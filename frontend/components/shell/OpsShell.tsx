@@ -1,4 +1,5 @@
 "use client";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -102,6 +103,7 @@ export function OpsShell({ children }: { children: ReactNode }) {
             })}
           </nav>
           <div className="flex items-center gap-2">
+            <LanguageToggle variant="compact" />
             <Link
               href="/ops/assistant"
               aria-label="Ask the ops assistant"

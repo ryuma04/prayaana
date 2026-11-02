@@ -3,6 +3,7 @@ import { Logo } from "@/components/brand/Logo";
 import { Zippy } from "@/components/art/Zippy";
 import { DestinationArt } from "@/components/art/DestinationArt";
 import { CarArt, JourneySequence } from "@/components/art/TravelVehicles";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -37,13 +38,16 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         </div>
       </aside>
       <main id="main" className="flex flex-col px-4 py-6 sm:px-8">
-        <div className="flex items-center justify-between lg:justify-end">
+        <div className="flex items-center justify-between lg:justify-end gap-3">
           <span className="lg:hidden">
             <Logo />
           </span>
-          <Link href="/" className="text-sm font-semibold text-muted hover:text-ink">
-            ← Back to home
-          </Link>
+          <div className="flex items-center gap-3">
+            <LanguageToggle variant="compact" />
+            <Link href="/" className="text-sm font-semibold text-muted hover:text-ink">
+              ← Back to home
+            </Link>
+          </div>
         </div>
         <div className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center py-8">{children}</div>
       </main>

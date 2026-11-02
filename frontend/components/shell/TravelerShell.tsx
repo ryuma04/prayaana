@@ -18,8 +18,10 @@ import { Logo } from "@/components/brand/Logo";
 import { NotificationBell } from "./NotificationBell";
 import { FeedbackPrompt } from "@/components/traveler/FeedbackPrompt";
 import { Avatar } from "@/components/ui/primitives";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import { useAuthStore } from "@/stores/authStore";
 import { useActiveTrip } from "@/stores/tripStore";
+import { useTranslation } from "@/lib/i18n";
 import { cn } from "@/lib/format";
 
 const FOCUS_ROUTES = ["/onboarding", "/quiz", "/plan/generate", "/booking-success"];
@@ -30,17 +32,18 @@ export function TravelerShell({ children }: { children: ReactNode }) {
   const user = useAuthStore((s) => s.user);
   const logout = useAuthStore((s) => s.logout);
   const active = useActiveTrip();
+  const { t } = useTranslation();
   const focus = FOCUS_ROUTES.some((r) => pathname.startsWith(r));
   const live = active?.status === "live";
 
   const nav = [
-    { href: "/discover", label: "Discover", Icon: CompassIcon, match: (p: string) => p.startsWith("/discover") },
-    { href: "/plan", label: "Plan", Icon: MapTrifoldIcon, match: (p: string) => p.startsWith("/plan") || p.startsWith("/compare") || p.startsWith("/checkout") },
+    { href: "/discover", label: t("navDiscover", "Discover"), Icon: CompassIcon, match: (p: string) => p.startsWith("/discover") },
+    { href: "/plan", label: t("navPlan", "Plan"), Icon: MapTrifoldIcon, match: (p: string) => p.startsWith("/plan") || p.startsWith("/compare") || p.startsWith("/checkout") },
     live
-      ? { href: "/my-trip/live", label: "Live", Icon: NavigationArrowIcon, match: (p: string) => p.startsWith("/my-trip/live") || p.startsWith("/my-trip/adapt") }
-      : { href: "/my-trip", label: "My Trip", Icon: SuitcaseRollingIcon, match: (p: string) => p.startsWith("/my-trip") || p.startsWith("/prepare") || p.startsWith("/review") },
-    ...(live ? [{ href: "/my-trip", label: "Trip", Icon: SuitcaseRollingIcon, match: (p: string) => p === "/my-trip" || /^\/my-trip\/trp/.test(p) || p.startsWith("/prepare") }] : []),
-    { href: "/profile", label: "Profile", Icon: UserCircleIcon, match: (p: string) => p.startsWith("/profile") || p.startsWith("/notifications") },
+      ? { href: "/my-trip/live", label: t("navLive", "Live"), Icon: NavigationArrowIcon, match: (p: string) => p.startsWith("/my-trip/live") || p.startsWith("/my-trip/adapt") }
+      : { href: "/my-trip", label: t("navMyTrip", "My Trip"), Icon: SuitcaseRollingIcon, match: (p: string) => p.startsWith("/my-trip") || p.startsWith("/prepare") || p.startsWith("/review") },
+    ...(live ? [{ href: "/my-trip", label: t("navTrip", "Trip"), Icon: SuitcaseRollingIcon, match: (p: string) => p === "/my-trip" || /^\/my-trip\/trp/.test(p) || p.startsWith("/prepare") }] : []),
+    { href: "/profile", label: t("navProfile", "Profile"), Icon: UserCircleIcon, match: (p: string) => p.startsWith("/profile") || p.startsWith("/notifications") },
   ];
 
   return (
@@ -62,13 +65,14 @@ export function TravelerShell({ children }: { children: ReactNode }) {
               })}
             </nav>
             <div className="flex items-center gap-2">
+              <LanguageToggle variant="compact" />
               {live && (
                 <Link href="/my-trip/live" className="hidden items-center gap-1.5 rounded-full border-2 border-ink bg-mint px-3 py-1.5 text-xs font-bold shadow-pop sm:inline-flex">
                   <span className="relative flex h-2 w-2">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-70" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
                   </span>
-                  Trip live
+                  {t("navTripLive", "Trip live")}
                 </Link>
               )}
               <NotificationBell audience="traveler" allHref="/notifications" />
@@ -80,7 +84,7 @@ export function TravelerShell({ children }: { children: ReactNode }) {
                 className="inline-flex h-10 items-center gap-1.5 rounded-full border-2 border-ink bg-white px-3 text-sm font-semibold shadow-pop transition hover:bg-pink-soft active:scale-95"
               >
                 <SignOutIcon size={16} weight="bold" />
-                <span className="hidden sm:inline">Log out</span>
+                <span className="hidden sm:inline">{t("logOut", "Log out")}</span>
               </button>
               <DropdownMenu.Root>
                 <DropdownMenu.Trigger className="rounded-full transition active:scale-95" aria-label="Account menu">
@@ -92,8 +96,8 @@ export function TravelerShell({ children }: { children: ReactNode }) {
                       <p className="text-sm font-semibold">{user?.name}</p>
                       <p className="text-xs text-muted">{user?.email}</p>
                     </div>
-                    <MenuItem onSelect={() => router.push("/profile")} icon={<UserCircleIcon size={16} />}>Profile & Travel DNA</MenuItem>
-                    <MenuItem onSelect={() => router.push("/quiz")} icon={<SparkleIcon size={16} />}>Retake quiz</MenuItem>
+                    <MenuItem onSelect={() => router.push("/profile")} icon={<UserCircleIcon size={16} />}>{t("profileAndDNA", "Profile & Travel DNA")}</MenuItem>
+                    <MenuItem onSelect={() => router.push("/quiz")} icon={<SparkleIcon size={16} />}>{t("retakeQuiz", "Retake quiz")}</MenuItem>
                     <MenuItem
                       onSelect={() => {
                         logout();
@@ -101,7 +105,7 @@ export function TravelerShell({ children }: { children: ReactNode }) {
                       }}
                       icon={<SquaresFourIcon size={16} />}
                     >
-                      Switch account
+                      {t("switchAccount", "Switch account")}
                     </MenuItem>
                     <DropdownMenu.Separator className="my-1 h-px bg-line" />
                     <MenuItem
@@ -111,7 +115,7 @@ export function TravelerShell({ children }: { children: ReactNode }) {
                       }}
                       icon={<SignOutIcon size={16} />}
                     >
-                      Sign out
+                      {t("signOut", "Sign out")}
                     </MenuItem>
                   </DropdownMenu.Content>
                 </DropdownMenu.Portal>

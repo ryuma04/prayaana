@@ -21,39 +21,43 @@ import {
 } from "@/components/landing/Sections";
 import { useAuthStore, homeForRole } from "@/stores/authStore";
 import { useAppReady } from "@/components/providers/StoreHydrator";
+import { useTranslation } from "@/lib/i18n";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 
 export default function LandingPage() {
   const user = useAuthStore((s) => s.user);
   const logout = useAuthStore((s) => s.logout);
   const ready = useAppReady((s) => s.ready);
+  const { t } = useTranslation();
   return (
     <div className="bg-dots min-h-dvh overflow-x-hidden">
       <header className="sticky top-0 z-40 border-b border-ink/5 bg-canvas/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
           <Logo />
           <nav className="hidden items-center gap-7 text-sm font-semibold text-ink-soft md:flex" aria-label="Landing">
-            <a href="#how" className="hover:text-ink">How it works</a>
-            <a href="#features" className="hover:text-ink">Features</a>
-            <a href="#operators" className="hover:text-ink">For operators</a>
-            <Link href="/discover" className="hover:text-ink">Destinations</Link>
+            <a href="#how" className="hover:text-ink">{t("navHowItWorks", "How it works")}</a>
+            <a href="#features" className="hover:text-ink">{t("navFeatures", "Features")}</a>
+            <a href="#operators" className="hover:text-ink">{t("navForOperators", "For operators")}</a>
+            <Link href="/discover" className="hover:text-ink">{t("navDestinations", "Destinations")}</Link>
           </nav>
           <div className="flex items-center gap-2">
+            <LanguageToggle variant="compact" />
             {ready && user ? (
               <>
                 <button onClick={() => logout()} className="rounded-full px-3 py-2 text-sm font-semibold hover:bg-ink/5">
-                  Log out
+                  {t("logOut", "Log out")}
                 </button>
                 <Button size="sm" href={homeForRole[user.role]} icon={<ArrowRightIcon size={14} weight="bold" />}>
-                  Open app
+                  {t("openApp", "Open app")}
                 </Button>
               </>
             ) : (
               <>
                 <Link href="/login" className="rounded-full px-3 py-2 text-sm font-semibold hover:bg-ink/5 sm:px-4">
-                  Log in
+                  {t("logIn", "Log in")}
                 </Link>
                 <Button size="sm" href="/signup">
-                  Get started
+                  {t("getStarted", "Get started")}
                 </Button>
               </>
             )}
@@ -70,8 +74,8 @@ export default function LandingPage() {
               animate={{ opacity: 1, y: 0 }}
               className="inline-flex -rotate-1 items-center gap-2 rounded-full border-2 border-ink bg-white px-3 py-1.5 text-xs font-bold shadow-pop"
             >
-              <span className="rounded-full bg-coral px-2 py-0.5 text-[10px] text-white">NEW</span>
-              Trip Fixer Agent, watch a trip repair itself
+              <span className="rounded-full bg-emerald-600 px-2 py-0.5 text-[10px] text-white">🌿 KARNATAKA</span>
+              {t("heroBadge", "Exclusively Karnataka · 16 Curated Destinations")}
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 18 }}
@@ -79,19 +83,14 @@ export default function LandingPage() {
               transition={{ delay: 0.08, duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
               className="mt-6 text-balance text-[2.6rem] font-extrabold leading-[1.02] text-ink sm:text-6xl lg:text-[4.1rem]"
             >
-              Plan your own trip.{" "}
-              <span className="relative inline-block">
-                <span className="relative z-10">We handle</span>
-                <span className="absolute inset-x-0 bottom-1 z-0 h-4 -rotate-1 rounded-full bg-sun sm:h-5" aria-hidden />
-              </span>{" "}
-              the changes.
+              {t("heroTitle", "Plan your own trip.")}
             </motion.h1>
             <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.24 }} className="mt-8 flex flex-wrap items-center gap-3">
               <Button size="lg" href="/signup" icon={<ArrowRightIcon size={18} weight="bold" />}>
-                Start planning
+                {t("startPlanning", "Start planning")}
               </Button>
-              <Button size="lg" variant="outline" href="/login" icon={<PlayCircleIcon size={20} weight="fill" />}>
-                Plan a trip
+              <Button size="lg" variant="outline" href="/discover" icon={<PlayCircleIcon size={20} weight="fill" />}>
+                {t("navDiscover", "Explore destinations")}
               </Button>
             </motion.div>
             <motion.ul initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-ink-soft">

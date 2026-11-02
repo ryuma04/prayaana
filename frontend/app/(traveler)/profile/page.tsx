@@ -18,11 +18,14 @@ import { destinationMap } from "@/data/destinations";
 import { cn, rupees } from "@/lib/format";
 import type { DestinationId } from "@/types";
 import { DnaIcon, Glyph } from "@/lib/icons";
+import { useTranslation } from "@/lib/i18n";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 
 export default function ProfilePage() {
   const router = useRouter();
   const user = useAuthStore((s) => s.user);
   const logout = useAuthStore((s) => s.logout);
+  const { t: tr } = useTranslation();
   const t = useTravelerStore(useShallow((s) => ({ dna: s.dna, xp: s.xp, badges: s.badges, saved: s.savedPlaces, limit: s.autoApproveLimit, language: s.language })));
   const setAutoApprove = useTravelerStore((s) => s.setAutoApprove);
   const setLanguage = useTravelerStore((s) => s.setLanguage);
@@ -135,32 +138,38 @@ export default function ProfilePage() {
         </section>
 
         <section>
-          <SectionTitle title="Settings" />
+          <SectionTitle title={tr("settings", "Settings")} />
           <Card pad="lg" className="space-y-6">
             <div>
               <div className="flex items-center justify-between">
                 <p className="flex items-center gap-2 font-semibold">
-                  <ShieldCheckIcon size={18} weight="duotone" className="text-purple" /> Auto-approve limit
+                  <ShieldCheckIcon size={18} weight="duotone" className="text-purple" /> {tr("autoApproveLimit", "Auto-approve limit")}
                 </p>
                 <span className="font-display font-bold">{rupees(t.limit)}</span>
               </div>
-              <p className="mt-1 text-xs text-muted">If something goes wrong on your trip, we fix it for you automatically when the extra cost is under this amount. Anything more, we ask you first.</p>
+              <p className="mt-1 text-xs text-muted">{tr("autoApproveDesc", "If something goes wrong on your trip, we fix it for you automatically when the extra cost is under this amount. Anything more, we ask you first.")}</p>
               <Slider className="mt-3" value={t.limit} onChange={setAutoApprove} min={0} max={5000} step={100} label="Auto-approve limit" />
             </div>
             <TelegramConnect />
-            <div className="flex items-center justify-between gap-3">
-              <p className="flex items-center gap-2 font-semibold">
-                <TranslateIcon size={18} weight="duotone" className="text-purple" /> Language
-              </p>
-              <Select value={t.language} onChange={(e) => setLanguage(e.target.value)} className="max-w-40" aria-label="Language">
-                {["English", "हिन्दी (Hindi)", "मराठी (Marathi)", "தமிழ் (Tamil)", "বাংলা (Bengali)"].map((l) => (
-                  <option key={l}>{l}</option>
-                ))}
-              </Select>
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="flex items-center gap-2 font-semibold">
+                  <TranslateIcon size={18} weight="duotone" className="text-purple" /> {tr("language", "Language")} / ಭಾಷೆ
+                </p>
+                <p className="mt-0.5 text-xs text-muted">Switch between English and Kannada (ಕರ್ನಾಟಕ)</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <LanguageToggle />
+                <Select value={t.language} onChange={(e) => setLanguage(e.target.value)} className="max-w-44" aria-label="Language">
+                  {["English", "ಕನ್ನಡ (Kannada)", "हिन्दी (Hindi)", "मराठी (Marathi)", "தமிழ் (Tamil)", "తెలుగు (Telugu)"].map((l) => (
+                    <option key={l}>{l}</option>
+                  ))}
+                </Select>
+              </div>
             </div>
             <div className="flex flex-wrap gap-2 border-t border-line pt-5">
               <Button variant="secondary" href="/notifications" icon={<BellIcon size={16} />}>
-                Notifications
+                {tr("notifications", "Notifications")}
               </Button>
               <Button
                 variant="secondary"
@@ -170,7 +179,7 @@ export default function ProfilePage() {
                 }}
                 icon={<SquaresFourIcon size={16} />}
               >
-                Switch account
+                {tr("switchAccount", "Switch account")}
               </Button>
               <Button
                 variant="outline"
@@ -180,7 +189,7 @@ export default function ProfilePage() {
                 }}
                 icon={<SignOutIcon size={16} />}
               >
-                Sign out
+                {tr("signOut", "Sign out")}
               </Button>
             </div>
           </Card>
