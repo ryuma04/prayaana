@@ -1,0 +1,5 @@
+# Only the AI service is built from the repository root; keep its context tiny.
+*
+!services/ai/requirements.txt
+!services/ai/app
+!backend/internal/seed/data/catalog.json

@@ -1,0 +1,4935 @@
+{
+  "operator": "Prayaana Travel Co.",
+  "quiz": [
+    {
+      "id": "morning",
+      "kind": "single",
+      "title": "Your perfect Karnataka morning?",
+      "subtitle": "Go with your gut.",
+      "options": [
+        {
+          "id": "trek",
+          "label": "Sunrise trek up Mullayanagiri",
+          "emoji": "🥾",
+          "tone": "mint",
+          "delta": {
+            "adventure": 20,
+            "nature": 20,
+            "rhythm": "early-bird"
+          }
+        },
+        {
+          "id": "coffee",
+          "label": "Filter coffee in a misty Coorg estate",
+          "emoji": "☕",
+          "tone": "sky",
+          "delta": {
+            "luxury": 14,
+            "nature": 16,
+            "relax": 18
+          }
+        },
+        {
+          "id": "market",
+          "label": "Wander Mysore's Devaraja market",
+          "emoji": "🧺",
+          "tone": "sun",
+          "delta": {
+            "culture": 20,
+            "food": 16,
+            "social": 10
+          }
+        },
+        {
+          "id": "sleep",
+          "label": "Sleep in to Arabian sea waves",
+          "emoji": "🌊",
+          "tone": "lavender",
+          "delta": {
+            "luxury": 12,
+            "rhythm": "night-owl",
+            "relax": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "view",
+      "kind": "single",
+      "title": "Pick a view to wake up to",
+      "options": [
+        {
+          "id": "boulders",
+          "label": "Hampi's golden boulder sunrise",
+          "emoji": "🏛️",
+          "tone": "sun",
+          "delta": {
+            "culture": 24,
+            "photo": 18,
+            "nature": 10
+          }
+        },
+        {
+          "id": "ghats",
+          "label": "Lush Western Ghats rainforest",
+          "emoji": "🌿",
+          "tone": "mint",
+          "delta": {
+            "nature": 25,
+            "adventure": 12
+          }
+        },
+        {
+          "id": "beach",
+          "label": "Gokarna cliffs & crescent beach",
+          "emoji": "🏖️",
+          "tone": "sky",
+          "delta": {
+            "relax": 20,
+            "nature": 12,
+            "social": 8
+          }
+        },
+        {
+          "id": "palace",
+          "label": "Illuminated Mysore Palace arches",
+          "emoji": "🏰",
+          "tone": "pink",
+          "delta": {
+            "culture": 22,
+            "luxury": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "thrill",
+      "kind": "slider",
+      "title": "Kali rafting, canopy walks, wild safaris…",
+      "subtitle": "How much adrenaline do you want?",
+      "trait": "adventure",
+      "left": "Keep my feet on the ground",
+      "right": "White water rapids & jungle safaris",
+      "emojiLeft": "🧘",
+      "emojiRight": "🚣"
+    },
+    {
+      "id": "food",
+      "kind": "single",
+      "title": "Karnataka cuisine on your trip is…",
+      "options": [
+        {
+          "id": "fuel",
+          "label": "Just fuel between sights",
+          "emoji": "⛽",
+          "tone": "cream",
+          "delta": {
+            "food": 4
+          }
+        },
+        {
+          "id": "half",
+          "label": "Half the reason: Ghee roast, Benne dosa & Pandi curry",
+          "emoji": "🤤",
+          "tone": "sun",
+          "delta": {
+            "food": 28,
+            "culture": 12
+          }
+        },
+        {
+          "id": "locals",
+          "label": "Authentic local Udupi tiffin shacks",
+          "emoji": "🍛",
+          "tone": "coral",
+          "delta": {
+            "food": 22,
+            "culture": 16
+          }
+        },
+        {
+          "id": "craft",
+          "label": "Bengaluru craft breweries & fine dining",
+          "emoji": "🍻",
+          "tone": "pink",
+          "delta": {
+            "food": 18,
+            "luxury": 18,
+            "social": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "pace",
+      "kind": "single",
+      "title": "How full should each day be?",
+      "options": [
+        {
+          "id": "slow",
+          "label": "Slow & serene",
+          "emoji": "🐢",
+          "hint": "2 unhurried experiences a day",
+          "tone": "mint",
+          "delta": {
+            "pace": "relaxed",
+            "luxury": 6,
+            "relax": 16
+          }
+        },
+        {
+          "id": "balanced",
+          "label": "Balanced exploration",
+          "emoji": "⚖️",
+          "hint": "3 experiences + relaxed evenings",
+          "tone": "sky",
+          "delta": {
+            "pace": "balanced"
+          }
+        },
+        {
+          "id": "packed",
+          "label": "Explore everything possible",
+          "emoji": "🚀",
+          "hint": "4+ iconic stops every day",
+          "tone": "coral",
+          "delta": {
+            "pace": "packed",
+            "adventure": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "never-skip",
+      "kind": "multi",
+      "title": "Things you would never skip in Karnataka",
+      "subtitle": "Pick up to 3",
+      "max": 3,
+      "options": [
+        {
+          "id": "heritage",
+          "label": "UNESCO World Heritage ruins & temples",
+          "emoji": "🏛️",
+          "tone": "sun",
+          "delta": {
+            "culture": 22,
+            "photo": 14
+          }
+        },
+        {
+          "id": "wildlife",
+          "label": "Tiger & Elephant safaris (Kabini / Bandipur)",
+          "emoji": "🐅",
+          "tone": "coral",
+          "delta": {
+            "nature": 22,
+            "adventure": 16
+          }
+        },
+        {
+          "id": "coffee",
+          "label": "Coffee plantation walking tours & tasting",
+          "emoji": "☕",
+          "tone": "mint",
+          "delta": {
+            "nature": 16,
+            "food": 14,
+            "relax": 14
+          }
+        },
+        {
+          "id": "coastal",
+          "label": "Pristine beaches & fresh seafood",
+          "emoji": "🏄",
+          "tone": "sky",
+          "delta": {
+            "relax": 18,
+            "food": 14
+          }
+        },
+        {
+          "id": "adventure",
+          "label": "Rafting & Western Ghats trekking",
+          "emoji": "🧗",
+          "tone": "coral",
+          "delta": {
+            "adventure": 24,
+            "nature": 14
+          }
+        },
+        {
+          "id": "wellness",
+          "label": "Ayurveda, yoga & quiet retreat",
+          "emoji": "🧘",
+          "tone": "lavender",
+          "delta": {
+            "relax": 24,
+            "luxury": 14
+          }
+        }
+      ]
+    }
+  ],
+  "team": [
+    {
+      "id": "tm-kavya",
+      "name": "Kavya Hegde",
+      "role": "coordinator",
+      "region": "Western Ghats & Hills",
+      "phone": "+91 94481 22301",
+      "languages": [
+        "Kannada",
+        "Tulu",
+        "English",
+        "Hindi"
+      ],
+      "status": "available",
+      "rating": 4.9,
+      "tone": "mint"
+    },
+    {
+      "id": "tm-manoj",
+      "name": "Manoj Gowda",
+      "role": "coordinator",
+      "region": "Heritage & North Karnataka",
+      "phone": "+91 98450 33412",
+      "languages": [
+        "Kannada",
+        "Hindi",
+        "English",
+        "Marathi"
+      ],
+      "status": "available",
+      "rating": 4.8,
+      "tone": "sun"
+    },
+    {
+      "id": "tm-deepa",
+      "name": "Deepa Nayak",
+      "role": "coordinator",
+      "region": "Coastal Karnataka",
+      "phone": "+91 94802 44523",
+      "languages": [
+        "Kannada",
+        "Konkani",
+        "Tulu",
+        "English"
+      ],
+      "status": "available",
+      "rating": 4.9,
+      "tone": "sky"
+    },
+    {
+      "id": "tm-anand",
+      "name": "Anand Rao",
+      "role": "coordinator",
+      "region": "Wildlife & Nature",
+      "phone": "+91 98801 55634",
+      "languages": [
+        "Kannada",
+        "English",
+        "Hindi",
+        "Tamil"
+      ],
+      "status": "available",
+      "rating": 4.8,
+      "tone": "coral"
+    },
+    {
+      "id": "tm-rohit",
+      "name": "Rohit Iyer",
+      "role": "ops",
+      "region": "HQ · Bengaluru",
+      "phone": "+91 98440 66745",
+      "languages": [
+        "English",
+        "Kannada",
+        "Hindi",
+        "Tamil"
+      ],
+      "status": "available",
+      "rating": 4.9,
+      "tone": "lavender"
+    }
+  ],
+  "coordinatorFor": {
+    "bengaluru": "tm-rohit",
+    "mysuru": "tm-rohit",
+    "coorg": "tm-kavya",
+    "chikmagalur": "tm-kavya",
+    "sakleshpur": "tm-kavya",
+    "hampi": "tm-manoj",
+    "badami": "tm-manoj",
+    "belur-halebidu": "tm-manoj",
+    "gokarna": "tm-deepa",
+    "udupi": "tm-deepa",
+    "mangalore": "tm-deepa",
+    "murdeshwar": "tm-deepa",
+    "kabini": "tm-anand",
+    "bandipur": "tm-anand",
+    "dandeli": "tm-anand",
+    "jogfalls": "tm-anand"
+  },
+  "destinations": [
+    {
+      "id": "bengaluru",
+      "name": "Bengaluru",
+      "state": "Karnataka",
+      "tagline": "Garden city, royal palaces & craft microbreweries",
+      "description": "Karnataka's vibrant capital where royal history meets global innovation. Walk under 100-year-old trees in Cubbon Park, admire the Tudor-style Bangalore Palace, taste legendary butter masala dosas, and experience India's craft beer capital.",
+      "art": "fort",
+      "tone": "coral",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "rating": 4.8,
+      "reviews": 1420,
+      "moods": [
+        "City Life",
+        "Food & Breweries",
+        "Heritage",
+        "Gardens"
+      ],
+      "interests": [
+        "culture",
+        "food",
+        "social",
+        "luxury",
+        "photo"
+      ],
+      "bestMonths": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "rainyMonths": [
+        7,
+        8
+      ],
+      "idealDays": "2 to 3 days",
+      "gateway": "Kempegowda International Airport (BLR), 35 km",
+      "fromCity": "Hub",
+      "climate": {
+        "tempC": 25,
+        "condition": "cloudy",
+        "rainChance": 20
+      },
+      "highlights": [
+        "Bangalore Palace tour",
+        "Lalbagh Glass House",
+        "MTR dosa & filter coffee",
+        "Indiranagar brewery crawl",
+        "Cubbon Park morning stroll"
+      ],
+      "clusters": [
+        {
+          "id": "central",
+          "name": "Central & British Cantonment",
+          "lunch": {
+            "name": "Mavalli Tiffin Room (MTR), Lalbagh Road",
+            "pricePerPerson": 350
+          },
+          "dinner": {
+            "name": "Toit Brewpub, Indiranagar",
+            "pricePerPerson": 900
+          }
+        },
+        {
+          "id": "royal",
+          "name": "Palace & Old Pete",
+          "lunch": {
+            "name": "Vidyarthi Bhavan, Gandhi Bazaar",
+            "pricePerPerson": 250
+          },
+          "dinner": {
+            "name": "Karavalli, Gateway Hotel (Coastal Dining)",
+            "pricePerPerson": 1800
+          }
+        }
+      ],
+      "localCabPerDay": 2400,
+      "airportTransfer": 1200,
+      "languages": [
+        "Kannada",
+        "English",
+        "Hindi",
+        "Tamil"
+      ],
+      "emergency": [
+        {
+          "label": "Bengaluru City Police",
+          "phone": "112"
+        },
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "Karnataka Tourist Helpline",
+          "phone": "1363"
+        }
+      ]
+    },
+    {
+      "id": "mysuru",
+      "name": "Mysuru",
+      "state": "Karnataka",
+      "tagline": "Royal palaces, silk weaves & fragrant sandalwood",
+      "description": "The cultural crown of Karnataka. Stand mesmerized as 100,000 bulbs light up the Mysore Palace, wander through the aromatic spice and flower alleys of Devaraja Market, ascend sacred Chamundi Hill, and savor authentic melt-in-mouth Mysore Pak.",
+      "art": "fort",
+      "tone": "pink",
+      "lat": 12.3052,
+      "lng": 76.6552,
+      "rating": 4.9,
+      "reviews": 1850,
+      "moods": [
+        "Royal Heritage",
+        "Culture",
+        "Art & Silk",
+        "Culinary"
+      ],
+      "interests": [
+        "culture",
+        "photo",
+        "food",
+        "relax",
+        "luxury"
+      ],
+      "bestMonths": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "rainyMonths": [
+        7,
+        8
+      ],
+      "idealDays": "2 to 3 days",
+      "gateway": "Mysore Airport (MYQ), 12 km · Bengaluru Airport, 180 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 26,
+        "condition": "sunny",
+        "rainChance": 15
+      },
+      "highlights": [
+        "Mysore Palace illumination",
+        "Chamundi Hill & Nandi",
+        "Devaraja Market sensory walk",
+        "St. Philomena's Cathedral",
+        "Guru Sweet Mart Mysore Pak"
+      ],
+      "clusters": [
+        {
+          "id": "palace-quarter",
+          "name": "Palace & Heritage Core",
+          "lunch": {
+            "name": "Hotel Original Vinayaka Mylari (Mylari Dosa)",
+            "pricePerPerson": 220
+          },
+          "dinner": {
+            "name": "Spring at Lalitha Mahal Palace",
+            "pricePerPerson": 1100
+          }
+        },
+        {
+          "id": "chamundi",
+          "name": "Chamundi Foothills & Gardens",
+          "lunch": {
+            "name": "Gufha Cave Restaurant",
+            "pricePerPerson": 650
+          },
+          "dinner": {
+            "name": "Poojari's Fish Land (Mysore-Bangalore Hwy)",
+            "pricePerPerson": 750
+          }
+        }
+      ],
+      "localCabPerDay": 2200,
+      "airportTransfer": 3200,
+      "languages": [
+        "Kannada",
+        "English",
+        "Hindi"
+      ],
+      "emergency": [
+        {
+          "label": "Mysuru City Police",
+          "phone": "112"
+        },
+        {
+          "label": "KR Hospital Mysuru",
+          "phone": "+91 821 242 0100"
+        },
+        {
+          "label": "Tourist Assistance",
+          "phone": "1363"
+        }
+      ]
+    },
+    {
+      "id": "hampi",
+      "name": "Hampi",
+      "state": "Karnataka",
+      "tagline": "UNESCO World Heritage & giant boulder landscapes",
+      "description": "The 14th-century capital of the Vijayanagara Empire carved into granite boulder hills on the banks of the Tungabhadra River. Explore the iconic Stone Chariot, listen to musical pillars at Vittala Temple, watch golden sunsets from Matanga Hill, and float across the river in a traditional round coracle.",
+      "art": "fort",
+      "tone": "sun",
+      "lat": 15.335,
+      "lng": 76.46,
+      "rating": 4.9,
+      "reviews": 2100,
+      "moods": [
+        "UNESCO Ruins",
+        "Ancient History",
+        "Boulder Sunsets",
+        "Coracles"
+      ],
+      "interests": [
+        "culture",
+        "photo",
+        "adventure",
+        "nature"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "rainyMonths": [
+        7,
+        8
+      ],
+      "idealDays": "3 to 4 days",
+      "gateway": "Jindal Vijaynagar Airport (VDY), 40 km · Hosapete Junction, 13 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 29,
+        "condition": "sunny",
+        "rainChance": 10
+      },
+      "highlights": [
+        "Vittala Temple & Stone Chariot",
+        "Matanga Hill sunrise panorama",
+        "Virupaksha Temple active worship",
+        "Tungabhadra coracle ride",
+        "Lotus Mahal & Elephant Stables"
+      ],
+      "clusters": [
+        {
+          "id": "sacred-centre",
+          "name": "Sacred Centre & Bazaar",
+          "lunch": {
+            "name": "Mango Tree Restaurant (Hampi Riverside)",
+            "pricePerPerson": 450
+          },
+          "dinner": {
+            "name": "Gopi Rooftop Restaurant",
+            "pricePerPerson": 400
+          }
+        },
+        {
+          "id": "royal-enclosure",
+          "name": "Royal Centre & Kamalapur",
+          "lunch": {
+            "name": "KSTDC Mayura Bhuvaneshwari",
+            "pricePerPerson": 380
+          },
+          "dinner": {
+            "name": "Laughing Buddha Hippie Cafe",
+            "pricePerPerson": 550
+          }
+        }
+      ],
+      "localCabPerDay": 2200,
+      "airportTransfer": 1600,
+      "languages": [
+        "Kannada",
+        "Hindi",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Hampi Police Station",
+          "phone": "+91 8394 241 224"
+        },
+        {
+          "label": "Emergency Control",
+          "phone": "112"
+        },
+        {
+          "label": "Tourist Helpline",
+          "phone": "1363"
+        }
+      ]
+    },
+    {
+      "id": "coorg",
+      "name": "Coorg",
+      "state": "Karnataka",
+      "tagline": "Coffee hills, cascading waterfalls & misty plantations",
+      "description": "The Scotland of India in the Western Ghats. Walk through fragrant coffee and black pepper estates, bathe elephants at Dubare on the Kaveri river, marvel at the Golden Temple in Bylakuppe Tibetan settlement, and watch rolling clouds from Raja's Seat.",
+      "art": "mountain",
+      "tone": "mint",
+      "lat": 12.4244,
+      "lng": 75.7382,
+      "rating": 4.8,
+      "reviews": 1980,
+      "moods": [
+        "Coffee Country",
+        "Misty Hills",
+        "Waterfalls",
+        "Homestays"
+      ],
+      "interests": [
+        "nature",
+        "relax",
+        "food",
+        "adventure"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealDays": "3 to 4 days",
+      "gateway": "Kannur Airport (CNN), 90 km · Mangaluru Airport (IXE), 140 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 22,
+        "condition": "cloudy",
+        "rainChance": 30
+      },
+      "highlights": [
+        "Coffee plantation walking & cupping",
+        "Dubare Elephant Camp Kaveri bath",
+        "Abbey Falls & hanging bridge",
+        "Namdroling Golden Temple",
+        "Raja's Seat sunset over valleys"
+      ],
+      "clusters": [
+        {
+          "id": "madikeri",
+          "name": "Madikeri Town & Hills",
+          "lunch": {
+            "name": "Coorg Cuisine, Madikeri",
+            "pricePerPerson": 420
+          },
+          "dinner": {
+            "name": "Raintree Heritage Restaurant",
+            "pricePerPerson": 650
+          }
+        },
+        {
+          "id": "kushalnagar",
+          "name": "Kushalnagar & Bylakuppe",
+          "lunch": {
+            "name": "Tibetan Camp 4 Canteen, Bylakuppe",
+            "pricePerPerson": 280
+          },
+          "dinner": {
+            "name": "Green Haven Multi-Cuisine",
+            "pricePerPerson": 450
+          }
+        }
+      ],
+      "localCabPerDay": 2600,
+      "airportTransfer": 4200,
+      "languages": [
+        "Kannada",
+        "Kodava",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Madikeri Police",
+          "phone": "+91 8272 228 333"
+        },
+        {
+          "label": "District Hospital Madikeri",
+          "phone": "+91 8272 225 363"
+        },
+        {
+          "label": "Emergency Helpline",
+          "phone": "112"
+        }
+      ]
+    },
+    {
+      "id": "chikmagalur",
+      "name": "Chikmagalur",
+      "state": "Karnataka",
+      "tagline": "Karnataka's highest peaks & the birthplace of Indian coffee",
+      "description": "Nestled in the Baba Budan range where coffee was first planted in India. Summit Mullayanagiri (1,930m) for panoramic 360-degree mountain vistas, explore sacred Baba Budangiri caves, take an adventurous 4x4 jeep ride to Hebbe Falls, and stay in heritage coffee planter bungalows.",
+      "art": "mountain",
+      "tone": "mint",
+      "lat": 13.3161,
+      "lng": 75.772,
+      "rating": 4.8,
+      "reviews": 1650,
+      "moods": [
+        "High Peaks",
+        "Coffee Estates",
+        "Trekking",
+        "Jeep Safaris"
+      ],
+      "interests": [
+        "adventure",
+        "nature",
+        "photo",
+        "food"
+      ],
+      "bestMonths": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8
+      ],
+      "idealDays": "3 days",
+      "gateway": "Mangaluru Airport (IXE), 150 km · Bengaluru, 240 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 21,
+        "condition": "cloudy",
+        "rainChance": 25
+      },
+      "highlights": [
+        "Mullayanagiri sunrise peak trek",
+        "Baba Budangiri & Manikyadhara falls",
+        "Hebbe Falls 4x4 jungle drive",
+        "Coffee Museum cupping experience",
+        "Bhadra wildlife sanctuary buffer tour"
+      ],
+      "clusters": [
+        {
+          "id": "town",
+          "name": "Chikmagalur Town & Lower Estates",
+          "lunch": {
+            "name": "Town Canteen (Crispy Gulbarga dosas)",
+            "pricePerPerson": 200
+          },
+          "dinner": {
+            "name": "Siri Cafe & Planters Dining",
+            "pricePerPerson": 550
+          }
+        },
+        {
+          "id": "peaks",
+          "name": "Mullayanagiri & Baba Budan Hills",
+          "lunch": {
+            "name": "Hilltop Estate Planter's Lunch",
+            "pricePerPerson": 450
+          },
+          "dinner": {
+            "name": "The Serai Coffee Restaurant",
+            "pricePerPerson": 1200
+          }
+        }
+      ],
+      "localCabPerDay": 2800,
+      "airportTransfer": 4500,
+      "languages": [
+        "Kannada",
+        "English",
+        "Hindi"
+      ],
+      "emergency": [
+        {
+          "label": "Chikmagalur Police",
+          "phone": "+91 8262 230 444"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        },
+        {
+          "label": "District Hospital",
+          "phone": "+91 8262 231 161"
+        }
+      ]
+    },
+    {
+      "id": "gokarna",
+      "name": "Gokarna",
+      "state": "Karnataka",
+      "tagline": "Sacred seaside temples, cliff trails & pristine crescent beaches",
+      "description": "Where the Western Ghats meet the Arabian Sea. Hike along the famous Five Beach Trail from Kudle to Paradise Beach, dip in holy waters at the 4th-century Mahabaleshwar Temple, relax at barefoot beach shacks at Om Beach, and witness fiery coastal sunsets.",
+      "art": "beach",
+      "tone": "sky",
+      "lat": 14.5479,
+      "lng": 74.3188,
+      "rating": 4.8,
+      "reviews": 1720,
+      "moods": [
+        "Beaches & Cliffs",
+        "Spiritual",
+        "Coastal Treks",
+        "Bohemian"
+      ],
+      "interests": [
+        "relax",
+        "adventure",
+        "nature",
+        "culture",
+        "social"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealDays": "3 to 4 days",
+      "gateway": "Goa Dabolim Airport (GOI), 140 km · Gokarna Road Railway Station, 9 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 28,
+        "condition": "sunny",
+        "rainChance": 15
+      },
+      "highlights": [
+        "Five-beach cliff trail trek",
+        "Sunset at Om Beach shacks",
+        "Mahabaleshwar Temple blessing",
+        "Mirjan Fort 16th-century ruins",
+        "Dolphin spotting boat cruise"
+      ],
+      "clusters": [
+        {
+          "id": "temple-town",
+          "name": "Gokarna Town & Main Beach",
+          "lunch": {
+            "name": "Pai Restaurant (Authentic South Indian)",
+            "pricePerPerson": 220
+          },
+          "dinner": {
+            "name": "Prema Restaurant (Homemade thalis & pies)",
+            "pricePerPerson": 350
+          }
+        },
+        {
+          "id": "om-kudle",
+          "name": "Om Beach & Kudle Bay",
+          "lunch": {
+            "name": "Namaste Cafe, Om Beach",
+            "pricePerPerson": 550
+          },
+          "dinner": {
+            "name": "Little Paradise Shack, Kudle",
+            "pricePerPerson": 600
+          }
+        }
+      ],
+      "localCabPerDay": 2200,
+      "airportTransfer": 3500,
+      "languages": [
+        "Kannada",
+        "Konkani",
+        "English",
+        "Hindi"
+      ],
+      "emergency": [
+        {
+          "label": "Gokarna Police Station",
+          "phone": "+91 8386 256 333"
+        },
+        {
+          "label": "Emergency Response",
+          "phone": "112"
+        },
+        {
+          "label": "Coastal Security Helpline",
+          "phone": "1093"
+        }
+      ]
+    },
+    {
+      "id": "badami",
+      "name": "Badami",
+      "state": "Karnataka",
+      "tagline": "Red sandstone cave temples & the cradle of temple architecture",
+      "description": "The dramatic capital of the Early Chalukya dynasty (6th-8th century). Marvel at the four rock-cut caves carved into towering red cliffs over Agastya Lake, see the intricately sculpted Bhutanatha Temples on the water's edge, and take day excursions to Aihole and the UNESCO World Heritage site of Pattadakal.",
+      "art": "fort",
+      "tone": "sun",
+      "lat": 15.9189,
+      "lng": 75.6775,
+      "rating": 4.8,
+      "reviews": 1240,
+      "moods": [
+        "Rock-cut Caves",
+        "Chalukya Architecture",
+        "UNESCO Monuments",
+        "Archaeology"
+      ],
+      "interests": [
+        "culture",
+        "photo",
+        "adventure"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "rainyMonths": [
+        7,
+        8
+      ],
+      "idealDays": "2 to 3 days",
+      "gateway": "Hubballi Airport (HBX), 105 km · Badami Railway Station, 5 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 28,
+        "condition": "sunny",
+        "rainChance": 10
+      },
+      "highlights": [
+        "Badami Cave Temples (Nataraja & Vishnu)",
+        "Bhutanatha Temple reflection on Agastya Lake",
+        "Pattadakal UNESCO monument cluster",
+        "Aihole Durga Temple apsidal design",
+        "Badami Fort northern hill climb"
+      ],
+      "clusters": [
+        {
+          "id": "caves-lake",
+          "name": "Cave Temples & Lake Circuit",
+          "lunch": {
+            "name": "Hotel Banashree (North Karnataka Jolada Roti thali)",
+            "pricePerPerson": 220
+          },
+          "dinner": {
+            "name": "KSTDC Mayura Chalukya Restaurant",
+            "pricePerPerson": 380
+          }
+        },
+        {
+          "id": "pattadakal-aihole",
+          "name": "Pattadakal & Aihole Heritage Circuit",
+          "lunch": {
+            "name": "Pattadakal Tourist Canteen",
+            "pricePerPerson": 250
+          },
+          "dinner": {
+            "name": "Heritage Resort Dining Hall",
+            "pricePerPerson": 500
+          }
+        }
+      ],
+      "localCabPerDay": 2400,
+      "airportTransfer": 2800,
+      "languages": [
+        "Kannada",
+        "Hindi",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Badami Police Station",
+          "phone": "+91 8357 220 133"
+        },
+        {
+          "label": "Community Health Centre",
+          "phone": "+91 8357 220 250"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        }
+      ]
+    },
+    {
+      "id": "udupi",
+      "name": "Udupi",
+      "state": "Karnataka",
+      "tagline": "Sacred Krishna temple, basalt sea islands & vegetarian heritage",
+      "description": "The birthplace of world-renowned Udupi vegetarian cuisine. Pay homage through Kanakana Kindi at Sri Krishna Matha, hop a ferry to St. Mary's Island with its million-year-old hexagonal basalt columns, walk Malpe Beach's sea-walk, and climb Kaup lighthouse at dusk.",
+      "art": "beach",
+      "tone": "sky",
+      "lat": 13.3409,
+      "lng": 74.7421,
+      "rating": 4.8,
+      "reviews": 1530,
+      "moods": [
+        "Temple Town",
+        "Coastal Islands",
+        "Udupi Cuisine",
+        "Sunsets"
+      ],
+      "interests": [
+        "culture",
+        "food",
+        "nature",
+        "relax",
+        "photo"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealDays": "2 to 3 days",
+      "gateway": "Mangaluru International Airport (IXE), 55 km · Udupi Railway Station, 4 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 28,
+        "condition": "sunny",
+        "rainChance": 20
+      },
+      "highlights": [
+        "Sri Krishna Matha & Kanakana Kindi",
+        "St. Mary's Island hexagonal rocks",
+        "Malpe Sea Walk & watersports",
+        "Mitra Samaj Goli Baje & Masala Dosa",
+        "Kaup Lighthouse sunset vista"
+      ],
+      "clusters": [
+        {
+          "id": "temple-core",
+          "name": "Krishna Matha & Town",
+          "lunch": {
+            "name": "Mitra Samaj (Iconic 1949 eatery)",
+            "pricePerPerson": 180
+          },
+          "dinner": {
+            "name": "Woodlands Restaurant, Udupi",
+            "pricePerPerson": 320
+          }
+        },
+        {
+          "id": "malpe-islands",
+          "name": "Malpe Beach & Coastal Strip",
+          "lunch": {
+            "name": "Fish Factory Malpe (Fresh Coastal Catch)",
+            "pricePerPerson": 550
+          },
+          "dinner": {
+            "name": "Thamboolam Coastal Dining",
+            "pricePerPerson": 650
+          }
+        }
+      ],
+      "localCabPerDay": 2200,
+      "airportTransfer": 1800,
+      "languages": [
+        "Kannada",
+        "Tulu",
+        "Konkani",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Udupi Town Police",
+          "phone": "+91 820 252 0333"
+        },
+        {
+          "label": "KMC Hospital Manipal",
+          "phone": "+91 820 292 2761"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        }
+      ]
+    },
+    {
+      "id": "mangalore",
+      "name": "Mangalore",
+      "state": "Karnataka",
+      "tagline": "Coastal city of ghee roast, historic cathedrals & surf beaches",
+      "description": "The gateway to Coastal Karnataka where Arabian Sea culture thrives. Taste legendary Chicken Ghee Roast where it was invented, marvel at St. Aloysius Chapel's Italian-painted frescoes, learn surfing at Sasihithlu, and tour the historic 10th-century Mangaladevi Temple.",
+      "art": "beach",
+      "tone": "coral",
+      "lat": 12.9141,
+      "lng": 74.856,
+      "rating": 4.7,
+      "reviews": 1390,
+      "moods": [
+        "Coastal Feast",
+        "Heritage Churches",
+        "Surfing & Sun",
+        "Culture"
+      ],
+      "interests": [
+        "food",
+        "culture",
+        "relax",
+        "photo",
+        "social"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealDays": "2 days",
+      "gateway": "Mangaluru International Airport (IXE), 12 km · Mangalore Central Station",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 29,
+        "condition": "sunny",
+        "rainChance": 20
+      },
+      "highlights": [
+        "Authentic Chicken & Paneer Ghee Roast",
+        "St. Aloysius Chapel ceiling paintings",
+        "Panambur Beach sunset & water sports",
+        "Kudroli Gokarnanatheshwara Temple",
+        "Pabbas Ice Cream Gudbud special"
+      ],
+      "clusters": [
+        {
+          "id": "city-heritage",
+          "name": "City Centre & Hampankatta",
+          "lunch": {
+            "name": "Giri Manja's Seafood Shack",
+            "pricePerPerson": 450
+          },
+          "dinner": {
+            "name": "Maharaja Restaurant (Ghee Roast specialist)",
+            "pricePerPerson": 750
+          }
+        },
+        {
+          "id": "beaches",
+          "name": "Panambur & Tannirbhavi Beaches",
+          "lunch": {
+            "name": "Ideal Ice Cream Cafe / Pabbas",
+            "pricePerPerson": 250
+          },
+          "dinner": {
+            "name": "Gajalee Sea Food Restaurant",
+            "pricePerPerson": 900
+          }
+        }
+      ],
+      "localCabPerDay": 2200,
+      "airportTransfer": 1200,
+      "languages": [
+        "Kannada",
+        "Tulu",
+        "Konkani",
+        "Beary",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Mangaluru City Police",
+          "phone": "112"
+        },
+        {
+          "label": "Wenlock District Hospital",
+          "phone": "+91 824 242 4333"
+        },
+        {
+          "label": "Tourist Assistance",
+          "phone": "1363"
+        }
+      ]
+    },
+    {
+      "id": "kabini",
+      "name": "Kabini",
+      "state": "Karnataka",
+      "tagline": "Wildlife heartland of tigers, leopards & Asian elephants",
+      "description": "One of Asia's finest wildlife reserves on the edge of Nagarhole National Park. Drift silently on boat safaris spotting herds of wild elephants drinking at the lake edge, take open-top jeep safaris tracking tigers and the legendary black panther, and stay in eco-luxury forest lodges.",
+      "art": "river",
+      "tone": "coral",
+      "lat": 11.9261,
+      "lng": 76.2711,
+      "rating": 4.9,
+      "reviews": 1610,
+      "moods": [
+        "Tiger Safari",
+        "Elephant Herds",
+        "Eco-Luxury",
+        "Jungle Silence"
+      ],
+      "interests": [
+        "nature",
+        "adventure",
+        "luxury",
+        "photo"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8
+      ],
+      "idealDays": "2 to 3 days",
+      "gateway": "Mysore Airport, 75 km · Bengaluru Airport, 220 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 24,
+        "condition": "sunny",
+        "rainChance": 15
+      },
+      "highlights": [
+        "Kabini boat safari for elephants & marsh crocs",
+        "Nagarhole National Park tiger zone jeep safari",
+        "Coracle floating on backwaters",
+        "Tribal community nature trail",
+        "Starlit jungle dinner by bonfire"
+      ],
+      "clusters": [
+        {
+          "id": "reserve-fringe",
+          "name": "Kabini River Bank Lodges",
+          "lunch": {
+            "name": "The Bison Resort Deck Lunch",
+            "pricePerPerson": 950
+          },
+          "dinner": {
+            "name": "Evolve Back Kuruba Grill",
+            "pricePerPerson": 1800
+          }
+        },
+        {
+          "id": "forest-buffer",
+          "name": "Antharasanthe & Nagarhole Gate",
+          "lunch": {
+            "name": "Jungle Lodges Dining Pavilion",
+            "pricePerPerson": 700
+          },
+          "dinner": {
+            "name": "Kabini River Lodge Courtyard",
+            "pricePerPerson": 900
+          }
+        }
+      ],
+      "localCabPerDay": 3000,
+      "airportTransfer": 4200,
+      "languages": [
+        "Kannada",
+        "English",
+        "Hindi"
+      ],
+      "emergency": [
+        {
+          "label": "Forest Department Control",
+          "phone": "+91 821 248 0901"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        },
+        {
+          "label": "H.D. Kote Government Hospital",
+          "phone": "+91 8228 255 224"
+        }
+      ]
+    },
+    {
+      "id": "bandipur",
+      "name": "Bandipur",
+      "state": "Karnataka",
+      "tagline": "Premier Project Tiger reserve in the Nilgiri Biosphere",
+      "description": "A dramatic deciduous forest where the Western and Eastern Ghats meet. Home to majestic tigers, leopards, dholes (wild dogs), and gaur. Ascend Himavad Gopalaswamy Betta shrouded in mountain mist, and join morning and evening forest department gypsy safaris.",
+      "art": "mountain",
+      "tone": "mint",
+      "lat": 11.6664,
+      "lng": 76.6291,
+      "rating": 4.8,
+      "reviews": 1470,
+      "moods": [
+        "Project Tiger",
+        "Forest Safaris",
+        "Mist Viewpoint",
+        "Wildlife"
+      ],
+      "interests": [
+        "nature",
+        "adventure",
+        "photo"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rainyMonths": [
+        7,
+        8
+      ],
+      "idealDays": "2 days",
+      "gateway": "Mysore Airport, 70 km · Bengaluru Airport, 220 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 25,
+        "condition": "sunny",
+        "rainChance": 15
+      },
+      "highlights": [
+        "Bandipur Tiger Reserve safari",
+        "Himavad Gopalaswamy Betta temple & mist view",
+        "Gaur (Indian Bison) herd tracking",
+        "Jungle night nature sounds walk",
+        "Elephant rehabilitation camp visit"
+      ],
+      "clusters": [
+        {
+          "id": "safari-core",
+          "name": "Bandipur Safari Gate & NH766",
+          "lunch": {
+            "name": "Bandipur Safari Lodge Buffet",
+            "pricePerPerson": 650
+          },
+          "dinner": {
+            "name": "Windflower Tusker Bar & Restaurant",
+            "pricePerPerson": 1100
+          }
+        },
+        {
+          "id": "gopalaswamy",
+          "name": "Gundlupet & Foothills",
+          "lunch": {
+            "name": "Highway Green Dhaba",
+            "pricePerPerson": 300
+          },
+          "dinner": {
+            "name": "Country Club Bandipur Restaurant",
+            "pricePerPerson": 600
+          }
+        }
+      ],
+      "localCabPerDay": 2800,
+      "airportTransfer": 3800,
+      "languages": [
+        "Kannada",
+        "Tamil",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Bandipur Forest Department",
+          "phone": "+91 8229 236 043"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        },
+        {
+          "label": "Gundlupet General Hospital",
+          "phone": "+91 8229 222 233"
+        }
+      ]
+    },
+    {
+      "id": "dandeli",
+      "name": "Dandeli",
+      "state": "Karnataka",
+      "tagline": "White water rapids, hornbill canopy walks & wilderness camps",
+      "description": "The adventure capital of Karnataka in the lush deciduous forests of the Western Ghats. Ride Grade 3 rapids on the turbulent Kali River, spot all four South Indian hornbill species on jungle canopy walks, explore ancient limestone Kavala Caves, and kayak Supa Reservoir.",
+      "art": "river",
+      "tone": "coral",
+      "lat": 15.2361,
+      "lng": 74.6173,
+      "rating": 4.8,
+      "reviews": 1590,
+      "moods": [
+        "River Rafting",
+        "Hornbill Birds",
+        "Adventure Sports",
+        "Dense Jungle"
+      ],
+      "interests": [
+        "adventure",
+        "nature",
+        "photo",
+        "social"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealDays": "3 days",
+      "gateway": "Hubballi Airport (HBX), 75 km · Alnavar Junction, 32 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 26,
+        "condition": "sunny",
+        "rainChance": 20
+      },
+      "highlights": [
+        "Grade 3 Kali River white water rafting",
+        "Timber Trail canopy hornbill walk",
+        "Syntheri Rocks monolithic granite gorge",
+        "Kavala Caves limestone exploration",
+        "Kayaking on Supa Reservoir backwaters"
+      ],
+      "clusters": [
+        {
+          "id": "river-kali",
+          "name": "Kali River & Rafting Stretch",
+          "lunch": {
+            "name": "Kali Adventure Camp Riverside Buffet",
+            "pricePerPerson": 650
+          },
+          "dinner": {
+            "name": "Hornbill River Resort Barbecue",
+            "pricePerPerson": 850
+          }
+        },
+        {
+          "id": "forest-gorge",
+          "name": "Kulgi & Syntheri Rocks",
+          "lunch": {
+            "name": "Wildwoods Nature Canteen",
+            "pricePerPerson": 350
+          },
+          "dinner": {
+            "name": "Dandeli Jungle Inn Dining",
+            "pricePerPerson": 500
+          }
+        }
+      ],
+      "localCabPerDay": 2600,
+      "airportTransfer": 2500,
+      "languages": [
+        "Kannada",
+        "Marathi",
+        "Hindi",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Dandeli Town Police",
+          "phone": "+91 8284 231 333"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        },
+        {
+          "label": "Dandeli Government Hospital",
+          "phone": "+91 8284 231 224"
+        }
+      ]
+    },
+    {
+      "id": "jogfalls",
+      "name": "Jog Falls",
+      "state": "Karnataka",
+      "tagline": "India's legendary four-cascade plunge waterfall",
+      "description": "Where the Sharavathi River dramatically plunges 253 metres (830 ft) in four distinct cascades: Raja, Roarer, Rocket, and Rani. Wander into the lush mist of the Sharavathi Valley, explore Honnemaradu backwaters for island kayaking, and drive along rainforest ghats.",
+      "art": "river",
+      "tone": "mint",
+      "lat": 14.2285,
+      "lng": 74.8118,
+      "rating": 4.7,
+      "reviews": 1340,
+      "moods": [
+        "Mighty Waterfalls",
+        "Rainforest Ghats",
+        "Backwaters",
+        "Nature"
+      ],
+      "interests": [
+        "nature",
+        "photo",
+        "adventure"
+      ],
+      "bestMonths": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        1
+      ],
+      "rainyMonths": [
+        6,
+        7
+      ],
+      "idealDays": "2 days",
+      "gateway": "Hubballi Airport (HBX), 130 km · Talguppa Railway Station, 14 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 23,
+        "condition": "cloudy",
+        "rainChance": 35
+      },
+      "highlights": [
+        "Jog Falls 4-stream viewpoint deck",
+        "Walk down 1,400 steps to the plunge pool",
+        "Sharavathi Valley lush viewpoints",
+        "Honnemaradu backwater island kayaking",
+        "Linganamakki Dam sunset panorama"
+      ],
+      "clusters": [
+        {
+          "id": "falls-view",
+          "name": "Falls View Deck & Sagara Road",
+          "lunch": {
+            "name": "KSTDC Mayura Gerusoppa Restaurant",
+            "pricePerPerson": 350
+          },
+          "dinner": {
+            "name": "Hotel Matthuga Planters Dining",
+            "pricePerPerson": 550
+          }
+        },
+        {
+          "id": "honnemaradu",
+          "name": "Sharavathi Backwaters & Sagara",
+          "lunch": {
+            "name": "Sagara Veg Mess",
+            "pricePerPerson": 200
+          },
+          "dinner": {
+            "name": "Green View Heritage Restaurant",
+            "pricePerPerson": 450
+          }
+        }
+      ],
+      "localCabPerDay": 2500,
+      "airportTransfer": 3500,
+      "languages": [
+        "Kannada",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Jog Falls Police Station",
+          "phone": "+91 8186 244 433"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        },
+        {
+          "label": "Sagara General Hospital",
+          "phone": "+91 8183 226 234"
+        }
+      ]
+    },
+    {
+      "id": "sakleshpur",
+      "name": "Sakleshpur",
+      "state": "Karnataka",
+      "tagline": "Star fort, green railway trek & cardamom hills",
+      "description": "A tranquil hill station in the Western Ghats famous for aromatic spice hills and mountain vistas. Climb the 8-pointed French-designed Manjarabad Star Fort built by Tipu Sultan, marvel at the sweeping Bisle Ghat reserve view of three mountain ranges, and trek through private cardamom plantations.",
+      "art": "mountain",
+      "tone": "mint",
+      "lat": 12.9439,
+      "lng": 75.7865,
+      "rating": 4.8,
+      "reviews": 1310,
+      "moods": [
+        "Star Fort",
+        "Cardamom Hills",
+        "Western Ghats Ridge",
+        "Homestays"
+      ],
+      "interests": [
+        "nature",
+        "adventure",
+        "relax",
+        "photo"
+      ],
+      "bestMonths": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8
+      ],
+      "idealDays": "2 to 3 days",
+      "gateway": "Mangaluru Airport (IXE), 130 km · Sakleshpur Railway Station, 2 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 22,
+        "condition": "cloudy",
+        "rainChance": 25
+      },
+      "highlights": [
+        "Manjarabad 8-point Star Fort trek",
+        "Bisle Ghat panoramic ridge viewpoint",
+        "Jenukallu Gudda peak hike",
+        "Cardamom estate guided tasting",
+        "Magajahalli Waterfalls natural bath"
+      ],
+      "clusters": [
+        {
+          "id": "fort-town",
+          "name": "Sakleshpur Town & Fort",
+          "lunch": {
+            "name": "Surabhi Restaurant, Town Centre",
+            "pricePerPerson": 250
+          },
+          "dinner": {
+            "name": "Mythri Heritage Dining",
+            "pricePerPerson": 450
+          }
+        },
+        {
+          "id": "bisle-ghat",
+          "name": "Bisle & Plantation Valleys",
+          "lunch": {
+            "name": "Planter's Home Dining (Malnad style)",
+            "pricePerPerson": 400
+          },
+          "dinner": {
+            "name": "Eka Resort Valley Dining",
+            "pricePerPerson": 750
+          }
+        }
+      ],
+      "localCabPerDay": 2600,
+      "airportTransfer": 3800,
+      "languages": [
+        "Kannada",
+        "English"
+      ],
+      "emergency": [
+        {
+          "label": "Sakleshpur Police Station",
+          "phone": "+91 8173 244 133"
+        },
+        {
+          "label": "Crawford Hospital Sakleshpur",
+          "phone": "+91 8173 244 240"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        }
+      ]
+    },
+    {
+      "id": "belur-halebidu",
+      "name": "Belur & Halebidu",
+      "state": "Karnataka",
+      "tagline": "UNESCO World Heritage Hoysala soapstone temple masterpieces",
+      "description": "The 12th-century pinnacle of medieval Indian architecture. In Belur, stand awestruck by Chennakeshava Temple's dancing bracket figures carved from soft chloritic schist. In Halebidu, study the twin Hoysaleswara temples adorned with 20,000 intricately carved animals, battles, and mythological epics.",
+      "art": "fort",
+      "tone": "sun",
+      "lat": 13.1623,
+      "lng": 75.8596,
+      "rating": 4.9,
+      "reviews": 1780,
+      "moods": [
+        "Hoysala Masterpieces",
+        "Soapstone Carvings",
+        "UNESCO Heritage",
+        "Medieval Art"
+      ],
+      "interests": [
+        "culture",
+        "photo",
+        "relax"
+      ],
+      "bestMonths": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "rainyMonths": [
+        7,
+        8
+      ],
+      "idealDays": "1 to 2 days",
+      "gateway": "Mangaluru Airport (IXE), 150 km · Hassan Junction, 35 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 25,
+        "condition": "sunny",
+        "rainChance": 15
+      },
+      "highlights": [
+        "Belur Chennakeshava Temple bracket figures",
+        "Halebidu Hoysaleswara temple friezes",
+        "Kedareshwara Temple star-shaped plinth",
+        "Jain Basadi complex Halebidu",
+        "Yagachi Dam water sports break"
+      ],
+      "clusters": [
+        {
+          "id": "belur-core",
+          "name": "Belur Chennakeshava Quarter",
+          "lunch": {
+            "name": "KSTDC Mayura Velapuri Belur",
+            "pricePerPerson": 320
+          },
+          "dinner": {
+            "name": "Vishnu Regency Dining, Belur",
+            "pricePerPerson": 450
+          }
+        },
+        {
+          "id": "halebidu-hassan",
+          "name": "Halebidu & Hassan Junction",
+          "lunch": {
+            "name": "Mayura Shantala Halebidu",
+            "pricePerPerson": 300
+          },
+          "dinner": {
+            "name": "Hassan Ashok Royal Kitchen",
+            "pricePerPerson": 750
+          }
+        }
+      ],
+      "localCabPerDay": 2400,
+      "airportTransfer": 3500,
+      "languages": [
+        "Kannada",
+        "English",
+        "Hindi"
+      ],
+      "emergency": [
+        {
+          "label": "Belur Police Station",
+          "phone": "+91 8177 222 233"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        },
+        {
+          "label": "Hassan District Hospital",
+          "phone": "+91 8172 268 444"
+        }
+      ]
+    },
+    {
+      "id": "murdeshwar",
+      "name": "Murdeshwar",
+      "state": "Karnataka",
+      "tagline": "Colossal 123ft seaside Shiva & Netrani scuba island",
+      "description": "Towering on the Kanduka Hill peninsula surrounded on three sides by the Arabian Sea. Behold the world's second-tallest Shiva statue and the towering 20-storey Raja Gopuram with high-speed elevator views. Take a thrilling boat expedition to Netrani Island (Pigeon Island) for world-class coral reef scuba diving and snorkeling.",
+      "art": "beach",
+      "tone": "sky",
+      "lat": 14.094,
+      "lng": 74.4899,
+      "rating": 4.8,
+      "reviews": 1680,
+      "moods": [
+        "Colossal Shiva",
+        "Scuba Diving",
+        "Arabian Sea Views",
+        "Peninsula Temple"
+      ],
+      "interests": [
+        "culture",
+        "adventure",
+        "photo",
+        "nature",
+        "relax"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "rainyMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealDays": "2 days",
+      "gateway": "Mangaluru Airport (IXE), 160 km · Murdeshwar Railway Station, 3 km",
+      "fromCity": "Bengaluru",
+      "climate": {
+        "tempC": 28,
+        "condition": "sunny",
+        "rainChance": 20
+      },
+      "highlights": [
+        "123-foot seaside Lord Shiva statue",
+        "Raja Gopuram 18th-floor elevator view",
+        "Netrani Island scuba diving & coral reef",
+        "Murdeshwar beach sunset & water jet-ski",
+        "Bhatkal historic light house excursion"
+      ],
+      "clusters": [
+        {
+          "id": "peninsula",
+          "name": "Temple Peninsula & Beach",
+          "lunch": {
+            "name": "Naveen Beach Restaurant (Over the waves)",
+            "pricePerPerson": 450
+          },
+          "dinner": {
+            "name": "RNS Residency Dining Hall",
+            "pricePerPerson": 600
+          }
+        },
+        {
+          "id": "netrani-coast",
+          "name": "Harbour & Coastal Strip",
+          "lunch": {
+            "name": "Fisherman's Wharf Seaside Shack",
+            "pricePerPerson": 500
+          },
+          "dinner": {
+            "name": "Dhenu Atithya Pure Veg",
+            "pricePerPerson": 300
+          }
+        }
+      ],
+      "localCabPerDay": 2300,
+      "airportTransfer": 3800,
+      "languages": [
+        "Kannada",
+        "Konkani",
+        "English",
+        "Hindi"
+      ],
+      "emergency": [
+        {
+          "label": "Murdeshwar Police Station",
+          "phone": "+91 8385 268 633"
+        },
+        {
+          "label": "Emergency",
+          "phone": "112"
+        },
+        {
+          "label": "RNS Hospital Murdeshwar",
+          "phone": "+91 8385 268 700"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "blr-palace",
+      "destinationId": "bengaluru",
+      "cluster": "royal",
+      "title": "Bangalore Palace Royal Tour",
+      "description": "Step into the 1887 Tudor-revival palace of the Wadiyar dynasty with Gothic windows, Victorian furniture, and ornate wooden carvings.",
+      "interests": [
+        "culture",
+        "photo",
+        "luxury"
+      ],
+      "durationMin": 90,
+      "price": 450,
+      "energy": 2,
+      "outdoor": false,
+      "slot": "morning",
+      "rating": 4.6,
+      "reviews": 620,
+      "vendorId": "v-blr-guides",
+      "lat": 12.9988,
+      "lng": 77.5921,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "coral",
+      "backupId": "blr-lalbagh"
+    },
+    {
+      "id": "blr-lalbagh",
+      "destinationId": "bengaluru",
+      "cluster": "central",
+      "title": "Lalbagh Botanical Gardens & Glass House",
+      "description": "Explore 240 acres of century-old trees, the London-inspired Glass House, and the ancient Lalbagh 3-billion-year-old rock.",
+      "interests": [
+        "nature",
+        "photo",
+        "relax"
+      ],
+      "durationMin": 120,
+      "price": 50,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.7,
+      "reviews": 950,
+      "vendorId": "v-blr-guides",
+      "lat": 12.9507,
+      "lng": 77.5848,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "mountain",
+      "tone": "mint",
+      "backupId": "blr-palace"
+    },
+    {
+      "id": "blr-food-walk",
+      "destinationId": "bengaluru",
+      "cluster": "central",
+      "title": "Old Bangalore Heritage Breakfast & Coffee Trail",
+      "description": "Guided food crawl through iconic South Indian institutions tasting hot crispy Benne Dosas, Kesari Bath, and foamy Mysore filter coffee.",
+      "interests": [
+        "food",
+        "culture",
+        "social"
+      ],
+      "durationMin": 120,
+      "price": 800,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 430,
+      "vendorId": "v-blr-foodies",
+      "lat": 12.9431,
+      "lng": 77.5742,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "food",
+      "tone": "sun",
+      "backupId": "blr-cubbon"
+    },
+    {
+      "id": "blr-cubbon",
+      "destinationId": "bengaluru",
+      "cluster": "central",
+      "title": "Cubbon Park Stroll & Vidhana Soudha View",
+      "description": "A tranquil walk beneath mahogany and bamboo canopies ending at the neo-Dravidian state legislature building.",
+      "interests": [
+        "nature",
+        "photo",
+        "relax"
+      ],
+      "durationMin": 90,
+      "price": 0,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.8,
+      "reviews": 780,
+      "vendorId": "v-blr-guides",
+      "lat": 12.9763,
+      "lng": 77.5929,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "mountain",
+      "tone": "sky",
+      "backupId": "blr-palace"
+    },
+    {
+      "id": "blr-brewery",
+      "destinationId": "bengaluru",
+      "cluster": "central",
+      "title": "Indiranagar Craft Microbrewery Experience",
+      "description": "Tasting flight of 6 freshly brewed craft beers paired with Malnad spiced chicken at one of India's pioneer brewpubs.",
+      "interests": [
+        "food",
+        "social",
+        "luxury"
+      ],
+      "durationMin": 120,
+      "price": 1200,
+      "energy": 1,
+      "outdoor": false,
+      "slot": "evening",
+      "rating": 4.8,
+      "reviews": 560,
+      "vendorId": "v-blr-nightlife",
+      "lat": 12.9784,
+      "lng": 77.6408,
+      "kidFriendly": false,
+      "walking": "low",
+      "icon": "food",
+      "tone": "coral"
+    },
+    {
+      "id": "mys-palace",
+      "destinationId": "mysuru",
+      "cluster": "palace-quarter",
+      "title": "Mysore Palace Grand Interior Tour",
+      "description": "Marvel at the stained-glass ceilings of the Durbar Hall, carved mahogany ceilings, and the golden throne of the Wadiyars.",
+      "interests": [
+        "culture",
+        "photo",
+        "luxury"
+      ],
+      "durationMin": 120,
+      "price": 100,
+      "energy": 2,
+      "outdoor": false,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 1400,
+      "vendorId": "v-mys-guides",
+      "lat": 12.3052,
+      "lng": 76.6552,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "pink",
+      "backupId": "mys-market"
+    },
+    {
+      "id": "mys-palace-light",
+      "destinationId": "mysuru",
+      "cluster": "palace-quarter",
+      "title": "Mysore Palace Night Illumination Show",
+      "description": "Witness the magical evening spectacle when 97,000 golden incandescent bulbs illuminate the palace facade against the dark sky.",
+      "interests": [
+        "culture",
+        "photo",
+        "relax"
+      ],
+      "durationMin": 60,
+      "price": 50,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 5,
+      "reviews": 2100,
+      "vendorId": "v-mys-guides",
+      "lat": 12.3052,
+      "lng": 76.6552,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "temple",
+      "tone": "sun"
+    },
+    {
+      "id": "mys-chamundi",
+      "destinationId": "mysuru",
+      "cluster": "chamundi",
+      "title": "Chamundi Hill & Monolithic Nandi Bull",
+      "description": "Ascend to the hilltop temple of Goddess Chamundeshwari and visit the colossal 1659 monolithic Nandi Bull carved from single granite.",
+      "interests": [
+        "culture",
+        "nature",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 0,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 890,
+      "vendorId": "v-mys-guides",
+      "lat": 12.2724,
+      "lng": 76.6713,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "mountain",
+      "tone": "coral",
+      "backupId": "mys-palace"
+    },
+    {
+      "id": "mys-market",
+      "destinationId": "mysuru",
+      "cluster": "palace-quarter",
+      "title": "Devaraja Market Spices & Silk Scent Walk",
+      "description": "A 120-year-old heritage market sensory tour through mounds of kumkum, fragrant jasmine garlands, sandalwood oils, and pure Mysore silk.",
+      "interests": [
+        "culture",
+        "food",
+        "social"
+      ],
+      "durationMin": 90,
+      "price": 0,
+      "energy": 2,
+      "outdoor": false,
+      "slot": "afternoon",
+      "rating": 4.7,
+      "reviews": 670,
+      "vendorId": "v-mys-guides",
+      "lat": 12.3093,
+      "lng": 76.6517,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "food",
+      "tone": "sun",
+      "backupId": "mys-palace"
+    },
+    {
+      "id": "mys-brindavan",
+      "destinationId": "mysuru",
+      "cluster": "chamundi",
+      "title": "Brindavan Gardens & Musical Fountain",
+      "description": "Terraced botanical gardens beside Krishnarajasagara Dam with evening synchronized illuminated dancing water fountains.",
+      "interests": [
+        "relax",
+        "nature",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 50,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 4.6,
+      "reviews": 920,
+      "vendorId": "v-mys-cabs",
+      "lat": 12.4244,
+      "lng": 76.5724,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "river",
+      "tone": "mint"
+    },
+    {
+      "id": "ham-vittala",
+      "destinationId": "hampi",
+      "cluster": "royal-enclosure",
+      "title": "Vittala Temple & Iconic Stone Chariot",
+      "description": "The crown jewel of Vijayanagara art featuring the world-famous Stone Chariot, musical granite pillars, and Maha-Mandapa carvings.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 40,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 5,
+      "reviews": 1820,
+      "vendorId": "v-ham-guides",
+      "lat": 15.3359,
+      "lng": 76.4789,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "sun",
+      "backupId": "ham-virupaksha"
+    },
+    {
+      "id": "ham-matanga",
+      "destinationId": "hampi",
+      "cluster": "sacred-centre",
+      "title": "Matanga Hill Sunrise Boulder Trek",
+      "description": "Climb the highest point in Hampi before dawn to witness morning mist lifting from ancient ruins, banana groves, and boulder hills.",
+      "interests": [
+        "adventure",
+        "photo",
+        "nature"
+      ],
+      "durationMin": 90,
+      "price": 0,
+      "energy": 4,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 890,
+      "vendorId": "v-ham-guides",
+      "lat": 15.333,
+      "lng": 76.468,
+      "kidFriendly": false,
+      "walking": "high",
+      "icon": "mountain",
+      "tone": "mint"
+    },
+    {
+      "id": "ham-virupaksha",
+      "destinationId": "hampi",
+      "cluster": "sacred-centre",
+      "title": "Virupaksha Temple & Hampi Bazaar Walk",
+      "description": "7th-century continuously active Shiva temple with a 50m gopuram, temple elephant Lakshmi blessings, and the ancient covered bazaar.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 90,
+      "price": 25,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.8,
+      "reviews": 1120,
+      "vendorId": "v-ham-guides",
+      "lat": 15.3352,
+      "lng": 76.4598,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "sun",
+      "backupId": "ham-vittala"
+    },
+    {
+      "id": "ham-coracle",
+      "destinationId": "hampi",
+      "cluster": "sacred-centre",
+      "title": "Tungabhadra Coracle Ride & River Rocks",
+      "description": "Float in a circular reed-and-canvas coracle boat through granite gorges of the Tungabhadra river past ancient rock carving shrines.",
+      "interests": [
+        "adventure",
+        "nature",
+        "photo"
+      ],
+      "durationMin": 60,
+      "price": 500,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.8,
+      "reviews": 740,
+      "vendorId": "v-ham-coracle",
+      "lat": 15.3385,
+      "lng": 76.4632,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "river",
+      "tone": "sky"
+    },
+    {
+      "id": "ham-royal-enclosure",
+      "destinationId": "hampi",
+      "cluster": "royal-enclosure",
+      "title": "Lotus Mahal & Elephant Stables Discovery",
+      "description": "Explore the secular Indo-Islamic pavilion of Queens with arched lotus petals and the grand domed chambers that once housed royal elephants.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 90,
+      "price": 40,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.7,
+      "reviews": 820,
+      "vendorId": "v-ham-guides",
+      "lat": 15.3205,
+      "lng": 76.4715,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "pink",
+      "backupId": "ham-vittala"
+    },
+    {
+      "id": "coo-plantation",
+      "destinationId": "coorg",
+      "cluster": "madikeri",
+      "title": "Private Coffee & Pepper Estate Guided Walk",
+      "description": "Follow the bean from shade-grown Arabica bush to roasting drum, smelling fresh pepper vines and tasting estate-pressed brew.",
+      "interests": [
+        "nature",
+        "food",
+        "relax"
+      ],
+      "durationMin": 120,
+      "price": 750,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 650,
+      "vendorId": "v-coo-planters",
+      "lat": 12.435,
+      "lng": 75.748,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "mountain",
+      "tone": "mint",
+      "backupId": "coo-abbey"
+    },
+    {
+      "id": "coo-abbey",
+      "destinationId": "coorg",
+      "cluster": "madikeri",
+      "title": "Abbey Falls Trail & Hanging Bridge",
+      "description": "Short descent through lush coffee and spice bushes to a roaring waterfall framed by the hanging footbridge.",
+      "interests": [
+        "nature",
+        "photo"
+      ],
+      "durationMin": 75,
+      "price": 30,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.6,
+      "reviews": 980,
+      "vendorId": "v-coo-cabs",
+      "lat": 12.4539,
+      "lng": 75.7196,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "river",
+      "tone": "mint",
+      "backupId": "coo-plantation"
+    },
+    {
+      "id": "coo-dubare",
+      "destinationId": "coorg",
+      "cluster": "kushalnagar",
+      "title": "Dubare Elephant Camp River Crossing & Bath",
+      "description": "Cross Kaveri waters by ferry to groom, feed, and interact with gentle elephants alongside trained tribal mahouts.",
+      "interests": [
+        "nature",
+        "adventure"
+      ],
+      "durationMin": 150,
+      "price": 600,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.7,
+      "reviews": 840,
+      "vendorId": "v-coo-forest",
+      "lat": 12.3686,
+      "lng": 75.9056,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "river",
+      "tone": "coral"
+    },
+    {
+      "id": "coo-namdroling",
+      "destinationId": "coorg",
+      "cluster": "kushalnagar",
+      "title": "Namdroling Golden Temple Bylakuppe",
+      "description": "Step into the serenity of India's largest Tibetan monastic settlement featuring three 40-foot gilded golden Buddha statues.",
+      "interests": [
+        "culture",
+        "relax"
+      ],
+      "durationMin": 90,
+      "price": 0,
+      "energy": 1,
+      "outdoor": false,
+      "slot": "afternoon",
+      "rating": 4.9,
+      "reviews": 1320,
+      "vendorId": "v-coo-guides",
+      "lat": 12.4304,
+      "lng": 75.9667,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "temple",
+      "tone": "sun",
+      "backupId": "coo-plantation"
+    },
+    {
+      "id": "coo-rajaseat",
+      "destinationId": "coorg",
+      "cluster": "madikeri",
+      "title": "Sunset over Western Ghats from Raja's Seat",
+      "description": "The royal garden cliff where Kodava monarchs spent evenings admiring crimson sunsets over misty undulating valleys.",
+      "interests": [
+        "relax",
+        "photo"
+      ],
+      "durationMin": 60,
+      "price": 25,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 4.7,
+      "reviews": 1100,
+      "vendorId": "v-coo-cabs",
+      "lat": 12.4214,
+      "lng": 75.7369,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "mountain",
+      "tone": "sky"
+    },
+    {
+      "id": "chk-mullayanagiri",
+      "destinationId": "chikmagalur",
+      "cluster": "peaks",
+      "title": "Mullayanagiri Peak Sunrise Summit Trek",
+      "description": "Hike Karnataka's highest peak (1,930m) across grassy mountain ridges with panoramic 360-degree views above morning clouds.",
+      "interests": [
+        "adventure",
+        "nature",
+        "photo"
+      ],
+      "durationMin": 150,
+      "price": 0,
+      "energy": 4,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 1150,
+      "vendorId": "v-chk-adventure",
+      "lat": 13.3912,
+      "lng": 75.7214,
+      "kidFriendly": false,
+      "walking": "high",
+      "icon": "mountain",
+      "tone": "mint"
+    },
+    {
+      "id": "chk-baba-budan",
+      "destinationId": "chikmagalur",
+      "cluster": "peaks",
+      "title": "Baba Budangiri & Manikyadhara Falls",
+      "description": "Sacred mountain shrine where Sufi saint Baba Budan first planted coffee beans brought from Yemen, and cool stream falls.",
+      "interests": [
+        "culture",
+        "nature"
+      ],
+      "durationMin": 120,
+      "price": 0,
+      "energy": 3,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.7,
+      "reviews": 720,
+      "vendorId": "v-chk-cabs",
+      "lat": 13.4227,
+      "lng": 75.7667,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "mountain",
+      "tone": "sun",
+      "backupId": "chk-coffee-museum"
+    },
+    {
+      "id": "chk-hebbe-falls",
+      "destinationId": "chikmagalur",
+      "cluster": "peaks",
+      "title": "Hebbe Falls 4x4 Mountain Jeep Safari",
+      "description": "A rugged 4-wheel drive journey through dense coffee valleys followed by a short trek to an untamed twin waterfall.",
+      "interests": [
+        "adventure",
+        "nature"
+      ],
+      "durationMin": 180,
+      "price": 1800,
+      "energy": 3,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.8,
+      "reviews": 580,
+      "vendorId": "v-chk-adventure",
+      "lat": 13.5414,
+      "lng": 75.7196,
+      "kidFriendly": false,
+      "walking": "medium",
+      "icon": "river",
+      "tone": "coral"
+    },
+    {
+      "id": "chk-coffee-museum",
+      "destinationId": "chikmagalur",
+      "cluster": "town",
+      "title": "Coffee Board Museum & Cupping Workshop",
+      "description": "Interactive museum documenting the botany, history, and roasting methods of Indian coffee with sensory cupping evaluation.",
+      "interests": [
+        "food",
+        "culture"
+      ],
+      "durationMin": 90,
+      "price": 50,
+      "energy": 1,
+      "outdoor": false,
+      "slot": "afternoon",
+      "rating": 4.6,
+      "reviews": 410,
+      "vendorId": "v-chk-cabs",
+      "lat": 13.315,
+      "lng": 75.778,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "food",
+      "tone": "coral",
+      "backupId": "chk-baba-budan"
+    },
+    {
+      "id": "chk-bhadra-safari",
+      "destinationId": "chikmagalur",
+      "cluster": "town",
+      "title": "Bhadra Wildlife Sanctuary Buffer Safari",
+      "description": "Evening jeep safari through lush moist deciduous teak forests scouting for leopards, barking deer, and Malabar giant squirrels.",
+      "interests": [
+        "nature",
+        "adventure",
+        "photo"
+      ],
+      "durationMin": 180,
+      "price": 900,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 4.7,
+      "reviews": 490,
+      "vendorId": "v-chk-adventure",
+      "lat": 13.684,
+      "lng": 75.641,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "river",
+      "tone": "mint"
+    },
+    {
+      "id": "gok-beach-trek",
+      "destinationId": "gokarna",
+      "cluster": "om-kudle",
+      "title": "Five-Beach Cliff Trail Trek",
+      "description": "Hike over coastal granite promontories from Kudle Beach through Om Beach to secluded Half Moon and Paradise beaches.",
+      "interests": [
+        "adventure",
+        "nature",
+        "photo"
+      ],
+      "durationMin": 180,
+      "price": 500,
+      "energy": 3,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 980,
+      "vendorId": "v-gok-treks",
+      "lat": 14.518,
+      "lng": 74.318,
+      "kidFriendly": false,
+      "walking": "high",
+      "icon": "mountain",
+      "tone": "mint"
+    },
+    {
+      "id": "gok-temple",
+      "destinationId": "gokarna",
+      "cluster": "temple-town",
+      "title": "Mahabaleshwar Temple & Kotiteertha Tank",
+      "description": "Ancient 4th-century temple housing the Atmalinga of Lord Shiva, followed by a serene walk around the freshwater temple tank.",
+      "interests": [
+        "culture",
+        "relax"
+      ],
+      "durationMin": 75,
+      "price": 0,
+      "energy": 1,
+      "outdoor": false,
+      "slot": "morning",
+      "rating": 4.7,
+      "reviews": 780,
+      "vendorId": "v-gok-cabs",
+      "lat": 14.5428,
+      "lng": 74.3168,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "temple",
+      "tone": "sun",
+      "backupId": "gok-mirjan"
+    },
+    {
+      "id": "gok-mirjan",
+      "destinationId": "gokarna",
+      "cluster": "temple-town",
+      "title": "Mirjan Fort 16th-Century Moss Ruins",
+      "description": "Explore the moss-covered laterite battlements and watchtowers of the fortress built by Queen Chennabhairadevi (The Pepper Queen).",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 90,
+      "price": 25,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.7,
+      "reviews": 620,
+      "vendorId": "v-gok-cabs",
+      "lat": 14.4925,
+      "lng": 74.4172,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "fort",
+      "tone": "coral",
+      "backupId": "gok-temple"
+    },
+    {
+      "id": "gok-dolphin-boat",
+      "destinationId": "gokarna",
+      "cluster": "om-kudle",
+      "title": "Om Beach Dolphin Spotting Boat Cruise",
+      "description": "Cruise into the calm Arabian Sea in early morning to watch playful pods of humpback dolphins breaching off the rocky coast.",
+      "interests": [
+        "nature",
+        "adventure"
+      ],
+      "durationMin": 60,
+      "price": 600,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 430,
+      "vendorId": "v-gok-boats",
+      "lat": 14.5175,
+      "lng": 74.3142,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "river",
+      "tone": "sky"
+    },
+    {
+      "id": "gok-sunset-shack",
+      "destinationId": "gokarna",
+      "cluster": "om-kudle",
+      "title": "Sunset & Sea Breeze at Kudle Beach",
+      "description": "Unwind on soft sands as the sun dips into the Arabian Sea, accompanied by fresh fruit smoothies and acoustic guitar tunes.",
+      "interests": [
+        "relax",
+        "social",
+        "food"
+      ],
+      "durationMin": 90,
+      "price": 200,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 4.8,
+      "reviews": 870,
+      "vendorId": "v-gok-treks",
+      "lat": 14.5276,
+      "lng": 74.3134,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "mountain",
+      "tone": "pink"
+    },
+    {
+      "id": "bad-caves",
+      "destinationId": "badami",
+      "cluster": "caves-lake",
+      "title": "Badami Rock-Cut Cave Temples Exploration",
+      "description": "Climb through four magnificent 6th-century rock-cut shrines carved into sandstone cliffs dedicated to Shiva, Vishnu, and Jain tirthankaras.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 25,
+      "energy": 3,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 1120,
+      "vendorId": "v-bad-guides",
+      "lat": 15.9189,
+      "lng": 75.6775,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "sun",
+      "backupId": "bad-bhutanatha"
+    },
+    {
+      "id": "bad-bhutanatha",
+      "destinationId": "badami",
+      "cluster": "caves-lake",
+      "title": "Bhutanatha Temples & Agastya Lake Circuit",
+      "description": "Walk along the emerald waters of Agastya Lake to 7th-century shrines reflected in the water against dramatic red rock gorges.",
+      "interests": [
+        "culture",
+        "photo",
+        "relax"
+      ],
+      "durationMin": 90,
+      "price": 0,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.8,
+      "reviews": 690,
+      "vendorId": "v-bad-guides",
+      "lat": 15.9202,
+      "lng": 75.6888,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "river",
+      "tone": "coral",
+      "backupId": "bad-caves"
+    },
+    {
+      "id": "bad-pattadakal",
+      "destinationId": "badami",
+      "cluster": "pattadakal-aihole",
+      "title": "Pattadakal UNESCO World Heritage Complex",
+      "description": "Marvel at 8th-century royal coronation temples blending Nagara and Dravida styles, including the exquisite Virupaksha Temple.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 40,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 840,
+      "vendorId": "v-bad-guides",
+      "lat": 15.9489,
+      "lng": 75.8164,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "sun",
+      "backupId": "bad-aihole"
+    },
+    {
+      "id": "bad-aihole",
+      "destinationId": "badami",
+      "cluster": "pattadakal-aihole",
+      "title": "Aihole 'Cradle of Temple Architecture' Tour",
+      "description": "Explore over 120 historic monuments including the famed 7th-century apsidal Durga Temple with its pillared ambulatory hall.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 25,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.8,
+      "reviews": 730,
+      "vendorId": "v-bad-guides",
+      "lat": 16.0194,
+      "lng": 75.8817,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "pink",
+      "backupId": "bad-pattadakal"
+    },
+    {
+      "id": "udu-krishna",
+      "destinationId": "udupi",
+      "cluster": "temple-core",
+      "title": "Sri Krishna Matha & Kanakana Kindi Darshan",
+      "description": "Visit the sacred 13th-century monastery founded by saint Madhvacharya, viewing the silver-clad deity through the nine-hole window.",
+      "interests": [
+        "culture",
+        "relax"
+      ],
+      "durationMin": 90,
+      "price": 0,
+      "energy": 1,
+      "outdoor": false,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 1250,
+      "vendorId": "v-udu-guides",
+      "lat": 13.3409,
+      "lng": 74.7521,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "temple",
+      "tone": "sun",
+      "backupId": "udu-culinary"
+    },
+    {
+      "id": "udu-stmarys",
+      "destinationId": "udupi",
+      "cluster": "malpe-islands",
+      "title": "St. Mary's Island Basalt Rock Boat Expedition",
+      "description": "Take a scenic boat ride to uninhabited islands featuring unique millions-year-old hexagonal volcanic columnar basalt rock formations.",
+      "interests": [
+        "nature",
+        "adventure",
+        "photo"
+      ],
+      "durationMin": 150,
+      "price": 450,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 980,
+      "vendorId": "v-udu-boats",
+      "lat": 13.3792,
+      "lng": 74.6736,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "river",
+      "tone": "sky"
+    },
+    {
+      "id": "udu-culinary",
+      "destinationId": "udupi",
+      "cluster": "temple-core",
+      "title": "Authentic Udupi Tiffin & Filter Coffee Trail",
+      "description": "Taste traditional Goli Baje, Tuppa Dosa, Patrode, and Halbai at heritage Brahmin culinary establishments.",
+      "interests": [
+        "food",
+        "culture"
+      ],
+      "durationMin": 90,
+      "price": 350,
+      "energy": 1,
+      "outdoor": false,
+      "slot": "afternoon",
+      "rating": 4.8,
+      "reviews": 560,
+      "vendorId": "v-udu-guides",
+      "lat": 13.3415,
+      "lng": 74.7495,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "food",
+      "tone": "coral",
+      "backupId": "udu-krishna"
+    },
+    {
+      "id": "udu-kaup-lighthouse",
+      "destinationId": "udupi",
+      "cluster": "malpe-islands",
+      "title": "Kaup Beach & 1901 British Lighthouse Climb",
+      "description": "Climb the spiral staircase of the 27-metre operational lighthouse perched on granite rocks for sweeping Arabian Sea views at sunset.",
+      "interests": [
+        "photo",
+        "relax",
+        "nature"
+      ],
+      "durationMin": 90,
+      "price": 30,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 4.8,
+      "reviews": 820,
+      "vendorId": "v-udu-cabs",
+      "lat": 13.2241,
+      "lng": 74.7392,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "mountain",
+      "tone": "pink"
+    },
+    {
+      "id": "mng-ghee-roast",
+      "destinationId": "mangalore",
+      "cluster": "city-heritage",
+      "title": "Origins of Ghee Roast: Mangalorean Culinary Trail",
+      "description": "A mouthwatering food journey tasting authentic fiery Kundapura Ghee Roast, Anjal (Kingfish) Tava Fry, Neer Dosa, and Kori Rotti.",
+      "interests": [
+        "food",
+        "social"
+      ],
+      "durationMin": 120,
+      "price": 850,
+      "energy": 1,
+      "outdoor": false,
+      "slot": "afternoon",
+      "rating": 4.9,
+      "reviews": 790,
+      "vendorId": "v-mng-foodies",
+      "lat": 12.871,
+      "lng": 74.843,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "food",
+      "tone": "coral"
+    },
+    {
+      "id": "mng-aloysius",
+      "destinationId": "mangalore",
+      "cluster": "city-heritage",
+      "title": "St. Aloysius Chapel Frescoes & Heritage Walk",
+      "description": "Admire the Sistine Chapel of India, decorated in 1899 by Italian Jesuit painter Antony Moscheni with breathtaking ceiling frescoes.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 75,
+      "price": 0,
+      "energy": 1,
+      "outdoor": false,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 620,
+      "vendorId": "v-mng-guides",
+      "lat": 12.8732,
+      "lng": 74.8475,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "temple",
+      "tone": "pink",
+      "backupId": "mng-panambur"
+    },
+    {
+      "id": "mng-panambur",
+      "destinationId": "mangalore",
+      "cluster": "beaches",
+      "title": "Panambur Beach Sunset & Coastal Watersports",
+      "description": "Jet-skiing, camel rides, and golden sand sunset watching on Karnataka's most vibrant and safest guarded coastal beach.",
+      "interests": [
+        "adventure",
+        "relax",
+        "social"
+      ],
+      "durationMin": 120,
+      "price": 350,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 4.6,
+      "reviews": 910,
+      "vendorId": "v-mng-cabs",
+      "lat": 12.9485,
+      "lng": 74.8089,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "mountain",
+      "tone": "sky",
+      "backupId": "mng-aloysius"
+    },
+    {
+      "id": "kab-boat-safari",
+      "destinationId": "kabini",
+      "cluster": "reserve-fringe",
+      "title": "Kabini River Wildlife Boat Safari",
+      "description": "Motorboat safari along the Nagarhole national park edge viewing herds of elephants swimming, marsh mugger crocodiles, and osprey.",
+      "interests": [
+        "nature",
+        "photo",
+        "adventure"
+      ],
+      "durationMin": 150,
+      "price": 1800,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 5,
+      "reviews": 1120,
+      "vendorId": "v-kab-safari",
+      "lat": 11.9261,
+      "lng": 76.2711,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "river",
+      "tone": "coral"
+    },
+    {
+      "id": "kab-jeep-safari",
+      "destinationId": "kabini",
+      "cluster": "forest-buffer",
+      "title": "Nagarhole Tiger Zone 4x4 Jeep Safari",
+      "description": "Official forest department open 4x4 safari through prime tiger, leopard, and Asiatic wild dog (dhole) territory in Nagarhole.",
+      "interests": [
+        "adventure",
+        "nature",
+        "photo"
+      ],
+      "durationMin": 180,
+      "price": 2200,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.9,
+      "reviews": 980,
+      "vendorId": "v-kab-safari",
+      "lat": 11.9542,
+      "lng": 76.2415,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "mountain",
+      "tone": "mint"
+    },
+    {
+      "id": "kab-coracle",
+      "destinationId": "kabini",
+      "cluster": "reserve-fringe",
+      "title": "Sunset Coracle Drift on Kabini Backwaters",
+      "description": "Gentle traditional round coracle boat glide along quiet reeds as evening bird songs echo over serene mirror-like waters.",
+      "interests": [
+        "relax",
+        "nature",
+        "photo"
+      ],
+      "durationMin": 60,
+      "price": 500,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 4.7,
+      "reviews": 430,
+      "vendorId": "v-kab-safari",
+      "lat": 11.918,
+      "lng": 76.28,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "river",
+      "tone": "sky"
+    },
+    {
+      "id": "ban-safari",
+      "destinationId": "bandipur",
+      "cluster": "safari-core",
+      "title": "Bandipur Tiger Reserve Morning Jeep Safari",
+      "description": "Early dawn safari tracking royal Bengal tigers, sloth bears, Indian gaur (bison), and crested serpent eagles across dry deciduous forest.",
+      "interests": [
+        "nature",
+        "adventure",
+        "photo"
+      ],
+      "durationMin": 150,
+      "price": 1500,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 1240,
+      "vendorId": "v-ban-forest",
+      "lat": 11.6664,
+      "lng": 76.6291,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "mountain",
+      "tone": "mint"
+    },
+    {
+      "id": "ban-gopalaswamy",
+      "destinationId": "bandipur",
+      "cluster": "gopalaswamy",
+      "title": "Himavad Gopalaswamy Betta Misty Peak",
+      "description": "Ascend to the highest peak in Bandipur National Park (1,450m) covered in year-round fog, featuring a 14th-century temple and elephant herds.",
+      "interests": [
+        "nature",
+        "culture",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 200,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.7,
+      "reviews": 690,
+      "vendorId": "v-ban-cabs",
+      "lat": 11.7214,
+      "lng": 76.5872,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "mountain",
+      "tone": "sky"
+    },
+    {
+      "id": "dan-rafting",
+      "destinationId": "dandeli",
+      "cluster": "river-kali",
+      "title": "Kali River Grade 3 White Water Rafting",
+      "description": "Tackle 9 thrilling rapids along 12 kilometres of the gushing Kali River surrounded by dense Western Ghats rainforest.",
+      "interests": [
+        "adventure",
+        "nature"
+      ],
+      "durationMin": 180,
+      "price": 1600,
+      "energy": 4,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 1350,
+      "vendorId": "v-dan-adventures",
+      "lat": 15.2415,
+      "lng": 74.622,
+      "kidFriendly": false,
+      "walking": "medium",
+      "icon": "river",
+      "tone": "coral"
+    },
+    {
+      "id": "dan-syntheri",
+      "destinationId": "dandeli",
+      "cluster": "forest-gorge",
+      "title": "Syntheri Rocks Monolithic Granite Gorge Walk",
+      "description": "Walk down into a 300-foot natural limestone and granite ravine carved over eons by the fast-flowing Kaneri River.",
+      "interests": [
+        "nature",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 40,
+      "energy": 3,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.7,
+      "reviews": 580,
+      "vendorId": "v-dan-cabs",
+      "lat": 15.2015,
+      "lng": 74.6642,
+      "kidFriendly": true,
+      "walking": "high",
+      "icon": "mountain",
+      "tone": "mint",
+      "backupId": "dan-canopy"
+    },
+    {
+      "id": "dan-canopy",
+      "destinationId": "dandeli",
+      "cluster": "river-kali",
+      "title": "Jungle Canopy Walk & Hornbill Birding",
+      "description": "Walk suspended 30 feet in the forest tree tops spotting Great Indian Hornbills, Malabar pied hornbills, and emerald doves.",
+      "interests": [
+        "nature",
+        "photo"
+      ],
+      "durationMin": 90,
+      "price": 350,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 420,
+      "vendorId": "v-dan-adventures",
+      "lat": 15.228,
+      "lng": 74.635,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "mountain",
+      "tone": "mint",
+      "backupId": "dan-syntheri"
+    },
+    {
+      "id": "jog-viewpoint",
+      "destinationId": "jogfalls",
+      "cluster": "falls-view",
+      "title": "Jog Falls Four-Cascade Grand View Deck",
+      "description": "Panoramic view of Raja, Roarer, Rocket, and Rani tumbling 830 feet into the gorge surrounded by dense rainforest mist.",
+      "interests": [
+        "nature",
+        "photo"
+      ],
+      "durationMin": 90,
+      "price": 20,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 1420,
+      "vendorId": "v-jog-cabs",
+      "lat": 14.2285,
+      "lng": 74.8118,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "river",
+      "tone": "mint",
+      "backupId": "jog-honnemaradu"
+    },
+    {
+      "id": "jog-honnemaradu",
+      "destinationId": "jogfalls",
+      "cluster": "honnemaradu",
+      "title": "Honnemaradu Backwater Island Kayaking",
+      "description": "Paddle across the crystal waters of the Sharavathi backwaters reservoir to secluded wooded islands for bird watching.",
+      "interests": [
+        "adventure",
+        "nature",
+        "relax"
+      ],
+      "durationMin": 150,
+      "price": 750,
+      "energy": 3,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.8,
+      "reviews": 360,
+      "vendorId": "v-jog-adventure",
+      "lat": 14.1812,
+      "lng": 74.9084,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "river",
+      "tone": "sky",
+      "backupId": "jog-viewpoint"
+    },
+    {
+      "id": "sak-manjarabad",
+      "destinationId": "sakleshpur",
+      "cluster": "fort-town",
+      "title": "Manjarabad Eight-Point Star Fort Hike",
+      "description": "Trek up 250 stone steps to explore the unique star-shaped laterite military fort built by Tipu Sultan in 1792 with secret tunnels.",
+      "interests": [
+        "culture",
+        "adventure",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 20,
+      "energy": 3,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 890,
+      "vendorId": "v-sak-cabs",
+      "lat": 12.9208,
+      "lng": 75.7538,
+      "kidFriendly": true,
+      "walking": "high",
+      "icon": "fort",
+      "tone": "sun",
+      "backupId": "sak-bisle"
+    },
+    {
+      "id": "sak-bisle",
+      "destinationId": "sakleshpur",
+      "cluster": "bisle-ghat",
+      "title": "Bisle Ghat Panoramic Mountain Ridge View",
+      "description": "Stand on the glass-railed observation platform viewing the virgin rainforest valley of three mountain ranges: Kumara Parvatha, Pushpagiri, and Dodda Betta.",
+      "interests": [
+        "nature",
+        "photo",
+        "relax"
+      ],
+      "durationMin": 150,
+      "price": 50,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 640,
+      "vendorId": "v-sak-cabs",
+      "lat": 12.7214,
+      "lng": 75.6982,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "mountain",
+      "tone": "mint",
+      "backupId": "sak-manjarabad"
+    },
+    {
+      "id": "bel-chennakeshava",
+      "destinationId": "belur-halebidu",
+      "cluster": "belur-core",
+      "title": "Belur Chennakeshava Hoysala Temple Masterpiece",
+      "description": "Commissioned in 1117 CE, home to 42 celestial maiden (Madanika) bracket figures sculpted in breathless lace-like soapstone details.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 0,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 5,
+      "reviews": 1450,
+      "vendorId": "v-bel-guides",
+      "lat": 13.1623,
+      "lng": 75.8596,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "sun",
+      "backupId": "hal-hoysaleswara"
+    },
+    {
+      "id": "hal-hoysaleswara",
+      "destinationId": "belur-halebidu",
+      "cluster": "halebidu-hassan",
+      "title": "Halebidu Hoysaleswara Twin Temple Friezes",
+      "description": "Twin temples on star plinths enveloped by eight outer sculptural bands depicting 1,248 battle elephants, lions, horses, and Mahabharata scenes.",
+      "interests": [
+        "culture",
+        "photo"
+      ],
+      "durationMin": 120,
+      "price": 25,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "afternoon",
+      "rating": 4.9,
+      "reviews": 1280,
+      "vendorId": "v-bel-guides",
+      "lat": 13.2138,
+      "lng": 75.9932,
+      "kidFriendly": true,
+      "walking": "medium",
+      "icon": "temple",
+      "tone": "pink",
+      "backupId": "bel-chennakeshava"
+    },
+    {
+      "id": "mur-shiva",
+      "destinationId": "murdeshwar",
+      "cluster": "peninsula",
+      "title": "Colossal Seaside Shiva & 20-Storey Gopuram",
+      "description": "Stand at the feet of the towering 123-foot Shiva statue looking out to the sea and take the elevator to the 18th floor of the Raja Gopuram.",
+      "interests": [
+        "culture",
+        "photo",
+        "relax"
+      ],
+      "durationMin": 90,
+      "price": 20,
+      "energy": 1,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.9,
+      "reviews": 1670,
+      "vendorId": "v-mur-cabs",
+      "lat": 14.094,
+      "lng": 74.4899,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "temple",
+      "tone": "sky",
+      "backupId": "mur-beach"
+    },
+    {
+      "id": "mur-scuba",
+      "destinationId": "murdeshwar",
+      "cluster": "netrani-coast",
+      "title": "Netrani Island Coral Reef Scuba Diving",
+      "description": "Speedboat excursion to Netrani Island for certified scuba diving or guided snorkeling among vibrant coral reefs, parrotfish, and sea turtles.",
+      "interests": [
+        "adventure",
+        "nature"
+      ],
+      "durationMin": 240,
+      "price": 3800,
+      "energy": 3,
+      "outdoor": true,
+      "slot": "morning",
+      "rating": 4.8,
+      "reviews": 520,
+      "vendorId": "v-mur-scuba",
+      "lat": 14.02,
+      "lng": 74.329,
+      "kidFriendly": false,
+      "walking": "medium",
+      "icon": "river",
+      "tone": "coral"
+    },
+    {
+      "id": "mur-beach",
+      "destinationId": "murdeshwar",
+      "cluster": "peninsula",
+      "title": "Murdeshwar Peninsula Beach & Water Jet-Ski",
+      "description": "Golden sand beach adjacent to the temple offering jet-ski rides, banana boats, and fresh coconut water beneath swaying palms.",
+      "interests": [
+        "adventure",
+        "relax",
+        "social"
+      ],
+      "durationMin": 90,
+      "price": 400,
+      "energy": 2,
+      "outdoor": true,
+      "slot": "evening",
+      "rating": 4.7,
+      "reviews": 790,
+      "vendorId": "v-mur-cabs",
+      "lat": 14.092,
+      "lng": 74.487,
+      "kidFriendly": true,
+      "walking": "low",
+      "icon": "mountain",
+      "tone": "pink",
+      "backupId": "mur-shiva"
+    }
+  ],
+  "stays": [
+    {
+      "id": "st-blr-zostel",
+      "destinationId": "bengaluru",
+      "name": "Zostel Bengaluru (Indiranagar)",
+      "type": "hostel",
+      "nightlyPrice": 1200,
+      "rating": 4.7,
+      "reviews": 420,
+      "vendorId": "v-st-blr-zostel",
+      "area": "Indiranagar",
+      "amenities": [
+        "Rooftop Cafe",
+        "Co-working",
+        "Wi-Fi",
+        "Walking tours"
+      ],
+      "tone": "lavender",
+      "lat": 12.973,
+      "lng": 77.641
+    },
+    {
+      "id": "st-blr-taj-westend",
+      "destinationId": "bengaluru",
+      "name": "Taj West End (Heritage Colonial)",
+      "type": "luxury",
+      "nightlyPrice": 14000,
+      "rating": 4.9,
+      "reviews": 860,
+      "vendorId": "v-st-blr-taj",
+      "area": "Race Course Road",
+      "amenities": [
+        "20-acre garden",
+        "Heritage Walk",
+        "Luxury Spa",
+        "Pool"
+      ],
+      "tone": "pink",
+      "lat": 12.983,
+      "lng": 77.584
+    },
+    {
+      "id": "st-blr-bloomrooms",
+      "destinationId": "bengaluru",
+      "name": "bloomrooms @ City Centre",
+      "type": "boutique",
+      "nightlyPrice": 3200,
+      "rating": 4.6,
+      "reviews": 580,
+      "vendorId": "v-st-blr-bloom",
+      "area": "Central Business District",
+      "amenities": [
+        "Signature Cloud Beds",
+        "Breakfast Cafe",
+        "High-speed Wi-Fi"
+      ],
+      "tone": "sun",
+      "lat": 12.981,
+      "lng": 77.605
+    },
+    {
+      "id": "st-mys-roost",
+      "destinationId": "mysuru",
+      "name": "The Roost Mysuru",
+      "type": "budget",
+      "nightlyPrice": 2200,
+      "rating": 4.6,
+      "reviews": 310,
+      "vendorId": "v-st-mys-roost",
+      "area": "Hunsur Road",
+      "amenities": [
+        "Garden Restaurant",
+        "Wi-Fi",
+        "Travel Desk"
+      ],
+      "tone": "mint",
+      "lat": 12.325,
+      "lng": 76.618
+    },
+    {
+      "id": "st-mys-radisson",
+      "destinationId": "mysuru",
+      "name": "Radisson Blu Plaza Mysuru",
+      "type": "boutique",
+      "nightlyPrice": 5500,
+      "rating": 4.8,
+      "reviews": 740,
+      "vendorId": "v-st-mys-radisson",
+      "area": "Chamundi Hill Road",
+      "amenities": [
+        "Chamundi View",
+        "Outdoor Pool",
+        "Spa",
+        "24/7 Dining"
+      ],
+      "tone": "sky",
+      "lat": 12.301,
+      "lng": 76.668
+    },
+    {
+      "id": "st-mys-lalitha-mahal",
+      "destinationId": "mysuru",
+      "name": "Lalitha Mahal Palace Hotel",
+      "type": "luxury",
+      "nightlyPrice": 11000,
+      "rating": 4.8,
+      "reviews": 620,
+      "vendorId": "v-st-mys-palace",
+      "area": "Lalitha Mahal Nagar",
+      "amenities": [
+        "Royal Italian Marble Palace",
+        "Billiards",
+        "Tennis",
+        "Royal Suites"
+      ],
+      "tone": "pink",
+      "lat": 12.302,
+      "lng": 76.691
+    },
+    {
+      "id": "st-ham-heritage-resort",
+      "destinationId": "hampi",
+      "name": "Heritage Resort Hampi",
+      "type": "boutique",
+      "nightlyPrice": 6500,
+      "rating": 4.8,
+      "reviews": 520,
+      "vendorId": "v-st-ham-heritage",
+      "area": "Hosapete-Hampi Road",
+      "amenities": [
+        "Cottages",
+        "Organic Farm",
+        "Pool",
+        "Ayurvedic Spa"
+      ],
+      "tone": "sun",
+      "lat": 15.298,
+      "lng": 76.435
+    },
+    {
+      "id": "st-ham-kstdc",
+      "destinationId": "hampi",
+      "name": "KSTDC Mayura Bhuvaneshwari",
+      "type": "budget",
+      "nightlyPrice": 2400,
+      "rating": 4.5,
+      "reviews": 680,
+      "vendorId": "v-st-ham-kstdc",
+      "area": "Kamalapur",
+      "amenities": [
+        "AC Rooms",
+        "Garden",
+        "Restaurant",
+        "Near Museum"
+      ],
+      "tone": "coral",
+      "lat": 15.312,
+      "lng": 76.478
+    },
+    {
+      "id": "st-ham-evolve-back",
+      "destinationId": "hampi",
+      "name": "Evolve Back Kamalapura Palace",
+      "type": "luxury",
+      "nightlyPrice": 28000,
+      "rating": 5,
+      "reviews": 840,
+      "vendorId": "v-st-ham-evolve",
+      "area": "Kamalapur",
+      "amenities": [
+        "Vijayanagara Architecture",
+        "Private Jacuzzis",
+        "Infinity Pool",
+        "Curated Trails"
+      ],
+      "tone": "pink",
+      "lat": 15.308,
+      "lng": 76.465
+    },
+    {
+      "id": "st-coo-homestay",
+      "destinationId": "coorg",
+      "name": "Coffee Blossom Estate Homestay",
+      "type": "homestay",
+      "nightlyPrice": 3200,
+      "rating": 4.9,
+      "reviews": 380,
+      "vendorId": "v-st-coo-homestay",
+      "area": "Madikeri Valley",
+      "amenities": [
+        "Plantation Walk",
+        "Home Cooked Kodava Meals",
+        "Campfire",
+        "Coffee Tasting"
+      ],
+      "tone": "mint",
+      "lat": 12.438,
+      "lng": 75.742
+    },
+    {
+      "id": "st-coo-tamara",
+      "destinationId": "coorg",
+      "name": "The Tamara Coorg",
+      "type": "luxury",
+      "nightlyPrice": 24000,
+      "rating": 4.9,
+      "reviews": 950,
+      "vendorId": "v-st-coo-tamara",
+      "area": "Kabbinakad Estate",
+      "amenities": [
+        "Stilted Cottages",
+        "Coffee Plantation",
+        "Elevation Spa",
+        "Fine Dining"
+      ],
+      "tone": "sky",
+      "lat": 12.218,
+      "lng": 75.789
+    },
+    {
+      "id": "st-coo-club-mahindra",
+      "destinationId": "coorg",
+      "name": "Club Mahindra Madikeri Resort",
+      "type": "boutique",
+      "nightlyPrice": 7500,
+      "rating": 4.7,
+      "reviews": 810,
+      "vendorId": "v-st-coo-mahindra",
+      "area": "Galibeedu Road",
+      "amenities": [
+        "Valley View",
+        "Two Swimming Pools",
+        "Kids Activity Zone",
+        "Rainforest Trek"
+      ],
+      "tone": "coral",
+      "lat": 12.451,
+      "lng": 75.731
+    },
+    {
+      "id": "st-chk-serai",
+      "destinationId": "chikmagalur",
+      "cluster": "town",
+      "name": "The Serai Chikmagalur",
+      "type": "luxury",
+      "nightlyPrice": 19000,
+      "rating": 4.9,
+      "reviews": 670,
+      "vendorId": "v-st-chk-serai",
+      "area": "Mugthihalli",
+      "amenities": [
+        "Private Pool Villas",
+        "Coffee Bean Spa",
+        "Plantation Biking",
+        "Lounge"
+      ],
+      "tone": "pink",
+      "lat": 13.332,
+      "lng": 75.812
+    },
+    {
+      "id": "st-chk-homestay",
+      "destinationId": "chikmagalur",
+      "name": "Mullayanagiri Mist Homestay",
+      "type": "homestay",
+      "nightlyPrice": 2800,
+      "rating": 4.8,
+      "reviews": 290,
+      "vendorId": "v-st-chk-homestay",
+      "area": "Foothills",
+      "amenities": [
+        "Peak View",
+        "Malnad Thali",
+        "Estate Trail",
+        "Bonfire"
+      ],
+      "tone": "mint",
+      "lat": 13.375,
+      "lng": 75.738
+    },
+    {
+      "id": "st-gok-zostel",
+      "destinationId": "gokarna",
+      "name": "Zostel Gokarna (Cliffside)",
+      "type": "hostel",
+      "nightlyPrice": 1100,
+      "rating": 4.8,
+      "reviews": 580,
+      "vendorId": "v-st-gok-zostel",
+      "area": "Kudle Beach Cliff",
+      "amenities": [
+        "Sea View Cafe",
+        "Hammocks",
+        "Sunset Common Room",
+        "Wi-Fi"
+      ],
+      "tone": "lavender",
+      "lat": 14.529,
+      "lng": 74.316
+    },
+    {
+      "id": "st-gok-kahani-paradise",
+      "destinationId": "gokarna",
+      "name": "Kahani Paradise Villa",
+      "type": "luxury",
+      "nightlyPrice": 22000,
+      "rating": 5,
+      "reviews": 210,
+      "vendorId": "v-st-gok-kahani",
+      "area": "Paradise Cliff",
+      "amenities": [
+        "Private 20-acre estate",
+        "Infinity pool over Arabian sea",
+        "Personal Chef"
+      ],
+      "tone": "pink",
+      "lat": 14.508,
+      "lng": 74.331
+    },
+    {
+      "id": "st-gok-namaste",
+      "destinationId": "gokarna",
+      "name": "Namaste Sanjeevini Om Beach",
+      "type": "boutique",
+      "nightlyPrice": 4200,
+      "rating": 4.7,
+      "reviews": 490,
+      "vendorId": "v-st-gok-namaste",
+      "area": "Om Beach",
+      "amenities": [
+        "Yoga Deck",
+        "Ayurvedic Treatments",
+        "Beach Path",
+        "Tropical Garden"
+      ],
+      "tone": "mint",
+      "lat": 14.516,
+      "lng": 74.319
+    },
+    {
+      "id": "st-bad-heritage-resort",
+      "destinationId": "badami",
+      "name": "Badami Court Heritage Hotel",
+      "type": "boutique",
+      "nightlyPrice": 3800,
+      "rating": 4.6,
+      "reviews": 340,
+      "vendorId": "v-st-bad-court",
+      "area": "Station Road",
+      "amenities": [
+        "Swimming Pool",
+        "Garden Restaurant",
+        "Travel Desk"
+      ],
+      "tone": "sun",
+      "lat": 15.925,
+      "lng": 75.681
+    },
+    {
+      "id": "st-udu-country-inn",
+      "destinationId": "udupi",
+      "name": "Country Inn & Suites by Radisson Manipal",
+      "type": "boutique",
+      "nightlyPrice": 4200,
+      "rating": 4.7,
+      "reviews": 620,
+      "vendorId": "v-st-udu-country",
+      "area": "Manipal",
+      "amenities": [
+        "Rooftop Pool",
+        "Fitness Centre",
+        "Multi-cuisine Dining"
+      ],
+      "tone": "sky",
+      "lat": 13.351,
+      "lng": 74.786
+    },
+    {
+      "id": "st-mng-gateway",
+      "destinationId": "mangalore",
+      "name": "The Gateway Hotel Old Port Road",
+      "type": "boutique",
+      "nightlyPrice": 4800,
+      "rating": 4.7,
+      "reviews": 580,
+      "vendorId": "v-st-mng-gateway",
+      "area": "Old Port",
+      "amenities": [
+        "Harbour View",
+        "Cardamom Coastal Dining",
+        "Pool",
+        "Gym"
+      ],
+      "tone": "coral",
+      "lat": 12.859,
+      "lng": 74.839
+    },
+    {
+      "id": "st-kab-evolve",
+      "destinationId": "kabini",
+      "name": "Evolve Back Kuruba Safari Lodge",
+      "type": "luxury",
+      "nightlyPrice": 32000,
+      "rating": 5,
+      "reviews": 910,
+      "vendorId": "v-st-kab-evolve",
+      "area": "Kabini Riverfront",
+      "amenities": [
+        "Private Plunge Pool",
+        "Infinity Pool",
+        "Ayurvedic Centre",
+        "Boat Safari Desk"
+      ],
+      "tone": "pink",
+      "lat": 11.921,
+      "lng": 76.275
+    },
+    {
+      "id": "st-kab-jungle-lodges",
+      "destinationId": "kabini",
+      "name": "Kabini River Lodge (Jungle Lodges)",
+      "type": "boutique",
+      "nightlyPrice": 11000,
+      "rating": 4.8,
+      "reviews": 790,
+      "vendorId": "v-st-kab-jungle",
+      "area": "Karatche",
+      "amenities": [
+        "All Safari Inclusions",
+        "Coracle Rides",
+        "Colonial Dining Hall",
+        "Naturalist Guides"
+      ],
+      "tone": "coral",
+      "lat": 11.932,
+      "lng": 76.268
+    },
+    {
+      "id": "st-ban-safari-lodge",
+      "destinationId": "bandipur",
+      "name": "Bandipur Safari Lodge (Jungle Lodges)",
+      "type": "boutique",
+      "nightlyPrice": 7500,
+      "rating": 4.7,
+      "reviews": 650,
+      "vendorId": "v-st-ban-jungle",
+      "area": "National Park Boundary",
+      "amenities": [
+        "Daily Safaris Included",
+        "Cottages",
+        "Buffet Meals",
+        "Birding Walk"
+      ],
+      "tone": "mint",
+      "lat": 11.671,
+      "lng": 76.634
+    },
+    {
+      "id": "st-dan-kali-adventure",
+      "destinationId": "dandeli",
+      "name": "Kali Adventure Camp",
+      "type": "boutique",
+      "nightlyPrice": 5800,
+      "rating": 4.8,
+      "reviews": 590,
+      "vendorId": "v-st-dan-kali",
+      "area": "River Kali Bank",
+      "amenities": [
+        "River Tents & Rooms",
+        "Rafting Desk",
+        "Coracle Ride",
+        "Campfire Buffet"
+      ],
+      "tone": "coral",
+      "lat": 15.244,
+      "lng": 74.619
+    },
+    {
+      "id": "st-jog-mayura",
+      "destinationId": "jogfalls",
+      "name": "KSTDC Hotel Mayura Gerusoppa Jogfalls",
+      "type": "budget",
+      "nightlyPrice": 2200,
+      "rating": 4.5,
+      "reviews": 450,
+      "vendorId": "v-st-jog-mayura",
+      "area": "Near Viewpoint",
+      "amenities": [
+        "Falls View Rooms",
+        "Restaurant",
+        "Parking"
+      ],
+      "tone": "mint",
+      "lat": 14.226,
+      "lng": 74.809
+    },
+    {
+      "id": "st-sak-eka",
+      "destinationId": "sakleshpur",
+      "name": "Eka Resort Sakleshpur",
+      "type": "boutique",
+      "nightlyPrice": 5200,
+      "rating": 4.8,
+      "reviews": 380,
+      "vendorId": "v-st-sak-eka",
+      "area": "Halli Bailu",
+      "amenities": [
+        "Lake View Cottages",
+        "Plantation Trail",
+        "Boating",
+        "Bonfire"
+      ],
+      "tone": "mint",
+      "lat": 12.912,
+      "lng": 75.762
+    },
+    {
+      "id": "st-bel-mayura",
+      "destinationId": "belur-halebidu",
+      "name": "KSTDC Hotel Mayura Velapuri Belur",
+      "type": "budget",
+      "nightlyPrice": 2100,
+      "rating": 4.4,
+      "reviews": 410,
+      "vendorId": "v-st-bel-mayura",
+      "area": "Temple Road Belur",
+      "amenities": [
+        "AC Rooms",
+        "Vegetarian Restaurant",
+        "Parking"
+      ],
+      "tone": "sun",
+      "lat": 13.165,
+      "lng": 75.862
+    },
+    {
+      "id": "st-mur-rns",
+      "destinationId": "murdeshwar",
+      "name": "RNS Residency Sea View",
+      "type": "boutique",
+      "nightlyPrice": 4200,
+      "rating": 4.7,
+      "reviews": 730,
+      "vendorId": "v-st-mur-rns",
+      "area": "Beach Peninsula",
+      "amenities": [
+        "Full Sea View Balconies",
+        "Adjacent to Shiva Statue",
+        "Seafood Restaurant"
+      ],
+      "tone": "sky",
+      "lat": 14.095,
+      "lng": 74.488
+    }
+  ],
+  "transport": [
+    {
+      "id": "tr-blr-air",
+      "destinationId": "bengaluru",
+      "mode": "flight",
+      "label": "IndiGo 6E-214 · DEL → BLR",
+      "from": "Delhi",
+      "pricePerPerson": 5200,
+      "durationMin": 160,
+      "departs": "06:30",
+      "vendorId": "v-tr-indigo"
+    },
+    {
+      "id": "tr-mys-vande",
+      "destinationId": "mysuru",
+      "mode": "train",
+      "label": "Vande Bharat Express 20607 · SBC → MYS",
+      "from": "Bengaluru",
+      "pricePerPerson": 650,
+      "durationMin": 100,
+      "departs": "05:45",
+      "vendorId": "v-tr-irctc"
+    },
+    {
+      "id": "tr-mys-airavat",
+      "destinationId": "mysuru",
+      "mode": "bus",
+      "label": "KSRTC Airavat Club Class · BLR → MYS",
+      "from": "Bengaluru",
+      "pricePerPerson": 360,
+      "durationMin": 150,
+      "departs": "07:30",
+      "vendorId": "v-tr-ksrtc"
+    },
+    {
+      "id": "tr-mys-cab",
+      "destinationId": "mysuru",
+      "mode": "car",
+      "label": "Bengaluru-Mysuru Expressway Private Cab",
+      "from": "Bengaluru",
+      "pricePerPerson": 1200,
+      "durationMin": 120,
+      "departs": "07:00",
+      "vendorId": "v-blr-cabs"
+    },
+    {
+      "id": "tr-ham-hampi-exp",
+      "destinationId": "hampi",
+      "mode": "train",
+      "label": "Hampi Express 16592 · SBC → HPT (Hosapete)",
+      "from": "Bengaluru",
+      "pricePerPerson": 450,
+      "durationMin": 480,
+      "departs": "21:50",
+      "vendorId": "v-tr-irctc"
+    },
+    {
+      "id": "tr-ham-ksrtc",
+      "destinationId": "hampi",
+      "mode": "bus",
+      "label": "KSRTC Airavat Sleeper · BLR → Hampi",
+      "from": "Bengaluru",
+      "pricePerPerson": 950,
+      "durationMin": 420,
+      "departs": "22:30",
+      "vendorId": "v-tr-ksrtc"
+    },
+    {
+      "id": "tr-coo-ksrtc",
+      "destinationId": "coorg",
+      "mode": "bus",
+      "label": "KSRTC Airavat · BLR → Madikeri",
+      "from": "Bengaluru",
+      "pricePerPerson": 850,
+      "durationMin": 330,
+      "departs": "06:45",
+      "vendorId": "v-tr-ksrtc"
+    },
+    {
+      "id": "tr-coo-innova",
+      "destinationId": "coorg",
+      "mode": "car",
+      "label": "Private Innova · BLR → Coorg",
+      "from": "Bengaluru",
+      "pricePerPerson": 2200,
+      "durationMin": 300,
+      "departs": "06:00",
+      "vendorId": "v-blr-cabs"
+    },
+    {
+      "id": "tr-chk-ksrtc",
+      "destinationId": "chikmagalur",
+      "mode": "bus",
+      "label": "KSRTC Airavat Club Class · BLR → Chikmagalur",
+      "from": "Bengaluru",
+      "pricePerPerson": 750,
+      "durationMin": 270,
+      "departs": "07:15",
+      "vendorId": "v-tr-ksrtc"
+    },
+    {
+      "id": "tr-gok-panchaganga",
+      "destinationId": "gokarna",
+      "mode": "train",
+      "label": "Panchaganga Express 16595 · SBC → Gokarna Road",
+      "from": "Bengaluru",
+      "pricePerPerson": 650,
+      "durationMin": 660,
+      "departs": "18:50",
+      "vendorId": "v-tr-irctc"
+    },
+    {
+      "id": "tr-gok-sleeper",
+      "destinationId": "gokarna",
+      "mode": "bus",
+      "label": "SeaBird / KSRTC Non-Stop Sleeper",
+      "from": "Bengaluru",
+      "pricePerPerson": 1100,
+      "durationMin": 600,
+      "departs": "21:00",
+      "vendorId": "v-tr-ksrtc"
+    },
+    {
+      "id": "tr-bad-golgumbaz",
+      "destinationId": "badami",
+      "mode": "train",
+      "label": "Gol Gumbaz Express 16535 · SBC → Badami",
+      "from": "Bengaluru",
+      "pricePerPerson": 550,
+      "durationMin": 660,
+      "departs": "19:00",
+      "vendorId": "v-tr-irctc"
+    },
+    {
+      "id": "tr-udu-vande",
+      "destinationId": "udupi",
+      "mode": "train",
+      "label": "Vande Bharat Express · MAQ → Udupi",
+      "from": "Mangalore",
+      "pricePerPerson": 380,
+      "durationMin": 45,
+      "departs": "08:30",
+      "vendorId": "v-tr-irctc"
+    },
+    {
+      "id": "tr-udu-ksrtc",
+      "destinationId": "udupi",
+      "mode": "bus",
+      "label": "KSRTC Airavat Multi-Axle · BLR → Udupi",
+      "from": "Bengaluru",
+      "pricePerPerson": 900,
+      "durationMin": 480,
+      "departs": "21:30",
+      "vendorId": "v-tr-ksrtc"
+    },
+    {
+      "id": "tr-mng-flight",
+      "destinationId": "mangalore",
+      "mode": "flight",
+      "label": "IndiGo 6E-548 · BLR → IXE",
+      "from": "Bengaluru",
+      "pricePerPerson": 3200,
+      "durationMin": 55,
+      "departs": "07:20",
+      "vendorId": "v-tr-indigo"
+    },
+    {
+      "id": "tr-kab-car",
+      "destinationId": "kabini",
+      "mode": "car",
+      "label": "Private Cab · Mysuru → Kabini",
+      "from": "Mysuru",
+      "pricePerPerson": 1200,
+      "durationMin": 90,
+      "departs": "09:00",
+      "vendorId": "v-mys-cabs"
+    },
+    {
+      "id": "tr-ban-car",
+      "destinationId": "bandipur",
+      "mode": "car",
+      "label": "Chamarajanagar Highway Cab · Mysuru → Bandipur",
+      "from": "Mysuru",
+      "pricePerPerson": 1100,
+      "durationMin": 85,
+      "departs": "08:30",
+      "vendorId": "v-mys-cabs"
+    },
+    {
+      "id": "tr-dan-car",
+      "destinationId": "dandeli",
+      "mode": "car",
+      "label": "Hubballi Airport to Dandeli Jungle Cab",
+      "from": "Hubballi",
+      "pricePerPerson": 900,
+      "durationMin": 90,
+      "departs": "10:00",
+      "vendorId": "v-dan-cabs"
+    },
+    {
+      "id": "tr-jog-train",
+      "destinationId": "jogfalls",
+      "mode": "train",
+      "label": "Talguppa Express 16227 · SBC → TLGP",
+      "from": "Bengaluru",
+      "pricePerPerson": 350,
+      "durationMin": 420,
+      "departs": "23:00",
+      "vendorId": "v-tr-irctc"
+    },
+    {
+      "id": "tr-sak-train",
+      "destinationId": "sakleshpur",
+      "mode": "train",
+      "label": "Karwar Express 16515 · YPR → SKLR",
+      "from": "Bengaluru",
+      "pricePerPerson": 220,
+      "durationMin": 220,
+      "departs": "07:00",
+      "vendorId": "v-tr-irctc"
+    },
+    {
+      "id": "tr-bel-car",
+      "destinationId": "belur-halebidu",
+      "mode": "car",
+      "label": "Hassan Junction Heritage Cab · HAS → Belur",
+      "from": "Hassan",
+      "pricePerPerson": 500,
+      "durationMin": 40,
+      "departs": "08:30",
+      "vendorId": "v-bel-cabs"
+    },
+    {
+      "id": "tr-mur-train",
+      "destinationId": "murdeshwar",
+      "mode": "train",
+      "label": "Murdeshwar Express 16585 · SBC → MRDW",
+      "from": "Bengaluru",
+      "pricePerPerson": 650,
+      "durationMin": 720,
+      "departs": "20:15",
+      "vendorId": "v-tr-irctc"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "v-blr-cabs",
+      "name": "Bengaluru City & Outstation Cabs",
+      "kind": "local",
+      "destinationId": "bengaluru",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 94
+    },
+    {
+      "id": "v-mys-cabs",
+      "name": "Mysuru Royal Heritage Cabs",
+      "kind": "local",
+      "destinationId": "mysuru",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-ham-cabs",
+      "name": "Hampi Tungabhadra Cabs & Autos",
+      "kind": "local",
+      "destinationId": "hampi",
+      "language": "Kannada, Hindi",
+      "available": true,
+      "trustScore": 92
+    },
+    {
+      "id": "v-coo-cabs",
+      "name": "Kodagu Coffee Valley Cabs",
+      "kind": "local",
+      "destinationId": "coorg",
+      "language": "Kannada, Kodava",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-chk-cabs",
+      "name": "Chikmagalur Mountain Cabs & 4x4",
+      "kind": "local",
+      "destinationId": "chikmagalur",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 94
+    },
+    {
+      "id": "v-gok-cabs",
+      "name": "Gokarna Coastal Cabs",
+      "kind": "local",
+      "destinationId": "gokarna",
+      "language": "Kannada, Konkani",
+      "available": true,
+      "trustScore": 93
+    },
+    {
+      "id": "v-bad-cabs",
+      "name": "Badami Chalukya Travels",
+      "kind": "local",
+      "destinationId": "badami",
+      "language": "Kannada, Hindi",
+      "available": true,
+      "trustScore": 91
+    },
+    {
+      "id": "v-udu-cabs",
+      "name": "Udupi Coastline Cabs",
+      "kind": "local",
+      "destinationId": "udupi",
+      "language": "Kannada, Tulu",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-mng-cabs",
+      "name": "Mangalore Harbour Cabs",
+      "kind": "local",
+      "destinationId": "mangalore",
+      "language": "Kannada, Tulu, English",
+      "available": true,
+      "trustScore": 94
+    },
+    {
+      "id": "v-dan-cabs",
+      "name": "Dandeli Wilderness Cabs",
+      "kind": "local",
+      "destinationId": "dandeli",
+      "language": "Kannada, Hindi",
+      "available": true,
+      "trustScore": 92
+    },
+    {
+      "id": "v-ban-cabs",
+      "name": "Bandipur Forest & Hills Cabs",
+      "kind": "local",
+      "destinationId": "bandipur",
+      "language": "Kannada, Tamil",
+      "available": true,
+      "trustScore": 93
+    },
+    {
+      "id": "v-jog-cabs",
+      "name": "Sharavathi Valley Cabs",
+      "kind": "local",
+      "destinationId": "jogfalls",
+      "language": "Kannada",
+      "available": true,
+      "trustScore": 90
+    },
+    {
+      "id": "v-sak-cabs",
+      "name": "Sakleshpur Ghat Cabs",
+      "kind": "local",
+      "destinationId": "sakleshpur",
+      "language": "Kannada",
+      "available": true,
+      "trustScore": 92
+    },
+    {
+      "id": "v-bel-cabs",
+      "name": "Hoysala Heritage Travels",
+      "kind": "local",
+      "destinationId": "belur-halebidu",
+      "language": "Kannada",
+      "available": true,
+      "trustScore": 93
+    },
+    {
+      "id": "v-mur-cabs",
+      "name": "Murdeshwar Sea View Cabs",
+      "kind": "local",
+      "destinationId": "murdeshwar",
+      "language": "Kannada, Konkani",
+      "available": true,
+      "trustScore": 94
+    },
+    {
+      "id": "v-blr-guides",
+      "name": "Bengaluru Heritage Walks & Sights",
+      "kind": "activity",
+      "destinationId": "bengaluru",
+      "language": "English, Kannada",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-blr-foodies",
+      "name": "Bangalore Food & Brewery Crawls",
+      "kind": "activity",
+      "destinationId": "bengaluru",
+      "language": "English, Kannada",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-blr-nightlife",
+      "name": "Toit & Indiranagar Craft Brews",
+      "kind": "activity",
+      "destinationId": "bengaluru",
+      "language": "English",
+      "available": true,
+      "trustScore": 98
+    },
+    {
+      "id": "v-mys-guides",
+      "name": "Mysore Palace Official Guide Guild",
+      "kind": "activity",
+      "destinationId": "mysuru",
+      "language": "English, Kannada, Hindi",
+      "available": true,
+      "trustScore": 98
+    },
+    {
+      "id": "v-ham-guides",
+      "name": "Hampi UNESCO Certified Guides",
+      "kind": "activity",
+      "destinationId": "hampi",
+      "language": "English, Kannada, French",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-ham-coracle",
+      "name": "Tungabhadra Coracle Association",
+      "kind": "activity",
+      "destinationId": "hampi",
+      "language": "Kannada, Hindi",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-coo-planters",
+      "name": "Coorg Coffee Planters Guild",
+      "kind": "activity",
+      "destinationId": "coorg",
+      "language": "English, Kodava",
+      "available": true,
+      "trustScore": 98
+    },
+    {
+      "id": "v-coo-forest",
+      "name": "Dubare Elephant Camp Forest Dept",
+      "kind": "activity",
+      "destinationId": "coorg",
+      "language": "Kannada",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-coo-guides",
+      "name": "Kodagu Eco-Trek Guides",
+      "kind": "activity",
+      "destinationId": "coorg",
+      "language": "English, Kannada",
+      "available": true,
+      "trustScore": 94
+    },
+    {
+      "id": "v-chk-adventure",
+      "name": "Western Ghats Adventure Chikmagalur",
+      "kind": "activity",
+      "destinationId": "chikmagalur",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-gok-treks",
+      "name": "Gokarna Cliffside Trekkers",
+      "kind": "activity",
+      "destinationId": "gokarna",
+      "language": "English, Hindi",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-gok-boats",
+      "name": "Kudle Beach Dolphin Boatmen",
+      "kind": "activity",
+      "destinationId": "gokarna",
+      "language": "Kannada, Hindi",
+      "available": true,
+      "trustScore": 93
+    },
+    {
+      "id": "v-bad-guides",
+      "name": "Chalukya Archaeology Guide Forum",
+      "kind": "activity",
+      "destinationId": "badami",
+      "language": "English, Kannada, Hindi",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-udu-guides",
+      "name": "Udupi Heritage & Matha Guild",
+      "kind": "activity",
+      "destinationId": "udupi",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-udu-boats",
+      "name": "Malpe Beach Island Ferry Operators",
+      "kind": "activity",
+      "destinationId": "udupi",
+      "language": "Kannada, Tulu",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-mng-foodies",
+      "name": "Mangalore Ghee Roast Specialists",
+      "kind": "activity",
+      "destinationId": "mangalore",
+      "language": "English, Kannada, Tulu",
+      "available": true,
+      "trustScore": 98
+    },
+    {
+      "id": "v-mng-guides",
+      "name": "St. Aloysius Chapel Heritage Desk",
+      "kind": "activity",
+      "destinationId": "mangalore",
+      "language": "English",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-kab-safari",
+      "name": "Kabini & Nagarhole Wildlife Expeditions",
+      "kind": "activity",
+      "destinationId": "kabini",
+      "language": "English, Kannada",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-ban-forest",
+      "name": "Bandipur Tiger Project Forest Desk",
+      "kind": "activity",
+      "destinationId": "bandipur",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 98
+    },
+    {
+      "id": "v-dan-adventures",
+      "name": "Kali White Water Adventures Dandeli",
+      "kind": "activity",
+      "destinationId": "dandeli",
+      "language": "English, Hindi, Kannada",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-jog-adventure",
+      "name": "Honnemaradu Backwater Kayaking Co",
+      "kind": "activity",
+      "destinationId": "jogfalls",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-bel-guides",
+      "name": "Hoysala Art Historians Guild",
+      "kind": "activity",
+      "destinationId": "belur-halebidu",
+      "language": "English, Kannada",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-mur-scuba",
+      "name": "Netrani Scuba Adventures Murdeshwar",
+      "kind": "activity",
+      "destinationId": "murdeshwar",
+      "language": "English, Hindi, Kannada",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-tr-ksrtc",
+      "name": "KSRTC (Karnataka State Road Transport)",
+      "kind": "transport",
+      "destinationId": "bengaluru",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-tr-irctc",
+      "name": "South Western Railway (IRCTC)",
+      "kind": "transport",
+      "destinationId": "bengaluru",
+      "language": "English, Kannada, Hindi",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-tr-indigo",
+      "name": "IndiGo Airlines",
+      "kind": "transport",
+      "destinationId": "bengaluru",
+      "language": "English, Hindi",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-st-blr-zostel",
+      "name": "Zostel Hospitality Bengaluru",
+      "kind": "stay",
+      "destinationId": "bengaluru",
+      "language": "English, Hindi",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-st-blr-taj",
+      "name": "IHCL Taj West End",
+      "kind": "stay",
+      "destinationId": "bengaluru",
+      "language": "English",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-st-blr-bloom",
+      "name": "bloomrooms Hospitality",
+      "kind": "stay",
+      "destinationId": "bengaluru",
+      "language": "English",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-st-mys-roost",
+      "name": "The Roost Mysuru",
+      "kind": "stay",
+      "destinationId": "mysuru",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 93
+    },
+    {
+      "id": "v-st-mys-radisson",
+      "name": "Radisson Blu Plaza Mysuru",
+      "kind": "stay",
+      "destinationId": "mysuru",
+      "language": "English",
+      "available": true,
+      "trustScore": 98
+    },
+    {
+      "id": "v-st-mys-palace",
+      "name": "Lalitha Mahal Palace Hotel",
+      "kind": "stay",
+      "destinationId": "mysuru",
+      "language": "English, Kannada",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-st-ham-heritage",
+      "name": "Heritage Resort Hampi",
+      "kind": "stay",
+      "destinationId": "hampi",
+      "language": "English, Kannada",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-st-ham-kstdc",
+      "name": "KSTDC Hotel Mayura Hampi",
+      "kind": "stay",
+      "destinationId": "hampi",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 92
+    },
+    {
+      "id": "v-st-ham-evolve",
+      "name": "Evolve Back Kamalapura Palace",
+      "kind": "stay",
+      "destinationId": "hampi",
+      "language": "English",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-st-coo-homestay",
+      "name": "Coffee Blossom Estate Kodagu",
+      "kind": "stay",
+      "destinationId": "coorg",
+      "language": "Kodava, Kannada, English",
+      "available": true,
+      "trustScore": 98
+    },
+    {
+      "id": "v-st-coo-tamara",
+      "name": "The Tamara Coorg Resorts",
+      "kind": "stay",
+      "destinationId": "coorg",
+      "language": "English",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-st-coo-mahindra",
+      "name": "Club Mahindra Holidays Kodagu",
+      "kind": "stay",
+      "destinationId": "coorg",
+      "language": "English, Hindi",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-st-chk-serai",
+      "name": "The Serai Resorts Chikmagalur",
+      "kind": "stay",
+      "destinationId": "chikmagalur",
+      "language": "English",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-st-chk-homestay",
+      "name": "Mullayanagiri Homestay",
+      "kind": "stay",
+      "destinationId": "chikmagalur",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-st-gok-zostel",
+      "name": "Zostel Gokarna",
+      "kind": "stay",
+      "destinationId": "gokarna",
+      "language": "English, Hindi",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-st-gok-kahani",
+      "name": "Kahani Paradise Luxury Estate",
+      "kind": "stay",
+      "destinationId": "gokarna",
+      "language": "English",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-st-gok-namaste",
+      "name": "Namaste Hospitality Group",
+      "kind": "stay",
+      "destinationId": "gokarna",
+      "language": "English, Kannada",
+      "available": true,
+      "trustScore": 95
+    },
+    {
+      "id": "v-st-bad-court",
+      "name": "Badami Court Hotel",
+      "kind": "stay",
+      "destinationId": "badami",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 94
+    },
+    {
+      "id": "v-st-udu-country",
+      "name": "Country Inn & Suites Manipal",
+      "kind": "stay",
+      "destinationId": "udupi",
+      "language": "English",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-st-mng-gateway",
+      "name": "The Gateway Hotel Mangaluru",
+      "kind": "stay",
+      "destinationId": "mangalore",
+      "language": "English",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-st-kab-evolve",
+      "name": "Evolve Back Kuruba Safari Lodge",
+      "kind": "stay",
+      "destinationId": "kabini",
+      "language": "English",
+      "available": true,
+      "trustScore": 99
+    },
+    {
+      "id": "v-st-kab-jungle",
+      "name": "Kabini River Lodge (JLR)",
+      "kind": "stay",
+      "destinationId": "kabini",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 98
+    },
+    {
+      "id": "v-st-ban-jungle",
+      "name": "Bandipur Safari Lodge (JLR)",
+      "kind": "stay",
+      "destinationId": "bandipur",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-st-dan-kali",
+      "name": "Kali Adventure Camp (JLR)",
+      "kind": "stay",
+      "destinationId": "dandeli",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 97
+    },
+    {
+      "id": "v-st-jog-mayura",
+      "name": "KSTDC Hotel Mayura Gerusoppa",
+      "kind": "stay",
+      "destinationId": "jogfalls",
+      "language": "Kannada",
+      "available": true,
+      "trustScore": 92
+    },
+    {
+      "id": "v-st-sak-eka",
+      "name": "Eka Resort Sakleshpur",
+      "kind": "stay",
+      "destinationId": "sakleshpur",
+      "language": "Kannada, English",
+      "available": true,
+      "trustScore": 96
+    },
+    {
+      "id": "v-st-bel-mayura",
+      "name": "KSTDC Hotel Mayura Belur",
+      "kind": "stay",
+      "destinationId": "belur-halebidu",
+      "language": "Kannada",
+      "available": true,
+      "trustScore": 92
+    },
+    {
+      "id": "v-st-mur-rns",
+      "name": "RNS Residency Murdeshwar",
+      "kind": "stay",
+      "destinationId": "murdeshwar",
+      "language": "Kannada, Konkani, English",
+      "available": true,
+      "trustScore": 96
+    }
+  ]
+}

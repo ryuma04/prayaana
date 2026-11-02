@@ -1,0 +1,10 @@
+Hi {{.Name}},
+
+Your Trizpyy code is {{.Code}}
+
+Type it in the app, or open this link to confirm your email:
+{{.Link}}
+
+It works for {{.ExpiresIn}}. Didn't sign up for Trizpyy? Ignore this email.
+
+Trizpyy — Plan your own trip. We handle the changes.

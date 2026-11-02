@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/*
+ * Prayaana design tokens — "Soft Clay" (traveler) + "Calm Bento" (operator),
+ * with ink stickers and pop shadows borrowed from the comic reference (code.html).
+ */
+@theme {
+  --font-display: var(--font-unbounded), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+
+  --color-canvas: #f5f1e8;
+  --color-canvas-cool: #eef1f6;
+  --color-ink: #1c1b2b;
+  --color-ink-soft: #3a3850;
+  --color-muted: #625f78;
+  --color-faint: #9794ab;
+  --color-line: #e8e2d6;
+  --color-line-cool: #e3e7ef;
+  --color-pill: #1c1b22;
+
+  --color-pink: #f9cbc9;
+  --color-pink-soft: #fde4e2;
+  --color-pink-deep: #c9544f;
+  --color-coral: #f08a6c;
+  --color-coral-soft: #fde3d9;
+  --color-coral-deep: #c4502f;
+  --color-lavender: #c6b5f6;
+  --color-lavender-soft: #ece5fe;
+  --color-purple: #7b5cf0;
+  --color-purple-deep: #5a3dd4;
+  --color-mint: #d0e8ba;
+  --color-mint-soft: #e8f4dc;
+  --color-mint-deep: #3f8a2e;
+  --color-cream: #fdeedc;
+  --color-sun: #fad47f;
+  --color-sun-soft: #fef3d6;
+  --color-sun-deep: #a86f00;
+  --color-sky: #c4def8;
+  --color-sky-soft: #e3effc;
+  --color-sky-deep: #2f6fbf;
+  --color-star: #ffc23d;
+
+  --color-success: #23864b;
+  --color-success-soft: #dcf2e4;
+  --color-warning: #a4660a;
+  --color-warning-soft: #fff0d4;
+  --color-danger: #c93535;
+  --color-danger-soft: #fde2e2;
+  --color-info: #2f6fbf;
+  --color-info-soft: #e3effc;
+
+  --radius-xl2: 1.25rem;
+  --radius-xl3: 1.75rem;
+  --radius-xl4: 2.25rem;
+
+  --shadow-clay: 0 18px 34px -16px rgb(62 44 130 / 0.26), inset 0 -6px 12px rgb(40 22 96 / 0.07), inset 0 6px 12px rgb(255 255 255 / 0.9);
+  --shadow-clay-sm: 0 10px 20px -12px rgb(62 44 130 / 0.3), inset 0 -3px 6px rgb(40 22 96 / 0.06), inset 0 3px 6px rgb(255 255 255 / 0.85);
+  --shadow-clay-lg: 0 30px 60px -24px rgb(62 44 130 / 0.32), inset 0 -8px 16px rgb(40 22 96 / 0.07), inset 0 8px 16px rgb(255 255 255 / 0.9);
+  --shadow-pop: 3px 3px 0 #1c1b2b;
+  --shadow-pop-lg: 5px 5px 0 #1c1b2b;
+  --shadow-soft: 0 1px 2px rgb(28 27 43 / 0.05), 0 8px 24px -14px rgb(28 27 43 / 0.16);
+  --shadow-float: 0 24px 48px -18px rgb(28 27 43 / 0.35);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-wiggle: wiggle 2.4s ease-in-out infinite;
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-pulse-ring: pulse-ring 1.8s cubic-bezier(0.2, 0.7, 0.3, 1) infinite;
+  --animate-dash: dash 1.4s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+  @keyframes shimmer {
+    0% { background-position: -400px 0; }
+    100% { background-position: 400px 0; }
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(0.8); opacity: 0.7; }
+    100% { transform: scale(2.2); opacity: 0; }
+  }
+  @keyframes dash {
+    to { stroke-dashoffset: -24; }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-purple);
+    outline-offset: 2px;
+    border-radius: 12px;
+  }
+  ::selection {
+    background: var(--color-sun);
+    color: var(--color-ink);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+  button:not(:disabled), [role="button"] {
+    cursor: pointer;
+  }
+}
+
+@utility bg-dots {
+  background-color: var(--color-canvas);
+  background-image: radial-gradient(rgb(28 27 43 / 0.09) 1.1px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+@utility bg-dots-cool {
+  background-color: var(--color-canvas-cool);
+  background-image: radial-gradient(rgb(28 27 43 / 0.05) 1px, transparent 1.1px);
+  background-size: 24px 24px;
+}
+
+@utility bg-speed {
+  background-image: repeating-linear-gradient(0deg, rgb(0 0 0 / 0.035) 0 2px, transparent 2px 7px);
+}
+
+@utility clay {
+  background: #fff;
+  box-shadow: var(--shadow-clay);
+}
+
+@utility sticker {
+  border: 2px solid var(--color-ink);
+  box-shadow: var(--shadow-pop);
+}
+
+@utility skeleton {
+  background: linear-gradient(90deg, #ece7dd 0, #f7f3ec 40%, #ece7dd 80%);
+  background-size: 800px 100%;
+  animation: var(--animate-shimmer);
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* MapLibre controls in clay style */
+.maplibregl-ctrl-group {
+  border-radius: 14px !important;
+  box-shadow: var(--shadow-clay-sm) !important;
+}
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+}
+
+/* Sheet / dialog motion */
+.sheet-overlay[data-state="open"] { animation: sheet-fade 200ms ease-out; }
+.sheet-content[data-state="open"] { animation: sheet-up 320ms cubic-bezier(0.2, 0.9, 0.25, 1); }
+@media (min-width: 640px) {
+  .sheet-content[data-state="open"] { animation: sheet-in 280ms cubic-bezier(0.2, 0.9, 0.25, 1); }
+}
+@keyframes sheet-fade { from { opacity: 0; } }
+@keyframes sheet-up { from { transform: translateY(40px); opacity: 0; } }
+@keyframes sheet-in { from { opacity: 0; scale: 0.97; } }

@@ -1,0 +1,6 @@
+# Keep Go, SQL and shell sources LF everywhere so gofmt and CI agree on Windows checkouts.
+*.go   text eol=lf
+*.sql  text eol=lf
+*.sh   text eol=lf
+go.mod text eol=lf
+go.sum text eol=lf

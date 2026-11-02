@@ -1,0 +1,57 @@
+# One command runs Trizpyy: `docker compose up --build`
+#   web  → http://localhost:3000   api → http://localhost:8080
+# Secrets come from backend/.env (copy backend/.env.example). Nothing secret lives here.
+# By default the API uses your Neon DATABASE_URL from backend/.env.
+# For a fully local database instead: `docker compose --profile local-db up --build`
+# and set DATABASE_URL=postgres://trizpyy:trizpyy@db:5432/trizpyy?sslmode=disable in backend/.env.
+services:
+  api:
+    build: ./backend
+    env_file: ./backend/.env
+    environment:
+      APP_ENV: ${APP_ENV:-development}
+      PORT: "8080"
+      CORS_ORIGINS: http://localhost:3000
+      PUBLIC_WEB_URL: http://localhost:3000
+      PUBLIC_API_URL: http://localhost:8080
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8080
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  # Optional Python AI service: `docker compose --profile ai up --build`, then set
+  # AI_SERVICE_URL=http://ai:8090 in backend/.env.
+  ai:
+    build:
+      context: .
+      dockerfile: services/ai/Dockerfile
+    profiles: ["ai"]
+    env_file: ./backend/.env
+    ports:
+      - "8090:8090"
+    restart: unless-stopped
+
+  db:
+    image: postgres:17-alpine
+    profiles: ["local-db"]
+    environment:
+      POSTGRES_USER: trizpyy
+      POSTGRES_PASSWORD: trizpyy
+      POSTGRES_DB: trizpyy
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+
+volumes:
+  dbdata:
