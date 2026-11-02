@@ -279,7 +279,7 @@ func (s *Service) scenarioFromQuestion(q string) *engine.Scenario {
 	var dest *domain.Destination
 	for i := range s.Eng.Cat.Destinations {
 		d := &s.Eng.Cat.Destinations[i]
-		// The name ("Leh Ladakh") or the id as a word ("leh", "pondicherry").
+		// The name ("Coorg", "Hampi") or the id as a word ("coorg", "gokarna").
 		if strings.Contains(lower, strings.ToLower(d.Name)) || regexp.MustCompile(`\b`+regexp.QuoteMeta(d.ID)+`\b`).MatchString(lower) {
 			dest = d
 			break

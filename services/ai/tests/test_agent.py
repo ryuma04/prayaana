@@ -28,13 +28,13 @@ FACTS = {
     ],
     "incidents": [{"id": "inc1", "trip_code": "TRZ-101", "title": "Heavy rain forecast", "kind": "weather", "status": "plans_ready",
                    "severity": 4, "day": 3}],
-    "pending_confirmations": [{"vendor": "Himalayan Cabs", "trip_code": "TRZ-101", "item": "Solang pickup", "proposed": "Day 4, 9:00 AM",
+    "pending_confirmations": [{"vendor": "Kodagu Coffee Valley Cabs", "trip_code": "TRZ-101", "item": "Dubare pickup", "proposed": "Day 4, 9:00 AM",
                                "kind": "change", "age_min": 42}],
     "agent_runs": [],
     "focus": {"incident": {"id": "inc1", "trip_code": "TRZ-101", "title": "Heavy rain forecast", "status": "plans_ready", "day": 3},
-              "impact": [{"title": "Solang paragliding", "level": "cannot_happen", "reason": "Outdoor activity · heavy rain & gusts forecast",
+              "impact": [{"title": "River rafting", "level": "cannot_happen", "reason": "Outdoor activity · heavy rain & gusts forecast",
                           "cost_at_risk": 7000},
-                         {"title": "Cafe 1947", "level": "safe", "reason": "Not affected"}],
+                         {"title": "Big Cup Cafe", "level": "safe", "reason": "Not affected"}],
               "money_at_risk": 7000,
               "plans": [{"strategy": "cheapest", "title": "Cheapest", "cost_delta": -3500, "swaps": 1, "hearts_kept": 1, "hearts_total": 1},
                         {"strategy": "fastest", "title": "Fastest", "cost_delta": 400, "swaps": 1, "hearts_kept": 1, "hearts_total": 1, "recommended": True},
@@ -45,7 +45,7 @@ SIM = {"title": "Heavy rain in Coorg", "question": "What if heavy rain hits Coor
        "when": "tomorrow",
        "tours": [{"trip_code": "TRZ-101", "group": "Sharma family", "day": 3, "travelers": 4, "money_at_risk": 7000, "cannot_happen": 1,
                   "moves": 1, "safe": 3, "best_plan": "Fastest · +₹400", "best_strategy": "fastest", "fix_cost": 400, "auto_fixable": True,
-                  "items": [{"title": "Solang paragliding", "level": "cannot_happen", "reason": "Outdoor activity"}]}],
+                  "items": [{"title": "River rafting", "level": "cannot_happen", "reason": "Outdoor activity"}]}],
        "totals": {"tours": 1, "travelers": 4, "money_at_risk": 7000, "auto_fixable": 1, "cannot_happen": 1, "moves": 1, "safe": 3, "fix_cost": 400}}
 
 

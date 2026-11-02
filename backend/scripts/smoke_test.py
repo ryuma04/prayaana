@@ -81,8 +81,8 @@ def main():
     check("estimates computed", all(d["estimatePerPerson"] > 0 for d in dests))
     feel = call("GET", "/destinations?q=quiet%20mountains")
     check("search by feeling", len(feel) > 0 and feel[0]["searchScore"] > 0)
-    man = call("GET", "/destinations/manali")
-    check("destination detail", len(man["activities"]) > 5 and len(man["stays"]) == 4)
+    coo = call("GET", "/destinations/coorg")
+    check("destination detail", len(coo["activities"]) > 5 and len(coo["stays"]) == 4)
     call("GET", "/destinations/atlantis", expect=404)
     quiz = call("GET", "/quiz")
     check("quiz loaded", len(quiz) == 10)
@@ -91,12 +91,12 @@ def main():
 
     q = call("POST", "/profile/quiz", {"answers": {"morning": "trek", "view": "peaks", "thrill": 80, "pace": "balanced"}}, token=trav)
     check("travel DNA", q["dna"]["name"] != "" and len(q["interests"]) == 3)
-    prof = call("PATCH", "/profile", {"autoApproveLimit": 2000, "savedPlaces": ["goa", "nowhere"]}, token=trav)
-    check("profile update", prof["autoApproveLimit"] == 2000 and prof["savedPlaces"] == ["goa"])
+    prof = call("PATCH", "/profile", {"autoApproveLimit": 2000, "savedPlaces": ["gokarna", "nowhere"]}, token=trav)
+    check("profile update", prof["autoApproveLimit"] == 2000 and prof["savedPlaces"] == ["gokarna"])
 
-    prefs = {"destinationId": "manali", "startDate": meta["today"], "nights": 4, "adults": 2, "budgetPerPerson": 30000,
+    prefs = {"destinationId": "coorg", "startDate": meta["today"], "nights": 4, "adults": 2, "budgetPerPerson": 30000,
              "stayType": "boutique", "transport": "bus", "interests": ["nature", "adventure", "food"], "pace": "balanced",
-             "ownWords": "Manali, nature and adventure, great food, quiet cafés in the evening"}
+             "ownWords": "Coorg, nature and adventure, great food, quiet cafés in the evening"}
     call("POST", "/trips", {"prefs": {**prefs, "nights": 40}}, token=trav, expect=400)
     check("bad prefs rejected", True)
     created = call("POST", "/trips", {"prefs": prefs}, token=trav, expect=201)
@@ -252,7 +252,7 @@ def main():
     call("POST", "/ops/alerts/reports/cr-1/verify", token=ops)
     handed = call("POST", "/ops/alerts/warnings/ew-1/handoff", token=ops)
     check("warning handed to agent", handed["runId"] != "")
-    sim = call("POST", "/ops/simulate", {"scenarioId": "rain-manali"}, token=ops)
+    sim = call("POST", "/ops/simulate", {"scenarioId": "rain-coorg"}, token=ops)
     check("what-if simulator", sim["totals"]["tours"] >= 1)
     fixed = call("POST", "/ops/simulate/fix", {"scenarioId": "ropeway-closed"}, token=ops)
     check("fix all launched", isinstance(fixed, list))
@@ -260,8 +260,8 @@ def main():
     check("notifications", len(call("GET", "/notifications", token=ops)) > 0)
     call("POST", "/notifications/read-all", token=trav)
 
-    page = call("GET", "/v/demo-himalayan-cabs")
-    check("vendor link page", page["open"] and page["vendor"]["id"] == "v-man-cabs")
+    page = call("GET", "/v/demo-kodagu-cabs")
+    check("vendor link page", page["open"] and page["vendor"]["id"] == "v-coo-cabs")
     call("POST", "/v/demo-himalayan-cabs/reply", {"answer": "yes"})
     call("POST", "/v/demo-himalayan-cabs/reply", {"answer": "no"}, expect=409)
     check("vendor reply once", True)

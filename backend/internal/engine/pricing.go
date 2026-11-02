@@ -15,6 +15,8 @@ type Promo struct {
 }
 
 var Promos = []Promo{
+	{Code: "PRAYAANA10", Label: "10% off, up to ₹2,500", apply: func(s int) int { return min(2500, Round(float64(s)*0.1)) }},
+	{Code: "KARNATAKA10", Label: "10% off, up to ₹2,500", apply: func(s int) int { return min(2500, Round(float64(s)*0.1)) }},
 	{Code: "TRIZPYY10", Label: "10% off, up to ₹2,500", apply: func(s int) int { return min(2500, Round(float64(s)*0.1)) }},
 	{Code: "FIRSTTRIP", Label: "₹1,000 off your first trip", MinSubtotal: 15000, apply: func(int) int { return 1000 }},
 	{Code: "MONSOON500", Label: "₹500 off monsoon getaways", apply: func(int) int { return 500 }},
@@ -32,8 +34,9 @@ func findPromo(code string) *Promo {
 
 // TeamUp lists popular experiences where a group deal (5% off) is unlocked.
 var TeamUp = map[string]bool{
-	"man-paragliding": true, "goa-grande": true, "ris-rafting": true,
-	"leh-pangong": true, "hav-scuba": true, "udr-pichola": true,
+	"crg-abbey": true, "hmp-virupaksha": true, "gok-ombeach": true,
+	"dan-rafting": true, "ban-safari": true, "ckm-mullayanagiri": true,
+	"mys-palace": true, "blr-food-walk": true,
 }
 
 func QtyOf(i domain.TripItem) int {

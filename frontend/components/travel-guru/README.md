@@ -1,6 +1,6 @@
-# 🌍 Travel Guru AI Chatbot (Dynamic Tour Guide & Itinerary Planner)
+# 🌍 Travel Guru AI Chatbot (Karnataka Travel Companion)
 
-A production-grade, voice-enabled AI travel companion for discovering Indian destinations, planning multi-day itineraries, finding iconic street food, and getting real-time weather advisories.
+A production-grade, voice-enabled AI travel companion for discovering Karnataka destinations, planning multi-day itineraries, finding iconic regional delicacies, and getting real-time weather advisories.
 
 ---
 
@@ -10,8 +10,8 @@ A production-grade, voice-enabled AI travel companion for discovering Indian des
    - Queries live temperature, humidity, wind, and conditions via free Open-Meteo API.
    - Provides dynamic AI travel advisories based on current conditions (e.g. warm midday recommendations vs cool morning viewpoints vs rain preparations).
 
-2. **🌐 Open-City Dynamic Geocoding**:
-   - Supports **22+ pre-indexed iconic destinations** (Ahmedabad, Jaipur, Mumbai, Goa, Varanasi, Manali, Udaipur, Delhi, Alleppey, Rishikesh, Leh Ladakh, Munnar, Hampi, Puducherry, Amritsar, Agra, Ooty, and more).
+2. **🌐 Karnataka Curated Destinations**:
+   - Supports **16 pre-indexed iconic destinations** across Karnataka (Bengaluru, Mysuru, Hampi, Coorg, Chikmagalur, Gokarna, Badami, Udupi, Mangalore, Dandeli, Kabini, Bandipur, Jog Falls, Sakleshpur, Belur-Halebidu, Murdeshwar).
    - Plus dynamic geocoding for **ANY custom city** entered by the user (e.g., Pune, Shimla, Srinagar, Bangalore, or international cities) with automatic coordinates, live weather, and contextual landmark generation!
 
 3. **🗓️ Dynamic Multi-Day Itinerary Engine**:
@@ -94,7 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         {children}
-        <TravelGuruFloatingWidget initialCity="Ahmedabad" />
+        <TravelGuruFloatingWidget initialCity="Bengaluru" />
       </body>
     </html>
   );

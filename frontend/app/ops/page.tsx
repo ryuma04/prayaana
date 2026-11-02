@@ -241,10 +241,10 @@ export default function OpsToday() {
 function LiveWeatherMonitor() {
   const wx = useWeatherStore((s) => s.byDest);
   const hubs = [
-    { id: "manali", name: "Manali", state: "Himachal Pradesh" },
-    { id: "goa", name: "Goa", state: "Western Coast" },
-    { id: "rishikesh", name: "Rishikesh", state: "Uttarakhand" },
-    { id: "leh", name: "Leh Ladakh", state: "Ladakh" },
+    { id: "coorg", name: "Coorg (Kodagu)", state: "Malenadu & Western Ghats" },
+    { id: "gokarna", name: "Gokarna", state: "Karavali & Arabian Coast" },
+    { id: "hampi", name: "Hampi", state: "Vijayanagara Heritage" },
+    { id: "bengaluru", name: "Bengaluru", state: "Capital & Deccan Plateau" },
   ];
 
   return (

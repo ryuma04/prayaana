@@ -77,866 +77,1084 @@ export const CITIES_DATABASE: Record<string, CityInfo> = {
       }
     ]
   },
-  "Ahmedabad": {
-    name: "Ahmedabad",
-    stateOrCountry: "Gujarat, India",
-    tagline: "India's First UNESCO World Heritage City",
-    badge: "Heritage & Culture",
-    description: "Famous for textile heritage, Gandhi Ashram, vibrant night street markets, and 15th-century stepwells.",
-    weather: "Pleasant & Clear",
-    temp: "28°C",
-    bestSeason: "October – March",
-    language: "Gujarati, Hindi, English",
-    avgBudget: "₹1,500 – ₹2,500 / day",
-    lat: 23.0225,
-    lng: 72.5714,
-    famousFood: ["Gwalior Dosa at Manek Chowk", "Authentic Gujarati Thali at Agashiye", "Fafda & Jalebi at Chandravilas", "Khaman Dhokla", "Jamun Shots"],
-    emergencyContacts: [
-      { name: "Tourist Police Helpline", number: "1363", type: "Tourist Help" },
-      { name: "Ahmedabad City Police", number: "100 / 112", type: "Police" },
-      { name: "Civil Hospital Asarwa", number: "079-22683721", type: "Hospital" },
-      { name: "Medical Emergency Ambulance", number: "108", type: "Ambulance" }
+  "Mysuru": {
+    "name": "Mysuru",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "City of Palaces, Sandalwood & Royal Dussehra",
+    "badge": "Royal Heritage",
+    "description": "The cultural capital of Karnataka, celebrated for the Indo-Saracenic Mysore Palace, Chamundi Hill temple, Devaraja Market fragrances, and rich Wadiyar royalty.",
+    "weather": "Pleasant & Mild",
+    "temp": "26°C",
+    "bestSeason": "October – March",
+    "language": "Kannada, English",
+    "avgBudget": "₹1,800 – ₹3,500 / day",
+    "lat": 12.2958,
+    "lng": 76.6394,
+    "famousFood": [
+      "Mylari Masala Dosa",
+      "Original Mysore Pak at Guru Sweet Mart",
+      "Mysore Filter Coffee",
+      "Chiroti with Badam Milk",
+      "Bisi Bele Bath"
     ],
-    places: [
+    "emergencyContacts": [
       {
-        id: "ahd-1",
-        name: "Sabarmati Ashram",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "42k+",
-        description: "Historical residence of Mahatma Gandhi along the banks of Sabarmati River. Peaceful atmosphere with freedom movement archives and tranquil tree-shaded grounds.",
-        bestTime: "8:30 AM – 11:00 AM (Cool morning breeze)",
-        timing: "8:30 AM – 6:30 PM",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Ashram Road, Old Wadaj, Ahmedabad",
-        imageUrl: "https://images.unsplash.com/photo-1598890777032-bde835ba27c2?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Hridaya Kunj", "Gandhi Heritage Museum", "Riverfront Promenade Walk"],
-        tags: ["UNESCO", "Peaceful", "History", "Must Visit"],
-        insiderTip: "Visit early morning at 8:30 AM before tourist buses arrive. Walk the tree-shaded riverfront walkway directly behind the ashram.",
-        googleMapsUrl: "https://maps.google.com/?q=Sabarmati+Ashram+Ahmedabad",
-        lat: 23.0605,
-        lng: 72.5802,
-        durationHours: 2
+        "name": "Mysuru City Police",
+        "number": "112",
+        "type": "Police"
       },
       {
-        id: "ahd-2",
-        name: "Adalaj Stepwell (Adalaj ni Vav)",
-        category: "Heritage & History",
-        rating: 4.7,
-        reviewCount: "28k+",
-        description: "5-storey deep intricate Indo-Islamic architectural marvel built in 1498 by Queen Rudabai. Unique octagonal shaft keeps subterranean temperature 5 degrees cooler.",
-        bestTime: "9:00 AM – 12:00 PM (Best natural lighting)",
-        timing: "8:00 AM – 6:00 PM",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Adalaj, Gandhinagar Highway, Ahmedabad",
-        imageUrl: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Intricate Carvings", "5-Level Underground Structure", "Photography Hotspot"],
-        tags: ["Architecture", "Heritage", "Instagrammable"],
-        insiderTip: "Walk down to the 3rd subterranean level for symmetrical pillar alignment photos with sunlight filtering down the central shaft.",
-        googleMapsUrl: "https://maps.google.com/?q=Adalaj+Stepwell+Ahmedabad",
-        lat: 23.1667,
-        lng: 72.5833,
-        durationHours: 1.5
+        "name": "KR Hospital Mysuru",
+        "number": "0821-2423000",
+        "type": "Hospital"
       },
       {
-        id: "ahd-3",
-        name: "Manek Chowk Street Food Market",
-        category: "Food & Markets",
-        rating: 4.6,
-        reviewCount: "35k+",
-        description: "Jewelry market by day and bustling midnight street food haven from 8:30 PM with over 80 dessert, cheese, and spicy snack stalls.",
-        bestTime: "9:00 PM – 11:30 PM (Vibrant nightlife)",
-        timing: "8:30 PM – 1:30 AM",
-        entryFee: "₹200 - ₹500 for food",
-        approxCost: 350,
-        address: "Old City, Near Bhadra Fort, Ahmedabad",
-        imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Gwalior Dosa", "Pineapple Cheese Sandwich", "Kulfi & Rabdi"],
-        tags: ["Street Food", "Nightlife", "Iconic"],
-        insiderTip: "Try the iconic Gwalior butter dosa and Jamun shots. Arrive after 9:30 PM when the entire square converts into food stalls.",
-        googleMapsUrl: "https://maps.google.com/?q=Manek+Chowk+Ahmedabad",
-        lat: 23.0244,
-        lng: 72.5906,
-        durationHours: 2
+        "name": "Karnataka Tourism Info",
+        "number": "1363",
+        "type": "Tourist Help"
       },
       {
-        id: "ahd-4",
-        name: "Sabarmati Riverfront & Atal Pedestrian Bridge",
-        category: "Nightlife & Views",
-        rating: 4.7,
-        reviewCount: "40k+",
-        description: "Spectacular glass-and-steel footbridge inspired by kite culture, offering breezy riverside panoramic views and evening light shows.",
-        bestTime: "5:30 PM – 8:00 PM (Sunset & Illuminations)",
-        timing: "9:00 AM – 11:00 PM",
-        entryFee: "₹30 (Adults), ₹15 (Kids)",
-        approxCost: 30,
-        address: "Sabarmati Riverfront Promenade, Ellisbridge, Ahmedabad",
-        imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Kite-inspired design", "River view sunset", "Illuminated evening walkway"],
-        tags: ["Sunset", "Promenade", "Romantic", "Views"],
-        insiderTip: "Buy the bridge ticket online or at the counter before 6 PM to enjoy both the daylight river reflection and the dusk LED lighting.",
-        googleMapsUrl: "https://maps.google.com/?q=Atal+Bridge+Sabarmati+Riverfront",
-        lat: 23.0289,
-        lng: 72.5714,
-        durationHours: 1.5
+        "name": "Ambulance",
+        "number": "108",
+        "type": "Ambulance"
+      }
+    ],
+    "places": [
+      {
+        "id": "mys-1",
+        "name": "Mysore Palace Grand Interior",
+        "category": "Heritage & History",
+        "rating": 4.8,
+        "reviewCount": "120k+",
+        "description": "Spectacular royal seat of the Wadiyar maharajas featuring the octagonal Peacock Gombe Thotti pavilion, solid silver doors, and stained glass ceilings.",
+        "bestTime": "10:00 AM – 1:30 PM (or Sunday evenings for 100,000 bulb illumination)",
+        "timing": "10:00 AM – 5:30 PM daily",
+        "entryFee": "₹100 (Indians), ₹200 (Foreigners)",
+        "approxCost": 150,
+        "address": "Sayyaji Rao Rd, Agrahara, Chamrajpura, Mysuru 570001",
+        "imageUrl": "https://images.unsplash.com/photo-1600100397608-f010e421d4a0?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Golden Royal Throne",
+          "Durbar Hall",
+          "Ambavilas Stained Glass",
+          "Night Illumination"
+        ],
+        "tags": [
+          "Palace",
+          "Royal",
+          "Architecture",
+          "Must Visit"
+        ],
+        "insiderTip": "Visit on Sunday at 7:00 PM when the entire palace facade glows with 100,000 golden incandescent bulbs.",
+        "googleMapsUrl": "https://maps.google.com/?q=Mysore+Palace+Mysuru",
+        "lat": 12.3052,
+        "lng": 76.6552,
+        "durationHours": 2.5
       },
       {
-        id: "ahd-5",
-        name: "Sidi Saiyyed Mosque (Tree of Life)",
-        category: "Hidden Gem",
-        rating: 4.7,
-        reviewCount: "15k+",
-        description: "1573 AD mosque famous for world-renowned delicate stone latticework jalis carved like intertwined tree branches and foliage.",
-        bestTime: "10:00 AM – 12:00 PM (Direct morning sun reveals intricate shadows)",
-        timing: "7:00 AM – 7:00 PM",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Opposite Electricity House, Gheekanta, Ahmedabad",
-        imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Stone Jali filigree", "Tree of Life motif (IIM Logo)", "Peaceful prayer hall"],
-        tags: ["Heritage", "Architecture", "Spiritual", "Photography"],
-        insiderTip: "Step into the courtyard to see the eastern marble filigree screen. Wear modest clothing covering knees and shoulders.",
-        googleMapsUrl: "https://maps.google.com/?q=Sidi+Saiyyed+Mosque+Ahmedabad",
-        lat: 23.0278,
-        lng: 72.5815,
-        durationHours: 1
-      },
-      {
-        id: "ahd-6",
-        name: "Agashiye Rooftop – The House of MG",
-        category: "Cultural & Spiritual",
-        rating: 4.8,
-        reviewCount: "14k+",
-        description: "Heritage haveli rooftop dining experience serving grand multi-course authentic Gujarati Thali on bronze plates with live folk music.",
-        bestTime: "12:30 PM (Lunch) or 8:00 PM (Dinner under the stars)",
-        timing: "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
-        entryFee: "₹1,050 – ₹1,300 per thali",
-        approxCost: 1100,
-        address: "Opposite Sidi Saiyyed Mosque, Lal Darwaja, Ahmedabad",
-        imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Authentic Silver & Bronze Thali", "Live Jalebi Counter", "1920s Heritage Mansion"],
-        tags: ["Fine Dining", "Authentic Thali", "Luxury", "Food"],
-        insiderTip: "Reserve a terrace table 1 day in advance. Arrive 20 mins early to sample the fresh panna welcome drink and visit the vintage textile gallery.",
-        googleMapsUrl: "https://maps.google.com/?q=Agashiye+House+of+MG+Ahmedabad",
-        lat: 23.0272,
-        lng: 72.5819,
-        durationHours: 2
+        "id": "mys-2",
+        "name": "Chamundi Hill & Monolithic Nandi",
+        "category": "Spiritual & Views",
+        "rating": 4.7,
+        "reviewCount": "78k+",
+        "description": "Ancient hilltop temple dedicated to Goddess Chamundeshwari with a 1,000-step stone climb and a giant 16-foot monolithic granite Nandi Bull.",
+        "bestTime": "6:30 AM – 9:00 AM (Sunrise & cool mountain air)",
+        "timing": "6:00 AM – 9:00 PM",
+        "entryFee": "Free (Special darshan ₹100)",
+        "approxCost": 100,
+        "address": "Chamundi Hill, Mysuru 570010",
+        "imageUrl": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Goddess Chamundeshwari Sanctum",
+          "16-Foot Monolithic Nandi",
+          "Panoramic Mysuru City View"
+        ],
+        "tags": [
+          "Temple",
+          "Viewpoint",
+          "Heritage"
+        ],
+        "insiderTip": "Stop halfway down at the monolithic Nandi bull carved from a single boulder in 1659.",
+        "googleMapsUrl": "https://maps.google.com/?q=Chamundeshwari+Temple+Mysuru",
+        "lat": 12.2753,
+        "lng": 76.6702,
+        "durationHours": 2
       }
     ]
   },
-
-  "Jaipur": {
-    name: "Jaipur",
-    stateOrCountry: "Rajasthan, India",
-    tagline: "The Pink City of Forts & Palaces",
-    badge: "Royalty & Culture",
-    description: "Capital of Rajasthan, famous for hilltop royal palaces, vibrant bazaars, Rajput heritage, and mouth-watering Pyaz Kachori.",
-    weather: "Pleasant & Clear",
-    temp: "27°C",
-    bestSeason: "October – March",
-    language: "Hindi, Rajasthani, English",
-    avgBudget: "₹2,000 – ₹3,500 / day",
-    lat: 26.9124,
-    lng: 75.7873,
-    famousFood: ["Pyaz Kachori at Rawat Mishtan", "Dal Baati Churma at LMB", "Laal Maas at Handi", "Lassi at Lassiwala MI Road", "Ghewar"],
-    emergencyContacts: [
-      { name: "Rajasthan Tourist Assistance Force", number: "1363", type: "Tourist Help" },
-      { name: "Jaipur Police Control", number: "100 / 112", type: "Police" },
-      { name: "SMS Hospital (Sawai Man Singh)", number: "0141-2560291", type: "Hospital" },
-      { name: "Emergency Ambulance", number: "108", type: "Ambulance" }
+  "Coorg": {
+    "name": "Coorg (Kodagu)",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Scotland of India, Coffee Estates & Mist",
+    "badge": "Western Ghats",
+    "description": "Emerald green hill haven renowned for shade-grown coffee and pepper plantations, Abbey cascades, Tibetan monasteries, and Kodava hospitality.",
+    "weather": "Cool & Misty",
+    "temp": "19°C",
+    "bestSeason": "October – May",
+    "language": "Kodava, Kannada, English",
+    "avgBudget": "₹2,200 – ₹4,500 / day",
+    "lat": 12.4244,
+    "lng": 75.7382,
+    "famousFood": [
+      "Pandi Curry with Akki Rotti",
+      "Bamboo Shoot Curry (Kani)",
+      "Estate Filter Coffee",
+      "Kadamputtu (Rice Dumplings)",
+      "Coorg Wild Orange Honey"
     ],
-    places: [
+    "emergencyContacts": [
       {
-        id: "jpr-1",
-        name: "Amber Palace (Amer Fort)",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "65k+",
-        description: "Magnificent hilltop 16th-century fortress overlooking Maota Lake, famous for Sheesh Mahal (Hall of Mirrors) and grand ramparts.",
-        bestTime: "8:00 AM – 11:00 AM or 6:30 PM (Evening Sound & Light show)",
-        timing: "8:00 AM – 5:30 PM, 6:30 PM – 9:15 PM (Night Fort)",
-        entryFee: "₹100 (Indians), ₹550 (Foreigners)",
-        approxCost: 100,
-        address: "Devisinghpura, Amer, Jaipur",
-        imageUrl: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Sheesh Mahal (Mirror Palace)", "Ganesh Pol Gate", "Panoramic Aravalli Views"],
-        tags: ["UNESCO", "Royal Palace", "Must Visit"],
-        insiderTip: "Enter through Suraj Pol gate at 8:00 AM sharp to photograph Sheesh Mahal without crowds before tour groups arrive.",
-        googleMapsUrl: "https://maps.google.com/?q=Amer+Fort+Jaipur",
-        lat: 26.9855,
-        lng: 75.8513,
-        durationHours: 3
+        "name": "Madikeri Police Station",
+        "number": "08272-228333 / 112",
+        "type": "Police"
       },
       {
-        id: "jpr-2",
-        name: "Hawa Mahal (Palace of Winds)",
-        category: "Heritage & History",
-        rating: 4.7,
-        reviewCount: "55k+",
-        description: "5-storey pink sandstone facade featuring 953 jharokha honeycomb windows designed for royal women to observe street festivals secretly.",
-        bestTime: "8:00 AM – 10:00 AM (Morning sunlight illuminates pink stone)",
-        timing: "9:00 AM – 5:00 PM",
-        entryFee: "₹50 (Indians), ₹200 (Foreigners)",
-        approxCost: 50,
-        address: "Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Jaipur",
-        imageUrl: "https://images.unsplash.com/photo-1600100397608-f010f44390b1?auto=format&fit=crop&w=800&q=80",
-        highlights: ["953 Honeycomb Casements", "Tattoo Cafe Rooftop View", "Vibrant Old City Street"],
-        tags: ["Iconic", "Pink City", "Photography"],
-        insiderTip: "Cross the street and head to Wind View Cafe or Tattoo Cafe on the rooftop across Hawa Mahal for the classic postcard frame photo.",
-        googleMapsUrl: "https://maps.google.com/?q=Hawa+Mahal+Jaipur",
-        lat: 26.9239,
-        lng: 75.8267,
-        durationHours: 1.5
+        "name": "District Hospital Madikeri",
+        "number": "08272-225225",
+        "type": "Hospital"
       },
       {
-        id: "jpr-3",
-        name: "Nahargarh Fort & Padao Sunset Point",
-        category: "Nightlife & Views",
-        rating: 4.7,
-        reviewCount: "42k+",
-        description: "Crown of the Aravalli hills built as a royal defense sanctuary. Offers sweeping 360-degree views of Jaipur cityscape during sunset.",
-        bestTime: "5:00 PM – 7:30 PM (Golden hour sunset into twilight)",
-        timing: "10:00 AM – 10:00 PM",
-        entryFee: "₹50 (Entry), ₹200 (Padao Open Air Cafe)",
-        approxCost: 250,
-        address: "Krishna Nagar, Brahampuri, Jaipur",
-        imageUrl: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Padao Rooftop Cafe", "Madhavendra Bhawan", "City Skyline Sunset"],
-        tags: ["Sunset", "Panoramic", "Night View"],
-        insiderTip: "Hire a cab with waiting time for the winding mountain road up. Watch the entire Pink City illuminate with twinkling lights after dusk.",
-        googleMapsUrl: "https://maps.google.com/?q=Nahargarh+Fort+Jaipur",
-        lat: 26.9372,
-        lng: 75.8156,
-        durationHours: 2.5
+        "name": "Karnataka Forest Helpline",
+        "number": "1926",
+        "type": "Forest / Wildlife"
+      }
+    ],
+    "places": [
+      {
+        "id": "coo-1",
+        "name": "Private Coffee & Pepper Estate Trail",
+        "category": "Nature & Plantations",
+        "rating": 4.9,
+        "reviewCount": "45k+",
+        "description": "Immersive guided walk beneath towering canopy trees, picking ripe Arabica and Robusta coffee cherries, and smelling fresh green cardamom.",
+        "bestTime": "7:30 AM – 10:30 AM",
+        "timing": "8:00 AM – 5:00 PM",
+        "entryFee": "₹200 – ₹500 (with estate brew tasting)",
+        "approxCost": 350,
+        "address": "Madikeri Hills, Kodagu 571201",
+        "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Arabica & Robusta Bushes",
+          "Pepper Vine Arbors",
+          "Artisanal Cupping Tasting"
+        ],
+        "tags": [
+          "Coffee",
+          "Nature",
+          "Plantation",
+          "Must Visit"
+        ],
+        "insiderTip": "Buy fresh estate-roasted peaberry coffee beans and whole black pepper directly at the planter co-op counter.",
+        "googleMapsUrl": "https://maps.google.com/?q=Coffee+Plantation+Coorg",
+        "lat": 12.435,
+        "lng": 75.748,
+        "durationHours": 2.5
       },
       {
-        id: "jpr-4",
-        name: "Rawat Mishtan Bhandar & Bazaars",
-        category: "Food & Markets",
-        rating: 4.6,
-        reviewCount: "38k+",
-        description: "Legendary 70-year-old culinary institution famous across India for piping hot crispy Pyaz Kachori, Mawa Kachori, and Mirchi Vada.",
-        bestTime: "8:30 AM – 11:30 AM (Fresh morning batch)",
-        timing: "6:00 AM – 10:30 PM",
-        entryFee: "₹100 – ₹250 per person",
-        approxCost: 150,
-        address: "Station Road, Sindhi Camp, Jaipur",
-        imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Crispy Pyaz Kachori", "Sweet Mawa Kachori", "Ghewar with Rabdi"],
-        tags: ["Street Food", "Iconic Breakfast", "Snacks"],
-        insiderTip: "Pair the crispy Onion Kachori with their sweet Tamarind chutney and a glass of hot masala chai.",
-        googleMapsUrl: "https://maps.google.com/?q=Rawat+Mishtan+Bhandar+Jaipur",
-        lat: 26.9208,
-        lng: 75.7978,
-        durationHours: 1
-      },
-      {
-        id: "jpr-5",
-        name: "Panna Meena ka Kund Stepwell",
-        category: "Hidden Gem",
-        rating: 4.6,
-        reviewCount: "12k+",
-        description: "16th-century geometric stepwell with crisscross staircases, pastel ochre hues, and serene temple courtyards hidden near Amer Fort.",
-        bestTime: "7:30 AM – 9:30 AM (Quiet morning without crowds)",
-        timing: "7:00 AM – 6:00 PM",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Near Amer Fort, Kheri Gate, Amer, Jaipur",
-        imageUrl: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Geometric Stair Patterns", "Quiet Historical Courtyard", "Architectural Symmetries"],
-        tags: ["Hidden Gem", "Geometry", "Instagrammable"],
-        insiderTip: "Combine this with your Amer Fort morning visit. It is just a 5-minute walk down from Amer Fort's elephant stand.",
-        googleMapsUrl: "https://maps.google.com/?q=Panna+Meena+ka+Kund+Amer+Jaipur",
-        lat: 26.9922,
-        lng: 75.8569,
-        durationHours: 1
+        "id": "coo-2",
+        "name": "Namdroling Golden Temple Bylakuppe",
+        "category": "Spiritual & Heritage",
+        "rating": 4.9,
+        "reviewCount": "65k+",
+        "description": "The largest Tibetan monastic settlement in southern India, featuring three 40-foot gilded golden Buddha statues and ornate mural art.",
+        "bestTime": "9:00 AM – 12:00 PM & 1:00 PM – 3:30 PM",
+        "timing": "9:00 AM – 6:00 PM",
+        "entryFee": "Free",
+        "approxCost": 0,
+        "address": "Bylakuppe, Kushalnagar, Kodagu 571104",
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "40-Foot Gilded Golden Buddhas",
+          "Tibetan Prayer Wheels",
+          "Monastery Courtyard"
+        ],
+        "tags": [
+          "Tibetan",
+          "Monastery",
+          "Spiritual",
+          "Golden Temple"
+        ],
+        "insiderTip": "Visit Camp 4 Tibetan canteens right outside the gate for authentic momos and butter tea.",
+        "googleMapsUrl": "https://maps.google.com/?q=Namdroling+Monastery+Golden+Temple+Bylakuppe",
+        "lat": 12.4304,
+        "lng": 75.9667,
+        "durationHours": 2
       }
     ]
   },
-
-  "Mumbai": {
-    name: "Mumbai",
-    stateOrCountry: "Maharashtra, India",
-    tagline: "The City of Dreams & Arabian Sea Breezes",
-    badge: "Metropolis & Coastal",
-    description: "Financial powerhouse of India, famous for Victorian Gothic architecture, Marine Drive Queen's Necklace, Bollywood, and iconic street snacks.",
-    weather: "Warm & Coastal Breeze",
-    temp: "29°C",
-    bestSeason: "November – February",
-    language: "Marathi, Hindi, English",
-    avgBudget: "₹2,500 – ₹4,500 / day",
-    lat: 18.9220,
-    lng: 72.8347,
-    famousFood: ["Ashok Vada Pav Kirti College", "Bademiya Seekh Kebabs Colaba", "Pav Bhaji at Sardar / Cannon", "Parsi Akuri at Britannia & Co", "Bun Maska Chai"],
-    emergencyContacts: [
-      { name: "Mumbai Police Helpline", number: "100 / 112", type: "Police" },
-      { name: "Maharashtra Tourism Helpline", number: "1800-229-930", type: "Tourist Help" },
-      { name: "KEM Hospital Parel", number: "022-24107000", type: "Hospital" },
-      { name: "Emergency Ambulance", number: "108", type: "Ambulance" }
+  "Hampi": {
+    "name": "Hampi",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "UNESCO World Heritage Vijayanagara Empire",
+    "badge": "UNESCO Heritage",
+    "description": "Magnificent 14th-century boulder-strewn capital of the Vijayanagara Empire on the Tungabhadra river, famed for stone chariots and musical pillars.",
+    "weather": "Warm & Sunny",
+    "temp": "29°C",
+    "bestSeason": "October – February",
+    "language": "Kannada, English",
+    "avgBudget": "₹1,500 – ₹3,000 / day",
+    "lat": 15.335,
+    "lng": 76.46,
+    "famousFood": [
+      "Karnataka Banana Leaf Meals",
+      "Jolada Rotti with Ennegayi",
+      "Filter Coffee at Mango Tree",
+      "Bolan Rice & Coconut Payasam"
     ],
-    places: [
+    "emergencyContacts": [
       {
-        id: "bom-1",
-        name: "Gateway of India & Taj Mahal Palace",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "80k+",
-        description: "Iconic 26-meter basalt arch built in 1924 overlooking Mumbai Harbour, flanked by the 1903 heritage Taj Mahal Palace Hotel.",
-        bestTime: "6:30 AM – 9:00 AM (Sunrise & seabirds) or late evening",
-        timing: "Open 24 Hours",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Apollo Bandar, Colaba, Mumbai",
-        imageUrl: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Basalt Archway", "Heritage Taj Hotel", "Elephanta Island Ferry Point"],
-        tags: ["Iconic", "Harbour View", "Heritage", "Must Visit"],
-        insiderTip: "Take the 7:00 AM ferry from here to Elephanta Caves for ancient rock-cut Shiva sculptures. Return by afternoon for high tea near the promenade.",
-        googleMapsUrl: "https://maps.google.com/?q=Gateway+of+India+Mumbai",
-        lat: 18.9220,
-        lng: 72.8347,
-        durationHours: 2
+        "name": "Hampi Tourism Police",
+        "number": "112 / 08394-241222",
+        "type": "Police"
       },
       {
-        id: "bom-2",
-        name: "Marine Drive & Queen's Necklace",
-        category: "Nightlife & Views",
-        rating: 4.8,
-        reviewCount: "70k+",
-        description: "3.6-kilometer C-shaped coastal promenade along Netaji Subhash Chandra Bose Road. Glowing streetlights curve like a pearl necklace at night.",
-        bestTime: "5:30 PM – 9:00 PM (Sunset over the Arabian Sea)",
-        timing: "Open 24 Hours",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Netaji Subhash Chandra Bose Road, South Mumbai",
-        imageUrl: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Sunset over Arabian Sea", "Tetrapod seating", "Queen's Necklace Night Curve"],
-        tags: ["Sunset", "Promenade", "Romantic", "Views"],
-        insiderTip: "Grab roasted bhutta (corn) with lemon masala from street vendors and sit on the seawall tetrapods to enjoy the cool Arabian sea breeze.",
-        googleMapsUrl: "https://maps.google.com/?q=Marine+Drive+Mumbai",
-        lat: 18.9432,
-        lng: 72.8230,
-        durationHours: 2
+        "name": "Hospet Government Hospital",
+        "number": "08394-228222",
+        "type": "Hospital"
       },
       {
-        id: "bom-3",
-        name: "Colaba Causeway & Cafe Mondegar",
-        category: "Food & Markets",
-        rating: 4.6,
-        reviewCount: "32k+",
-        description: "Eclectic shopping street packed with vintage jewelry, curios, bohemian fashion, alongside vintage Parsi cafes and retro jukebox bistros.",
-        bestTime: "3:00 PM – 8:00 PM",
-        timing: "11:00 AM – 10:00 PM",
-        entryFee: "Free to explore (₹300 - ₹800 food/shopping)",
-        approxCost: 400,
-        address: "Shahid Bhagat Singh Road, Colaba, Mumbai",
-        imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Mario Miranda Cartoons", "Vintage Jukebox", "Antique & Silver Jewelry"],
-        tags: ["Shopping", "Cafes", "Street Market"],
-        insiderTip: "Bargain politely at the street stalls (start at 60% of quoted price), then chill with draught beer and cheese chili toast at Cafe Mondegar.",
-        googleMapsUrl: "https://maps.google.com/?q=Colaba+Causeway+Mumbai",
-        lat: 18.9189,
-        lng: 72.8285,
-        durationHours: 2.5
+        "name": "Karnataka Tourism Info Desk",
+        "number": "1363",
+        "type": "Tourist Help"
+      }
+    ],
+    "places": [
+      {
+        "id": "ham-1",
+        "name": "Vijaya Vittala Temple & Stone Chariot",
+        "category": "UNESCO World Heritage",
+        "rating": 4.9,
+        "reviewCount": "90k+",
+        "description": "The crowning architectural marvel of Vijayanagara, housing the iconic monolithic Garuda stone chariot and 56 musical granite pillars.",
+        "bestTime": "8:00 AM – 10:30 AM & 4:00 PM – 6:00 PM",
+        "timing": "8:30 AM – 5:30 PM daily",
+        "entryFee": "₹40 (covers Zenana Enclosure too)",
+        "approxCost": 100,
+        "address": "Hampi, Bellary District, Karnataka 583239",
+        "imageUrl": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Monolithic Stone Chariot",
+          "Musical Pillars Maha Mantapa",
+          "King Balance Scales"
+        ],
+        "tags": [
+          "UNESCO",
+          "Stone Chariot",
+          "History",
+          "Must Visit"
+        ],
+        "insiderTip": "Take the eco battery car from the outer parking or walk along the historic bazaar street beside the river boulders.",
+        "googleMapsUrl": "https://maps.google.com/?q=Vijaya+Vittala+Temple+Hampi",
+        "lat": 15.3364,
+        "lng": 76.4788,
+        "durationHours": 2.5
       },
       {
-        id: "bom-4",
-        name: "Chhatrapati Shivaji Maharaj Terminus (CSMT)",
-        category: "Heritage & History",
-        rating: 4.7,
-        reviewCount: "45k+",
-        description: "Victorian Gothic UNESCO World Heritage railway terminal built in 1887 with gargoyles, domes, stained glass, and peacock arches.",
-        bestTime: "7:00 PM – 9:00 PM (Spectacular multi-color architectural LED illumination)",
-        timing: "Open 24 Hours",
-        entryFee: "Free outside viewing",
-        approxCost: 0,
-        address: "Fort, Mumbai, Maharashtra 400001",
-        imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Victorian Gothic Architecture", "Night Light Display", "Heritage Gallery"],
-        tags: ["UNESCO", "Architecture", "Photography"],
-        insiderTip: "Stand on the pedestrian viewing gallery bridge across the junction at 7:30 PM to snap the illuminated golden facade against evening traffic trails.",
-        googleMapsUrl: "https://maps.google.com/?q=CSMT+Mumbai",
-        lat: 18.9400,
-        lng: 72.8353,
-        durationHours: 1
-      },
-      {
-        id: "bom-5",
-        name: "Kala Ghoda Art Precinct",
-        category: "Hidden Gem",
-        rating: 4.7,
-        reviewCount: "22k+",
-        description: "Mumbai's creative cultural hub brimming with indie art galleries, heritage bookshops, designer boutiques, and artisanal bakeries.",
-        bestTime: "11:00 AM – 5:00 PM",
-        timing: "10:30 AM – 8:00 PM",
-        entryFee: "Free Entry (Gallery visits free)",
-        approxCost: 200,
-        address: "Kala Ghoda, Fort, Mumbai",
-        imageUrl: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Jehangir Art Gallery", "David Sassoon Library", "Kala Ghoda Cafe"],
-        tags: ["Art", "Culture", "Walkable", "Heritage"],
-        insiderTip: "Walk into Jehangir Art Gallery (free entry) to meet local artists, then enjoy cold brew coffee and waffles at Kala Ghoda Cafe.",
-        googleMapsUrl: "https://maps.google.com/?q=Kala+Ghoda+Mumbai",
-        lat: 18.9288,
-        lng: 72.8329,
-        durationHours: 2
+        "id": "ham-2",
+        "name": "Matanga Hill Sunrise & Tungabhadra View",
+        "category": "Nature & Views",
+        "rating": 4.8,
+        "reviewCount": "42k+",
+        "description": "The highest point in central Hampi offering unparalleled 360-degree views of the boulder hills, Virupaksha gopura, and winding Tungabhadra river.",
+        "bestTime": "5:30 AM – 7:00 AM (Spectacular Golden Hour)",
+        "timing": "Open 24/7 (climb in daylight)",
+        "entryFee": "Free",
+        "approxCost": 0,
+        "address": "Matanga Hill, Hampi, Karnataka 583239",
+        "imageUrl": "https://images.unsplash.com/photo-1600100397608-f010e421d4a0?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Golden Sunrise over Ruins",
+          "Aerial View of Achyutaraya Temple",
+          "Veerabhadra Hilltop Shrine"
+        ],
+        "tags": [
+          "Sunrise",
+          "Trek",
+          "Viewpoint",
+          "Photography"
+        ],
+        "insiderTip": "Start ascending by 5:45 AM from the east side of Hampi Bazaar; carry a flashlight for the initial stone steps.",
+        "googleMapsUrl": "https://maps.google.com/?q=Matanga+Hill+Hampi",
+        "lat": 15.332,
+        "lng": 76.468,
+        "durationHours": 2
       }
     ]
   },
-
-  "Goa": {
-    name: "Goa",
-    stateOrCountry: "Goa, India",
-    tagline: "Sun, Sand, Portuguese Heritage & Susegad",
-    badge: "Beaches & Coastal",
-    description: "Tropical coastal paradise known for golden beaches, 16th-century Portuguese churches, vibrant beach shacks, spice plantations, and seafood curries.",
-    weather: "Breezy & Sunny",
-    temp: "30°C",
-    bestSeason: "November – March",
-    language: "Konkani, English, Hindi, Portuguese",
-    avgBudget: "₹2,500 – ₹5,000 / day",
-    lat: 15.2993,
-    lng: 74.1240,
-    famousFood: ["Goan Fish Curry Thali", "Pork Vindaloo", "Bebinca Dessert", "Poi Bread & Chorizo", "Prawn Balchão"],
-    emergencyContacts: [
-      { name: "Goa Tourist Police", number: "1363 / 0832-2420821", type: "Tourist Help" },
-      { name: "Police Emergency", number: "100 / 112", type: "Police" },
-      { name: "Goa Medical College (Bambolim)", number: "0832-2458700", type: "Hospital" },
-      { name: "Beach Lifeguard & Rescue (Drishti)", number: "0832-2414113", type: "Rescue" }
+  "Gokarna": {
+    "name": "Gokarna",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Sacred Temples, Om Beach & Coastal Cliffs",
+    "badge": "Karavali Coast",
+    "description": "Charming coastal town nestled between the Western Ghats and the Arabian Sea, revered for the Mahabaleshwar Atmalinga temple and unspoiled crescent beaches.",
+    "weather": "Tropical Coastal Breeze",
+    "temp": "28°C",
+    "bestSeason": "October – April",
+    "language": "Kannada, Konkani, English",
+    "avgBudget": "₹1,500 – ₹3,200 / day",
+    "lat": 14.5479,
+    "lng": 74.3188,
+    "famousFood": [
+      "Fresh Seafood Thali",
+      "Avocado Toast at Namaste Cafe",
+      "Coastal Kokum Kadhi",
+      "Neer Dosa with Fish Gassi",
+      "Tender Coconut Shake"
     ],
-    places: [
+    "emergencyContacts": [
       {
-        id: "goa-1",
-        name: "Fontainhas – Latin Quarter",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "25k+",
-        description: "Asia's only preserved Latin Quarter with pastel-painted Portuguese villas, tiled nameplates, overhanging wooden balconies, and artisan bakeries.",
-        bestTime: "7:30 AM – 10:30 AM (Soft morning light for photography)",
-        timing: "Open 24 Hours (Best in daylight)",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Panjim, Goa 403001",
-        imageUrl: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Pastel Portuguese Mansions", "31st January Road", "Traditional Confeitaria 31 De Janeiro"],
-        tags: ["Portuguese", "Heritage", "Instagrammable", "Culture"],
-        insiderTip: "Stop by Confeitaria 31 De Janeiro for fresh warm Swiss rolls and Bebinca baked in a traditional wood-fired oven since 1930.",
-        googleMapsUrl: "https://maps.google.com/?q=Fontainhas+Latin+Quarter+Panaji+Goa",
-        lat: 15.4989,
-        lng: 73.8315,
-        durationHours: 2
+        "name": "Gokarna Police Station",
+        "number": "08386-256333 / 112",
+        "type": "Police"
       },
       {
-        id: "goa-2",
-        name: "Basilica of Bom Jesus",
-        category: "Heritage & History",
-        rating: 4.7,
-        reviewCount: "48k+",
-        description: "1605 UNESCO World Heritage baroque church enshrining the sacred mortal remains of St. Francis Xavier in a silver casket.",
-        bestTime: "9:00 AM – 11:30 AM",
-        timing: "9:00 AM – 6:30 PM (Sun: 10:30 AM – 6:30 PM)",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Old Goa Rd, Bainguinim, Goa 403402",
-        imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Tomb of St. Francis Xavier", "Baroque Basalt Facade", "Se Cathedral across the square"],
-        tags: ["UNESCO", "Spiritual", "Baroque", "Old Goa"],
-        insiderTip: "Walk directly across the garden square after your visit to see Sé Cathedral, one of the largest churches in all of Asia with its Golden Bell.",
-        googleMapsUrl: "https://maps.google.com/?q=Basilica+of+Bom+Jesus+Old+Goa",
-        lat: 15.5009,
-        lng: 73.9116,
-        durationHours: 1.5
+        "name": "Government Hospital Gokarna",
+        "number": "08386-256244",
+        "type": "Hospital"
       },
       {
-        id: "goa-3",
-        name: "Chapora Fort & Vagator Sunset",
-        category: "Nightlife & Views",
-        rating: 4.7,
-        reviewCount: "38k+",
-        description: "Red laterite cliff fortress immortalized in Bollywood ('Dil Chahta Hai') with breathtaking views of the Chapora river estuary and Vagator sea.",
-        bestTime: "5:00 PM – 6:45 PM (Classic cinematic sunset)",
-        timing: "6:00 AM – 7:00 PM",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Chapora, Vagator, North Goa 403509",
-        imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Dil Chahta Hai Corner", "Cliff edge panoramic sunset", "Chapora river view"],
-        tags: ["Sunset", "Ocean View", "Iconic", "Bollywood"],
-        insiderTip: "Wear grippy sneakers for the 10-minute stone incline walk. Sit on the western rampart wall for the iconic sun dip over the Arabian Sea.",
-        googleMapsUrl: "https://maps.google.com/?q=Chapora+Fort+Goa",
-        lat: 15.6059,
-        lng: 73.7364,
-        durationHours: 2
-      },
+        "name": "Coastal Lifeguard Emergency",
+        "number": "112",
+        "type": "Lifeguard"
+      }
+    ],
+    "places": [
       {
-        id: "goa-4",
-        name: "Palolem Beach & Butterfly Island",
-        category: "Nature & Parks",
-        rating: 4.8,
-        reviewCount: "42k+",
-        description: "Gentle crescent-shaped south Goan bay fringed by leaning coconut palms, calm turquoise waters, colorful beach huts, and dolphin boat tours.",
-        bestTime: "7:00 AM (Dolphin boat trips) or 4:00 PM – Sunset",
-        timing: "Open 24 Hours",
-        entryFee: "Free Entry",
-        approxCost: 300,
-        address: "Canacona, South Goa 403702",
-        imageUrl: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Kayaking in calm bay", "Dolphin safari boats", "Silent Noise club"],
-        tags: ["Beach", "Relaxing", "South Goa", "Nature"],
-        insiderTip: "Rent a sea kayak at Palolem for ₹300/hour to paddle across to Monkey Island or Butterfly Beach during morning low tide.",
-        googleMapsUrl: "https://maps.google.com/?q=Palolem+Beach+Goa",
-        lat: 15.0099,
-        lng: 74.0232,
-        durationHours: 3
+        "id": "gok-1",
+        "name": "Om Beach & Cliffside Trail",
+        "category": "Beaches & Nature",
+        "rating": 4.8,
+        "reviewCount": "62k+",
+        "description": "Naturally shaped like the sacred Hindu symbol Om (ॐ), featuring gentle surf, rugged laterite rock pools, beach shacks, and dolphins offshore.",
+        "bestTime": "7:00 AM – 11:00 AM & 4:30 PM – 6:30 PM (Sunset)",
+        "timing": "Open daily",
+        "entryFee": "Free",
+        "approxCost": 200,
+        "address": "Om Beach, Gokarna, Uttara Kannada 581326",
+        "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Natural Om Symbol Shape",
+          "Cliff Trek to Half Moon Beach",
+          "Namaste Cafe Sunset"
+        ],
+        "tags": [
+          "Beach",
+          "Coast",
+          "Sunset",
+          "Must Visit"
+        ],
+        "insiderTip": "Trek the cliff trail from Om Beach to Half Moon Beach and Paradise Beach for secluded secret coves.",
+        "googleMapsUrl": "https://maps.google.com/?q=Om+Beach+Gokarna",
+        "lat": 14.5186,
+        "lng": 74.3156,
+        "durationHours": 3
       }
     ]
   },
-
-  "Varanasi": {
-    name: "Varanasi",
-    stateOrCountry: "Uttar Pradesh, India",
-    tagline: "The Eternal City of Light & Sacred Ghats",
-    badge: "Spiritual & Ancient",
-    description: "One of the world's oldest continuously inhabited cities, renowned for 84 holy Ganga ghats, evening Ganga Aarti, silk weavers, and Banarasi cuisine.",
-    weather: "Pleasant & Clear",
-    temp: "26°C",
-    bestSeason: "October – March",
-    language: "Hindi, Bhojpuri, English",
-    avgBudget: "₹1,200 – ₹2,200 / day",
-    lat: 25.3176,
-    lng: 82.9739,
-    famousFood: ["Kachori Sabzi & Jalebi at Ram Bhandar", "Blue Lassi Shop Chowk", "Banarasi Tamatar Chaat at Kashi Chaat", "Malaiyo Dessert", "Banarasi Paan"],
-    emergencyContacts: [
-      { name: "Varanasi Tourist Police", number: "1363 / 0542-2508101", type: "Tourist Help" },
-      { name: "Police Emergency", number: "100 / 112", type: "Police" },
-      { name: "Sir Sunderlal Hospital (BHU)", number: "0542-2307500", type: "Hospital" },
-      { name: "Emergency Ambulance", number: "108", type: "Ambulance" }
+  "Chikmagalur": {
+    "name": "Chikmagalur",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Coffee Cradle & Mullayanagiri High Peak",
+    "badge": "Western Ghats",
+    "description": "The historic birthplace of coffee in India where Baba Budan first planted beans. Home to Mullayanagiri (Karnataka highest summit) and misty jungle homestays.",
+    "weather": "Crisp & Mountain Breeze",
+    "temp": "21°C",
+    "bestSeason": "September – April",
+    "language": "Kannada, English",
+    "avgBudget": "₹2,000 – ₹4,000 / day",
+    "lat": 13.3161,
+    "lng": 75.772,
+    "famousFood": [
+      "Authentic Arabica Filter Coffee",
+      "Akki Rotti with Chutney",
+      "Malnad Style Chicken Sukka",
+      "Pathrode Colocasia Rolls",
+      "Jackfruit Payasam"
     ],
-    places: [
+    "emergencyContacts": [
       {
-        id: "vns-1",
-        name: "Dashashwamedh Ghat & Evening Ganga Aarti",
-        category: "Cultural & Spiritual",
-        rating: 4.9,
-        reviewCount: "90k+",
-        description: "The most sacred and grandest ghat along the Ganges, renowned for the synchronized daily sunset Maha Aarti performed by priests with multi-tiered brass oil lamps.",
-        bestTime: "5:30 PM – 7:30 PM (Evening Aarti ceremony starts at dusk)",
-        timing: "Open 24 Hours (Aarti: ~6:45 PM)",
-        entryFee: "Free on ghat steps (₹150 – ₹300 for boat seat)",
-        approxCost: 200,
-        address: "Dashashwamedh Ghat Road, Varanasi",
-        imageUrl: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Sync brass lamp aarti", "Chanting of Vedic mantras", "Ganga floating clay lamps (diyas)"],
-        tags: ["Spiritual", "Must Visit", "Iconic", "Ghats"],
-        insiderTip: "Book a wooden hand-rowed boat at 5:15 PM from Assi or Dashashwamedh to watch the Aarti illuminated from the river surface with reflections.",
-        googleMapsUrl: "https://maps.google.com/?q=Dashashwamedh+Ghat+Varanasi",
-        lat: 25.3076,
-        lng: 83.0107,
-        durationHours: 2.5
+        "name": "Chikmagalur Town Police",
+        "number": "112 / 08262-230401",
+        "type": "Police"
       },
       {
-        id: "vns-2",
-        name: "Sunrise Boat Ride along the Ghats",
-        category: "Nature & Parks",
-        rating: 4.9,
-        reviewCount: "60k+",
-        description: "Unforgettable dawn boat cruise gliding past all 84 historical ghats from Assi to Manikarnika while morning sunlight bathes the temple facades.",
-        bestTime: "5:30 AM – 7:30 AM (Sunrise & Subah-e-Banaras)",
-        timing: "5:15 AM – 8:30 AM",
-        entryFee: "₹300 – ₹600 per boat (shared/private)",
-        approxCost: 400,
-        address: "Assi Ghat to Manikarnika Ghat, Varanasi",
-        imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Subah-e-Banaras morning chants", "Golden sunrise on ancient palaces", "Bird feeding on the river"],
-        tags: ["Sunrise", "Peaceful", "Ghats", "Photography"],
-        insiderTip: "Start at Assi Ghat at 5:30 AM for morning classical Shehnai music, then row upstream past Harishchandra and Scindia ghats.",
-        googleMapsUrl: "https://maps.google.com/?q=Assi+Ghat+Varanasi",
-        lat: 25.2954,
-        lng: 83.0069,
-        durationHours: 2
+        "name": "District Hospital Chikmagalur",
+        "number": "08262-230555",
+        "type": "Hospital"
       },
       {
-        id: "vns-3",
-        name: "Kashi Vishwanath Corridor & Temple",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "85k+",
-        description: "Golden Temple dedicated to Lord Shiva housing one of the 12 sacred Jyotirlingas, newly unified to the riverbanks via the grand stone corridor.",
-        bestTime: "6:00 AM – 9:00 AM (Morning Mangala or Sugam darshan)",
-        timing: "4:00 AM – 11:00 PM",
-        entryFee: "Free Entry (Sugam VIP ticket ₹300)",
-        approxCost: 0,
-        address: "Lahori Tola, Varanasi, UP 221001",
-        imageUrl: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Gold-plated temple spires", "Direct river promenade connection", "Ancient Jyotirlinga"],
-        tags: ["Spiritual", "Jyotirlinga", "Sacred", "Heritage"],
-        insiderTip: "Mobile phones, leather belts, and bags are prohibited inside. Leave them safely at official lockers at Gate 4 near Gyanvapi.",
-        googleMapsUrl: "https://maps.google.com/?q=Kashi+Vishwanath+Temple+Varanasi",
-        lat: 25.3109,
-        lng: 83.0107,
-        durationHours: 2
-      },
+        "name": "Forest Range Control",
+        "number": "1926",
+        "type": "Forest"
+      }
+    ],
+    "places": [
       {
-        id: "vns-4",
-        name: "Kashi Chaat Bhandar & Blue Lassi",
-        category: "Food & Markets",
-        rating: 4.7,
-        reviewCount: "35k+",
-        description: "Famous local culinary haven serving mouthwatering hot Tamatar Chaat (mashed spiced tomatoes with cashews) and hand-churned fruit lassis.",
-        bestTime: "4:30 PM – 9:00 PM",
-        timing: "3:30 PM – 10:30 PM",
-        entryFee: "₹80 – ₹200 for food",
-        approxCost: 150,
-        address: "Girja Ghar Crossing, Godowlia, Varanasi",
-        imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Signature Tamatar Chaat", "Dahi Puri in Clay Kulhads", "Pomegranate Lassi"],
-        tags: ["Street Food", "Iconic", "Culinary Legend"],
-        insiderTip: "Ask for the Tamatar Chaat with extra clarified butter (desi ghee) tadka, followed by a chilled Rabdi Malai kulhad.",
-        googleMapsUrl: "https://maps.google.com/?q=Kashi+Chaat+Bhandar+Varanasi",
-        lat: 25.3090,
-        lng: 83.0065,
-        durationHours: 1
+        "id": "chk-1",
+        "name": "Mullayanagiri Peak & Shiva Shrine",
+        "category": "Adventure & Trekking",
+        "rating": 4.9,
+        "reviewCount": "58k+",
+        "description": "The highest summit in Karnataka (1,930 m) offering breathless views of rolling emerald Ghat hills and a tranquil sage shrine at the top.",
+        "bestTime": "6:00 AM – 9:30 AM (Catching the cloud sea)",
+        "timing": "6:00 AM – 6:00 PM",
+        "entryFee": "Free",
+        "approxCost": 100,
+        "address": "Mullayanagiri, Baba Budangiri Range, Karnataka 577101",
+        "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Highest Point in Karnataka (1,930 m)",
+          "Sea of Clouds View",
+          "Hilltop Shiva Shrine"
+        ],
+        "tags": [
+          "Peak",
+          "Trek",
+          "Adventure",
+          "Must Visit"
+        ],
+        "insiderTip": "Climb the final 500 stone steps early in the morning when the peak floats above the clouds.",
+        "googleMapsUrl": "https://maps.google.com/?q=Mullayanagiri+Peak+Chikmagalur",
+        "lat": 13.3912,
+        "lng": 75.7214,
+        "durationHours": 3
       }
     ]
   },
-
-  "Manali": {
-    name: "Manali",
-    stateOrCountry: "Himachal Pradesh, India",
-    tagline: "Snow Peaks, Pine Forests & Riverside Cafés",
-    badge: "Himalayas & Adventure",
-    description: "Himalayan valley resort town on the Beas river. Gateway to Solang Valley adventures, Atal Tunnel, Rohtang Pass, and rustic wooden Old Manali bistros.",
-    weather: "Crisp & Mountain Air",
-    temp: "15°C",
-    bestSeason: "March – June & September – December",
-    language: "Hindi, Pahari, English",
-    avgBudget: "₹2,200 – ₹4,000 / day",
-    lat: 32.2432,
-    lng: 77.1892,
-    famousFood: ["Himachali Siddu with Ghee & Chutney", "Trout Fish at Johnson's Cafe", "Tibetan Thukpa & Momos", "Wood-fired Pizza at Cafe 1947", "Fresh Apple Cider"],
-    emergencyContacts: [
-      { name: "Manali Police Station", number: "01902-252322 / 112", type: "Police" },
-      { name: "Himachal Tourism Helpline", number: "1800-180-8077", type: "Tourist Help" },
-      { name: "Civil Hospital Manali", number: "01902-253385", type: "Hospital" },
-      { name: "Mountain Rescue / Disaster Control", number: "1077", type: "Rescue" }
+  "Badami": {
+    "name": "Badami",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Chalukya Rock-Cut Cave Temples & Agastya Lake",
+    "badge": "Chalukyan Architecture",
+    "description": "Capital of the Early Chalukya dynasty, famed for four red-sandstone rock-cut cave temples overlooking the emerald waters of Agastya Lake and Bhutanatha shrines.",
+    "weather": "Warm & Dry",
+    "temp": "30°C",
+    "bestSeason": "October – March",
+    "language": "Kannada, English",
+    "avgBudget": "₹1,400 – ₹2,800 / day",
+    "lat": 15.9187,
+    "lng": 75.6766,
+    "famousFood": [
+      "North Karnataka Jolada Rotti Oota",
+      "Shenga Chutney (Peanut)",
+      "Girmit Street Snack",
+      "Badami Peda",
+      "Yennegai"
     ],
-    places: [
+    "emergencyContacts": [
       {
-        id: "man-1",
-        name: "Solang Valley & Paragliding",
-        category: "Nature & Parks",
-        rating: 4.7,
-        reviewCount: "50k+",
-        description: "High altitude adventure haven flanked by snow-capped peaks, offering tandem paragliding, zorbing, ATV quad biking, and winter snow ski slopes.",
-        bestTime: "9:00 AM – 2:00 PM (Clear morning winds for flights)",
-        timing: "9:00 AM – 6:00 PM",
-        entryFee: "Free valley entry (₹1,500 – ₹3,000 for paragliding)",
-        approxCost: 2000,
-        address: "Solang Valley, 14 km from Manali, HP",
-        imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Tandem Paragliding", "Ropeway Gondola to Anjani Mahadev", "Snow sports in winter"],
-        tags: ["Adventure", "Snow", "Mountain Views", "Must Visit"],
-        insiderTip: "Book your paragliding pilot through government-authorized counters. Take the cable car gondola to the ridge top for breathtaking Pir Panjal views.",
-        googleMapsUrl: "https://maps.google.com/?q=Solang+Valley+Manali",
-        lat: 32.3167,
-        lng: 77.1583,
-        durationHours: 3.5
+        "name": "Badami Police Station",
+        "number": "112 / 08357-220033",
+        "type": "Police"
       },
       {
-        id: "man-2",
-        name: "Hadimba Devi Temple & Cedar Forest",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "42k+",
-        description: "Unique 1553 AD pagoda-style wooden temple with carved wooden antlers and multi-tiered timber roofs nestled amidst towering giant deodar cedar forests.",
-        bestTime: "8:00 AM – 10:30 AM (Morning mist between cedar trees)",
-        timing: "8:00 AM – 6:00 PM",
-        entryFee: "Free Entry",
-        approxCost: 0,
-        address: "Hadimba Temple Rd, Old Manali, HP 175131",
-        imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
-        highlights: ["4-Tier Pagoda Woodwork", "Ancient Deodar Cedar Grove", "Yak photography spot"],
-        tags: ["Heritage", "Forest", "Peaceful", "Spiritual"],
-        insiderTip: "Walk behind the temple along the tranquil forest trails through the Dhungri Van Vihar sanctuary to escape commercial stalls.",
-        googleMapsUrl: "https://maps.google.com/?q=Hadimba+Devi+Temple+Manali",
-        lat: 32.2483,
-        lng: 77.1812,
-        durationHours: 1.5
-      },
+        "name": "Community Health Centre Badami",
+        "number": "08357-220120",
+        "type": "Hospital"
+      }
+    ],
+    "places": [
       {
-        id: "man-3",
-        name: "Old Manali Riverside & Cafe 1947",
-        category: "Nightlife & Views",
-        rating: 4.7,
-        reviewCount: "30k+",
-        description: "Bohemian village across Manalsu stream with live acoustic music, wooden verandas overlooking rushing mountain waters, and wood-fired pizzas.",
-        bestTime: "1:00 PM (Sunny riverside lunch) or 7:30 PM (Live music)",
-        timing: "11:00 AM – 11:30 PM",
-        entryFee: "₹400 – ₹900 per meal",
-        approxCost: 600,
-        address: "Near Old Manali Bridge, Old Manali, HP",
-        imageUrl: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Riverside outdoor deck", "Live acoustic indie performances", "Artisan Wood-fired Pizzas"],
-        tags: ["Cafes", "Music", "Riverside", "Chill"],
-        insiderTip: "Request an outdoor bridge-side table directly above the gushing river. Try their thin-crust quattro formaggi pizza and mountain mint tea.",
-        googleMapsUrl: "https://maps.google.com/?q=Cafe+1947+Old+Manali",
-        lat: 32.2536,
-        lng: 77.1802,
-        durationHours: 2
+        "id": "bad-1",
+        "name": "Badami Rock-Cut Cave Temples",
+        "category": "Heritage & Archaeology",
+        "rating": 4.8,
+        "reviewCount": "42k+",
+        "description": "6th-century rock-cut monuments carved out of fiery red cliff sandstone, depicting Nataraja with 81 dancing poses, Vishnu, and Jain tirthankaras.",
+        "bestTime": "8:30 AM – 11:00 AM & 3:30 PM – 5:30 PM",
+        "timing": "9:00 AM – 5:30 PM",
+        "entryFee": "₹25 (ASI entry ticket)",
+        "approxCost": 50,
+        "address": "Badami, Bagalkot District, Karnataka 587201",
+        "imageUrl": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "18-Armed Dancing Nataraja",
+          "Cave 3 Maha Vishnu Relief",
+          "Agastya Lake Panorama"
+        ],
+        "tags": [
+          "Caves",
+          "Chalukya",
+          "Rock Cut",
+          "Must Visit"
+        ],
+        "insiderTip": "Cross around Agastya Lake to the Bhutanatha temples during sunset for the iconic postcard reflection.",
+        "googleMapsUrl": "https://maps.google.com/?q=Badami+Cave+Temples",
+        "lat": 15.9187,
+        "lng": 75.6766,
+        "durationHours": 2.5
       }
     ]
   },
-
-  "Udaipur": {
-    name: "Udaipur",
-    stateOrCountry: "Rajasthan, India",
-    tagline: "The City of Lakes & Venice of the East",
-    badge: "Lakes & Royalty",
-    description: "Romantic lake city surrounded by the Aravalli Hills, famous for marble palaces, serene Lake Pichola boat cruises, and rooftop Mewari feasts.",
-    weather: "Sunny & Pleasant",
-    temp: "27°C",
-    bestSeason: "October – March",
-    language: "Hindi, Mewari, English",
-    avgBudget: "₹2,200 – ₹4,000 / day",
-    lat: 24.5854,
-    lng: 73.7125,
-    famousFood: ["Dal Baati Churma at Krishna Dal Bati", "Gatte ki Sabzi", "Mirchi Vada at Jagdish Chowk", "Lal Maas at Ambrai", "Kullad Coffee at Fatehsagar"],
-    emergencyContacts: [
-      { name: "Udaipur Tourist Police", number: "1363 / 0294-2411535", type: "Tourist Help" },
-      { name: "City Police Control", number: "100 / 112", type: "Police" },
-      { name: "Maharana Bhupal Hospital (MB)", number: "0294-2528811", type: "Hospital" },
-      { name: "Emergency Ambulance", number: "108", type: "Ambulance" }
+  "Udupi": {
+    "name": "Udupi",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Krishna Mutt, Coastal Cuisine & Malpe Beach",
+    "badge": "Coastal & Culinary",
+    "description": "Renowned pilgrimage and culinary hub famous for the 13th-century Sri Krishna Mutt, Kanakana Kindi window, St. Mary basalt islands, and classic Udupi vegetarian food.",
+    "weather": "Breezy & Warm",
+    "temp": "27°C",
+    "bestSeason": "October – March",
+    "language": "Kannada, Tulu, English",
+    "avgBudget": "₹1,500 – ₹3,000 / day",
+    "lat": 13.3409,
+    "lng": 74.7421,
+    "famousFood": [
+      "Authentic Masala Dosa with Coconut Chutney",
+      "Goli Baje (Mangalore Bajji)",
+      "Kottige",
+      "Patrode",
+      "Banana Halwa"
     ],
-    places: [
+    "emergencyContacts": [
       {
-        id: "udr-1",
-        name: "City Palace Complex",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "58k+",
-        description: "Rajasthan's largest royal palace complex overlooking Lake Pichola, featuring mirror mosaics, peacock courtyards, and royal Mewar weaponry.",
-        bestTime: "9:00 AM – 12:00 PM (Best natural courtyard lighting)",
-        timing: "9:30 AM – 5:30 PM",
-        entryFee: "₹300 (Adults), ₹100 (Kids)",
-        approxCost: 300,
-        address: "Old City, Udaipur, Rajasthan 313001",
-        imageUrl: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Mor Chowk (Peacock Courtyard)", "Sheesh Mahal Mirrors", "Lake Pichola balcony views"],
-        tags: ["Royal", "Palace", "Architecture", "Must Visit"],
-        insiderTip: "Get the combined Palace + Boat ticket at the Badi Pol counter to avoid a second queue at the jetty.",
-        googleMapsUrl: "https://maps.google.com/?q=City+Palace+Udaipur",
-        lat: 24.5764,
-        lng: 73.6835,
-        durationHours: 3
+        "name": "Udupi Town Police",
+        "number": "112 / 0820-2520444",
+        "type": "Police"
       },
       {
-        id: "udr-2",
-        name: "Lake Pichola Sunset Boat Cruise",
-        category: "Nightlife & Views",
-        rating: 4.9,
-        reviewCount: "45k+",
-        description: "Magical evening cruise on Pichola's shimmering waters, sailing past the floating Taj Lake Palace and Jag Mandir island palace under the golden sunset.",
-        bestTime: "5:00 PM – 6:30 PM (Sunset golden hour slot)",
-        timing: "10:00 AM – 6:30 PM",
-        entryFee: "₹500 (Regular) / ₹800 (Sunset special with Jagmandir stop)",
-        approxCost: 800,
-        address: "Rameshwar Ghat Jetty, City Palace, Udaipur",
-        imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Taj Lake Palace views", "Jag Mandir Island stopover", "Aravalli range sunset reflections"],
-        tags: ["Romantic", "Sunset", "Boat Cruise", "Lake View"],
-        insiderTip: "Book the 5:15 PM sunset slot. You get 30 minutes to stroll Jag Mandir island's marble elephant courtyard while the sunset glows behind the mountains.",
-        googleMapsUrl: "https://maps.google.com/?q=Lake+Pichola+Boat+Cruise+Udaipur",
-        lat: 24.5722,
-        lng: 73.6811,
-        durationHours: 1.5
+        "name": "KMC Hospital Manipal",
+        "number": "0820-2922761",
+        "type": "Hospital"
+      }
+    ],
+    "places": [
+      {
+        "id": "udp-1",
+        "name": "Sri Krishna Mutt & Kanakana Kindi",
+        "category": "Spiritual & Heritage",
+        "rating": 4.9,
+        "reviewCount": "75k+",
+        "description": "Venerated 13th-century monastery established by Saint Madhvacharya where Lord Krishna is worshipped exclusively through a silver nine-holed window.",
+        "bestTime": "6:30 AM – 9:00 AM & 5:00 PM – 8:00 PM",
+        "timing": "5:30 AM – 9:30 PM daily",
+        "entryFee": "Free (Annaprasada lunch served daily)",
+        "approxCost": 0,
+        "address": "Car Street, Udupi, Karnataka 576101",
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Kanakana Kindi Silver Window",
+          "Golden Chariot",
+          "Free Sacred Temple Dining"
+        ],
+        "tags": [
+          "Krishna",
+          "Temple",
+          "Pilgrimage",
+          "Must Visit"
+        ],
+        "insiderTip": "Partake in the serene free Annaprasada lunch served on plantain leaves in the grand dining hall at 12:00 PM.",
+        "googleMapsUrl": "https://maps.google.com/?q=Udupi+Sri+Krishna+Matha",
+        "lat": 13.3409,
+        "lng": 74.7521,
+        "durationHours": 2
       }
     ]
   },
-
-  "Delhi": {
-    name: "Delhi",
-    stateOrCountry: "Delhi NCR, India",
-    tagline: "The Historic & Vibrant Heart of India",
-    badge: "Heritage & Capital",
-    description: "India's historic capital blending Mughal fortresses, Lutyens' colonial avenues, vibrant Chandni Chowk street food lanes, and modern art.",
-    weather: "Clear & Pleasant",
-    temp: "26°C",
-    bestSeason: "October – March",
-    language: "Hindi, English, Punjabi, Urdu",
-    avgBudget: "₹2,000 – ₹4,000 / day",
-    lat: 28.6139,
-    lng: 77.2090,
-    famousFood: ["Chole Bhature at Sita Ram Diwan Chand", "Paranthe at Paranthe Wali Gali", "Butter Chicken at Moti Mahal", "Daulat ki Chaat Chandni Chowk", "Kathi Rolls Khan Market"],
-    emergencyContacts: [
-      { name: "Delhi Tourist Police", number: "1363 / 011-23365330", type: "Tourist Help" },
-      { name: "Police Emergency", number: "112", type: "Police" },
-      { name: "AIIMS New Delhi", number: "011-26588500", type: "Hospital" },
-      { name: "Ambulance", number: "102 / 108", type: "Ambulance" }
+  "Mangalore": {
+    "name": "Mangalore (Mangaluru)",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Port City, Ghee Roast & Tannirbhavi Beach",
+    "badge": "Coastal Hub",
+    "description": "Premier port city of Karnataka, famed for Kundapura Chicken Ghee Roast, fresh seafood, Panambur surf festivals, and St. Aloysius chapel Italian frescoes.",
+    "weather": "Warm Coastal Breeze",
+    "temp": "28°C",
+    "bestSeason": "October – March",
+    "language": "Tulu, Kannada, Konkani, English",
+    "avgBudget": "₹1,800 – ₹3,500 / day",
+    "lat": 12.9141,
+    "lng": 74.856,
+    "famousFood": [
+      "Chicken Ghee Roast at Maharaja",
+      "Kori Rotti with Coconut Gravy",
+      "Anjal (Kingfish) Tawa Fry",
+      "Gadbad Ice Cream at Pabbas",
+      "Neer Dosa"
     ],
-    places: [
+    "emergencyContacts": [
       {
-        id: "del-1",
-        name: "Qutub Minar & Mehrauli Archaeological Park",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "75k+",
-        description: "73-meter fluted red sandstone victory tower built in 1192, surrounded by ancient 4th-century rust-resistant Iron Pillar and Indo-Islamic ruins.",
-        bestTime: "8:30 AM – 11:00 AM (Soft morning lighting on stone calligraphy)",
-        timing: "7:00 AM – 9:00 PM (Night illuminated minar)",
-        entryFee: "₹50 (Indians), ₹600 (Foreigners)",
-        approxCost: 50,
-        address: "Mehrauli, New Delhi 110030",
-        imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
-        highlights: ["73m Sandstone Minaret", "4th Century Iron Pillar", "Alai Darwaza"],
-        tags: ["UNESCO", "Architecture", "Ancient", "Must Visit"],
-        insiderTip: "Take the Delhi Metro directly to Qutab Minar station. Walk into the adjacent Mehrauli Archaeological Park to discover Jamali Kamali tomb and Rajon ki Baoli stepwell.",
-        googleMapsUrl: "https://maps.google.com/?q=Qutub+Minar+Delhi",
-        lat: 28.5245,
-        lng: 77.1855,
-        durationHours: 2.5
+        "name": "Mangaluru City Police",
+        "number": "112 / 0824-2220800",
+        "type": "Police"
       },
       {
-        id: "del-2",
-        name: "Humayun's Tomb & Sunder Nursery",
-        category: "Heritage & History",
-        rating: 4.8,
-        reviewCount: "68k+",
-        description: "Magnificent 16th-century Persian garden-tomb of Emperor Humayun that inspired the Taj Mahal, flanked by 90-acre heritage botanical park Sunder Nursery.",
-        bestTime: "3:30 PM – 6:00 PM (Golden hour photography)",
-        timing: "6:00 AM – 6:00 PM",
-        entryFee: "₹40 (Indians), ₹600 (Foreigners)",
-        approxCost: 40,
-        address: "Mathura Road, Nizamuddin East, New Delhi",
-        imageUrl: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Charbagh Persian Gardens", "White Marble Dome", "Adjacent Sunder Nursery Cafes"],
-        tags: ["UNESCO", "Mughal", "Architecture", "Garden"],
-        insiderTip: "Spend 2 hours at the tomb, then cross the gate into Sunder Nursery to enjoy lake views, artisan coffee, and weekend farmers' markets.",
-        googleMapsUrl: "https://maps.google.com/?q=Humayun+Tomb+Delhi",
-        lat: 28.5933,
-        lng: 77.2507,
-        durationHours: 3
+        "name": "Father Muller Hospital",
+        "number": "0824-2238000",
+        "type": "Hospital"
+      }
+    ],
+    "places": [
+      {
+        "id": "mng-1",
+        "name": "Panambur Beach & Tannirbhavi Seaside",
+        "category": "Beaches & Recreation",
+        "rating": 4.7,
+        "reviewCount": "48k+",
+        "description": "Vibrant golden sand shoreline with safe lifeguard patrols, jet ski rides, coastal food shacks, and romantic sunset views over Arabian Sea freighters.",
+        "bestTime": "4:30 PM – 7:00 PM",
+        "timing": "6:00 AM – 7:30 PM",
+        "entryFee": "Free",
+        "approxCost": 150,
+        "address": "Panambur, Mangaluru, Karnataka 575010",
+        "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Golden Sunset Views",
+          "Jet Ski & Water Sports",
+          "Fresh Fish Fry Shacks"
+        ],
+        "tags": [
+          "Beach",
+          "Coast",
+          "Sunset"
+        ],
+        "insiderTip": "Visit Pabbas Ice Cream afterwards on MG Road for their legendary multi-layer Gadbad sundae.",
+        "googleMapsUrl": "https://maps.google.com/?q=Panambur+Beach+Mangalore",
+        "lat": 12.9538,
+        "lng": 74.8037,
+        "durationHours": 2.5
+      }
+    ]
+  },
+  "Dandeli": {
+    "name": "Dandeli",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Kali River Rafting & Hornbill Jungle Reserve",
+    "badge": "Adventure Capital",
+    "description": "Ultimate white-water rafting haven nestled along the Kali river in the dense Western Ghats, brimming with hornbills, black panthers, and jungle canopy stays.",
+    "weather": "Cool & Rainforest Canopy",
+    "temp": "24°C",
+    "bestSeason": "October – May",
+    "language": "Kannada, English",
+    "avgBudget": "₹2,500 – ₹4,500 / day",
+    "lat": 15.2417,
+    "lng": 74.6294,
+    "famousFood": [
+      "Malenadu Jungle Thali",
+      "Bamboo Shoot Stir Fry",
+      "Desi Ghee Rice",
+      "Local River Fish Curry"
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Dandeli Police Station",
+        "number": "112 / 08284-231233",
+        "type": "Police"
       },
       {
-        id: "del-3",
-        name: "Chandni Chowk & Jama Masjid Food Walk",
-        category: "Food & Markets",
-        rating: 4.7,
-        reviewCount: "50k+",
-        description: "Bustling 17th-century Shahjahanabad bazaar filled with spice markets, cycle rickshaw rides, hot Jalebi stalls, and views of India's largest mosque.",
-        bestTime: "4:00 PM – 9:00 PM (Evening street food and lights)",
-        timing: "10:30 AM – 10:00 PM (Closed Sundays for wholesale shops, food open daily)",
-        entryFee: "Free to explore (₹300 – ₹700 for food tour)",
-        approxCost: 450,
-        address: "Old Delhi, Chandni Chowk, Delhi 110006",
-        imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
-        highlights: ["Khari Baoli Spice Market", "Old Famous Jalebi Wala", "Jama Masjid Minaret view"],
-        tags: ["Street Food", "Bazaar", "Old Delhi", "Culture"],
-        insiderTip: "Take an electric rickshaw to Khari Baoli (Asia's largest spice market) and climb to the 4th floor rooftop of Gadodia Market for a bird's-eye view of Old Delhi.",
-        googleMapsUrl: "https://maps.google.com/?q=Chandni+Chowk+Delhi",
-        lat: 28.6506,
-        lng: 77.2303,
-        durationHours: 3
+        "name": "Dandeli Forest Office",
+        "number": "1926",
+        "type": "Forest"
+      }
+    ],
+    "places": [
+      {
+        "id": "dan-1",
+        "name": "Kali River White Water Rafting",
+        "category": "Adventure & Water Sports",
+        "rating": 4.8,
+        "reviewCount": "34k+",
+        "description": "Exhilarating 9 km Grade 2 and 3 rapids through pristine rainforest gorges with professional river instructors.",
+        "bestTime": "8:30 AM – 1:00 PM",
+        "timing": "8:00 AM – 4:00 PM",
+        "entryFee": "₹1,200 – ₹1,800 / person",
+        "approxCost": 1500,
+        "address": "Kali River Banks, Dandeli, Karnataka 581325",
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Grade 3 Rapids",
+          "Rainforest River Gorges",
+          "Natural Jacuzzi Rapids"
+        ],
+        "tags": [
+          "Rafting",
+          "Adventure",
+          "River",
+          "Must Visit"
+        ],
+        "insiderTip": "Rafting depends on dam water discharge timing; book morning slots for maximum rapid volume.",
+        "googleMapsUrl": "https://maps.google.com/?q=Kali+River+Rafting+Dandeli",
+        "lat": 15.2417,
+        "lng": 74.6294,
+        "durationHours": 3.5
+      }
+    ]
+  },
+  "Kabini": {
+    "name": "Kabini",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Nagarhole Tiger Safari & Kaveri River Lodges",
+    "badge": "Wildlife Sanctuary",
+    "description": "Premier wildlife reserve in the Nilgiri Biosphere, famous for frequent leopard and Bengal tiger sightings, Asian elephant herds, and luxury river safaris.",
+    "weather": "Gentle & Forest Breezes",
+    "temp": "23°C",
+    "bestSeason": "October – May",
+    "language": "Kannada, English",
+    "avgBudget": "₹4,000 – ₹9,000 / day",
+    "lat": 11.95,
+    "lng": 76.25,
+    "famousFood": [
+      "South Karnataka Homestyle Feasts",
+      "Kori Gassi with Steamed Rice",
+      "Filter Coffee & Jackfruit Chips"
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Nagarhole Wildlife Control",
+        "number": "1926",
+        "type": "Forest / Rescue"
+      },
+      {
+        "name": "HD Kote Police Station",
+        "number": "112 / 08228-255333",
+        "type": "Police"
+      }
+    ],
+    "places": [
+      {
+        "id": "kab-1",
+        "name": "Nagarhole Boat Safari on Kabini Reservoir",
+        "category": "Wildlife & Nature",
+        "rating": 4.9,
+        "reviewCount": "28k+",
+        "description": "Cruising the tranquil Kabini backwaters where wild elephants gather on banks, marsh crocodiles bask, and black panthers are occasionally spotted.",
+        "bestTime": "6:00 AM – 9:00 AM & 3:30 PM – 6:30 PM",
+        "timing": "Morning and Evening Jungle Safari slots",
+        "entryFee": "₹1,500 – ₹2,500 / person",
+        "approxCost": 2000,
+        "address": "Kabini Reservoir, Nagarhole Tiger Reserve, Karnataka 571114",
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Wild Asian Elephant Herds",
+          "Osprey & Water Birds",
+          "Sunset Backwater Reflections"
+        ],
+        "tags": [
+          "Safari",
+          "Wildlife",
+          "Elephants",
+          "Tigers"
+        ],
+        "insiderTip": "Book forest department vehicle and boat safaris at least 15 days ahead through Karnataka Eco-Tourism portal.",
+        "googleMapsUrl": "https://maps.google.com/?q=Kabini+River+Lodge",
+        "lat": 11.95,
+        "lng": 76.25,
+        "durationHours": 3
+      }
+    ]
+  },
+  "Bandipur": {
+    "name": "Bandipur",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Project Tiger Reserve & Chital Deer Meadows",
+    "badge": "National Park",
+    "description": "Sprawling deciduous sanctuary along the foothills of the Western Ghats, housing high densities of Bengal tigers, Indian gaurs, and peacocks.",
+    "weather": "Warm Forest Air",
+    "temp": "25°C",
+    "bestSeason": "October – May",
+    "language": "Kannada, English",
+    "avgBudget": "₹2,500 – ₹6,000 / day",
+    "lat": 11.6664,
+    "lng": 76.6291,
+    "famousFood": [
+      "Mysore Style Thali",
+      "Milagu Rasam & Rice",
+      "Tender Coconut"
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Bandipur Forest Reception",
+        "number": "08229-236043 / 1926",
+        "type": "Forest"
+      },
+      {
+        "name": "Gundlupet Police",
+        "number": "112",
+        "type": "Police"
+      }
+    ],
+    "places": [
+      {
+        "id": "ban-1",
+        "name": "Bandipur Open Jeep Jungle Safari",
+        "category": "Wildlife & Safari",
+        "rating": 4.8,
+        "reviewCount": "38k+",
+        "description": "Open-top 4x4 forest department safari navigating deep inside the tiger reserve tracks under guided naturalists.",
+        "bestTime": "6:15 AM – 9:00 AM & 3:30 PM – 6:00 PM",
+        "timing": "Scheduled slots only",
+        "entryFee": "₹800 – ₹2,500 / person",
+        "approxCost": 1500,
+        "address": "Bandipur National Park, Gundlupet Taluk, Karnataka 571126",
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Bengal Tigers & Leopards",
+          "Wild Indian Gaurs",
+          "Peacock Groves"
+        ],
+        "tags": [
+          "Tiger Reserve",
+          "Safari",
+          "Wildlife"
+        ],
+        "insiderTip": "The 6:15 AM morning safari offers the highest chance of seeing gaurs and predator tracks on the mud roads.",
+        "googleMapsUrl": "https://maps.google.com/?q=Bandipur+National+Park",
+        "lat": 11.6664,
+        "lng": 76.6291,
+        "durationHours": 2.5
+      }
+    ]
+  },
+  "Jog Falls": {
+    "name": "Jog Falls",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Second Highest Plunge Waterfall in India",
+    "badge": "Natural Wonder",
+    "description": "Spectacular Sharavathi river plunge drop of 253 meters (830 feet), cascading as four distinct streams named Raja, Roarer, Rocket, and Rani.",
+    "weather": "Misty & Humid",
+    "temp": "22°C",
+    "bestSeason": "July – December",
+    "language": "Kannada, English",
+    "avgBudget": "₹1,200 – ₹2,500 / day",
+    "lat": 14.2285,
+    "lng": 74.8124,
+    "famousFood": [
+      "Malnad Jackfruit Chips",
+      "Mirchi Bajji & Chai",
+      "Jolada Rotti Oota"
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Jog Falls Police Outpost",
+        "number": "112 / 08183-258222",
+        "type": "Police"
+      },
+      {
+        "name": "Sagar Taluk Hospital",
+        "number": "08183-226102",
+        "type": "Hospital"
+      }
+    ],
+    "places": [
+      {
+        "id": "jog-1",
+        "name": "Jog Falls Raja & Rani Viewpoint",
+        "category": "Waterfalls & Views",
+        "rating": 4.8,
+        "reviewCount": "45k+",
+        "description": "Vantage amphitheatre overlooking the majestic 830-foot vertical drop of the Sharavathi river into the deep misty canyon below.",
+        "bestTime": "9:00 AM – 12:00 PM & 3:00 PM – 5:30 PM",
+        "timing": "7:30 AM – 6:30 PM",
+        "entryFee": "₹20 (Viewpoint deck)",
+        "approxCost": 50,
+        "address": "Jog Falls, Shivamogga District, Karnataka 577435",
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "830-Foot Vertical Plunge",
+          "Raja, Roarer, Rocket, Rani Streams",
+          "Canyon Rainbow Views"
+        ],
+        "tags": [
+          "Waterfall",
+          "Sharavathi",
+          "Nature",
+          "Must Visit"
+        ],
+        "insiderTip": "Visit immediately after dam water release or during monsoon months for the thundering wall of water.",
+        "googleMapsUrl": "https://maps.google.com/?q=Jog+Falls+Karnataka",
+        "lat": 14.2285,
+        "lng": 74.8124,
+        "durationHours": 2.5
+      }
+    ]
+  },
+  "Sakleshpur": {
+    "name": "Sakleshpur",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "Manjarabad Star Fort & Green Route Hills",
+    "badge": "Western Ghats",
+    "description": "Charming hill town nestled in the Bisle Ghats, known for Tipu Sultan eight-pointed star fort, cardamom hills, and scenic railway trek ridges.",
+    "weather": "Cool & Mountain Air",
+    "temp": "20°C",
+    "bestSeason": "September – April",
+    "language": "Kannada, English",
+    "avgBudget": "₹1,800 – ₹3,500 / day",
+    "lat": 12.9438,
+    "lng": 75.7865,
+    "famousFood": [
+      "Akki Rotti with Avarekalu Sambhar",
+      "Cardamom Tea",
+      "Jackfruit Halwa",
+      "Malnad Chicken Curry"
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Sakleshpur Police",
+        "number": "112 / 08173-244133",
+        "type": "Police"
+      },
+      {
+        "name": "Crawford Hospital Sakleshpur",
+        "number": "08173-244222",
+        "type": "Hospital"
+      }
+    ],
+    "places": [
+      {
+        "id": "sak-1",
+        "name": "Manjarabad Star Fort",
+        "category": "Heritage & Forts",
+        "rating": 4.7,
+        "reviewCount": "32k+",
+        "description": "Unique 8-pointed star-shaped granite fortress built in 1792 by Tipu Sultan, offering breathtaking views of the Arabian Sea horizon on clear days.",
+        "bestTime": "8:00 AM – 11:00 AM & 3:30 PM – 5:30 PM",
+        "timing": "8:00 AM – 6:00 PM",
+        "entryFee": "Free",
+        "approxCost": 0,
+        "address": "Donigal, Sakleshpur, Hassan District, Karnataka 573134",
+        "imageUrl": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Eight-Pointed Star Design",
+          "Ghat Valley Vista",
+          "Tipu Sultan Military Architecture"
+        ],
+        "tags": [
+          "Star Fort",
+          "Heritage",
+          "Viewpoint"
+        ],
+        "insiderTip": "Climb the 250 steps to the parapet to clearly see the symmetrical eight points of the star layout.",
+        "googleMapsUrl": "https://maps.google.com/?q=Manjarabad+Fort+Sakleshpur",
+        "lat": 12.9238,
+        "lng": 75.7665,
+        "durationHours": 2
+      }
+    ]
+  },
+  "Belur-Halebidu": {
+    "name": "Belur & Halebidu",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "UNESCO Hoysala Stone Temple Architecture",
+    "badge": "Hoysala Masterpieces",
+    "description": "World Heritage Hoysala temples of Chennakeshava and Hoysaleshwara (12th century), famous for soapstone carvings of dancing celestial dancers (Madanikas).",
+    "weather": "Pleasant & Sunny",
+    "temp": "26°C",
+    "bestSeason": "October – March",
+    "language": "Kannada, English",
+    "avgBudget": "₹1,500 – ₹3,000 / day",
+    "lat": 13.1623,
+    "lng": 75.8596,
+    "famousFood": [
+      "Hassan Style Veg Oota",
+      "Ragi Mudde with Bassaru",
+      "Mysore Pak",
+      "Benne Dosa"
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Belur Police",
+        "number": "112 / 08177-222233",
+        "type": "Police"
+      },
+      {
+        "name": "Hassan District Hospital",
+        "number": "08172-268022",
+        "type": "Hospital"
+      }
+    ],
+    "places": [
+      {
+        "id": "bel-1",
+        "name": "Chennakeshava Temple Belur",
+        "category": "UNESCO World Heritage",
+        "rating": 4.9,
+        "reviewCount": "52k+",
+        "description": "1117 AD Hoysala masterpiece built by King Vishnuvardhana over 103 years, renowned for intricate bracket figures (Shilabalikas) and star-shaped platform.",
+        "bestTime": "7:30 AM – 11:00 AM & 3:30 PM – 6:30 PM",
+        "timing": "7:30 AM – 7:30 PM",
+        "entryFee": "Free (Audio guides / certified guides available)",
+        "approxCost": 150,
+        "address": "Temple Rd, Belur, Hassan District, Karnataka 573115",
+        "imageUrl": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "Shilabalika Bracket Dancers",
+          "Star-Shaped Sanctum Base",
+          "Gravity Pillar"
+        ],
+        "tags": [
+          "Hoysala",
+          "UNESCO",
+          "Stone Carvings",
+          "Architecture"
+        ],
+        "insiderTip": "Hire a certified ASI guide at the entrance gate to illuminate the intricate jewelry, moving stone rings, and mirror reflections.",
+        "googleMapsUrl": "https://maps.google.com/?q=Chennakeshava+Temple+Belur",
+        "lat": 13.1623,
+        "lng": 75.8596,
+        "durationHours": 2.5
+      }
+    ]
+  },
+  "Murdeshwar": {
+    "name": "Murdeshwar",
+    "stateOrCountry": "Karnataka, India",
+    "tagline": "World Second Tallest Shiva Statue & Arabian Sea Coast",
+    "badge": "Coastal Landmark",
+    "description": "Breathtaking coastal pilgrimage town surrounded on three sides by the Arabian Sea, featuring a towering 123-foot Lord Shiva statue and 20-story Raja Gopura.",
+    "weather": "Coastal Breeze & Sunny",
+    "temp": "28°C",
+    "bestSeason": "October – March",
+    "language": "Kannada, Konkani, English",
+    "avgBudget": "₹1,500 – ₹3,200 / day",
+    "lat": 14.094,
+    "lng": 74.4899,
+    "famousFood": [
+      "Coastal Fish Meals",
+      "Mangalorean Buns",
+      "Tender Coconut",
+      "Neer Dosa with Chutney"
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Murdeshwar Police Station",
+        "number": "112 / 08385-268233",
+        "type": "Police"
+      },
+      {
+        "name": "Government Hospital Bhatkal",
+        "number": "08385-226424",
+        "type": "Hospital"
+      }
+    ],
+    "places": [
+      {
+        "id": "mur-1",
+        "name": "Giant 123-Foot Shiva Statue & Raja Gopura",
+        "category": "Spiritual & Coastal",
+        "rating": 4.8,
+        "reviewCount": "68k+",
+        "description": "Magnificent 123-foot monolithic Shiva statue on Kanduka Hill, with a high-speed elevator inside the 249-foot 20-story Raja Gopura offering coastal vistas.",
+        "bestTime": "6:30 AM – 10:30 AM & 4:30 PM – 7:30 PM (Sunset glow)",
+        "timing": "6:00 AM – 8:30 PM",
+        "entryFee": "Free (Lift to 18th floor ₹20)",
+        "approxCost": 50,
+        "address": "Kanduka Hill, Murdeshwar, Uttara Kannada 581350",
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+        "highlights": [
+          "123-Foot Lord Shiva Statue",
+          "249-Foot 20-Story Raja Gopura Lift",
+          "Arabian Sea Surrounding Panorama"
+        ],
+        "tags": [
+          "Shiva",
+          "Statue",
+          "Coast",
+          "Must Visit"
+        ],
+        "insiderTip": "Take the internal elevator to the 18th floor of the Raja Gopura for a jaw-dropping aerial view of the Shiva statue against the blue sea.",
+        "googleMapsUrl": "https://maps.google.com/?q=Murdeshwar+Temple+Karnataka",
+        "lat": 14.094,
+        "lng": 74.4899,
+        "durationHours": 2.5
       }
     ]
   }

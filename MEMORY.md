@@ -11,9 +11,9 @@
 - **Top Navigation**: Removed `Travelers` and `Inbox` from `frontend/components/shell/OpsShell.tsx` to streamline the operator console navigation bar for presentations.
 - **Problems & What-If Simulation Data**:
   - Injected 3 representative disruption scenarios into `frontend/data/demoIncidents.ts`:
-    1. **Weather**: Heavy rain alert in Solang Valley (Outdoor paragliding & rafting impacted).
-    2. **Flight Delay**: Indigo 6E-2432 delayed by 3.5 hrs (Sunset boat cruise at risk).
-    3. **Vendor Unavailable**: Rafting / cable partner closure with emergency alternative re-booking.
+    1. **Weather**: Heavy rain alert in Coorg / Western Ghats (Outdoor trekking & rafting impacted).
+    2. **Flight Delay**: Indigo 6E-2432 into BLR delayed by 3.5 hrs (Sunset tour at risk).
+    3. **Vendor Unavailable**: Rafting / guide closure with emergency alternative re-booking.
   - Linked fallback data in `useIncidentStore` and `useTripStore` so that the Incident Center (`/ops/incidents`), What-If simulator (`/ops/what-if`), and incident detail pages (`/ops/incidents/[id]`) display full impact analyses, travelers affected, cost-at-risk, and recommended fix plans even if the live database is clean.
 
 ## 3. Remote Tracking & Deployment
@@ -33,6 +33,6 @@
 - **Environment Configuration**: Provisioned via `SUPER_ADMIN_EMAIL` and `SUPER_ADMIN_PASSWORD` (min 12 characters).
 
 ## 5. Live Open-Meteo Weather Radar & Operator Demo Data
-- **Demo Seed Coverage**: 6 live tours across Manali, Goa, Leh, and Rishikesh with pre-staged open incidents in `backend/internal/seed/demo.go` for full What-If and Trip Fixer agent demoing.
+- **Demo Seed Coverage**: 6 live tours across Coorg, Hampi, Gokarna, and Dandeli with pre-staged open incidents in `backend/internal/seed/demo.go` for full What-If and Trip Fixer agent demoing.
 - **Real-Time Meteorological Radar**: Integrated live Open-Meteo feed on Operator Dashboard (`/ops`) and What-If Simulator (`/ops/what-if`), displaying live temperature, rain probability, and one-click disruption simulation.
 

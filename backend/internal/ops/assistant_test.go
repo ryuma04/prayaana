@@ -25,7 +25,7 @@ func TestWhatIfQuestionsBecomeScenarios(t *testing.T) {
 	s := testService(t)
 	var cabs domain.Vendor
 	for _, v := range s.Eng.Cat.Vendors {
-		if v.ID == "v-man-cabs" {
+		if v.ID == "v-coo-cabs" {
 			cabs = v
 		}
 	}
@@ -34,11 +34,11 @@ func TestWhatIfQuestionsBecomeScenarios(t *testing.T) {
 		kind, dest, when string
 		check            func(*engine.Scenario) bool
 	}{
-		{"What happens if heavy rain starts in Goa?", domain.IncWeather, "goa", "tomorrow", nil},
-		{"what if it rains in Manali today", domain.IncWeather, "manali", "today", nil},
-		{"What if Leh flights land 4 hours late?", domain.IncFlightDelay, "leh", "tomorrow", func(sc *engine.Scenario) bool { return sc.DelayMin != nil && *sc.DelayMin == 240 }},
-		{"What if " + cabs.Name + " can't serve Manali trips?", domain.IncVendorUnavailable, "manali", "tomorrow", func(sc *engine.Scenario) bool { return sc.VendorID == cabs.ID }},
-		{"What if the Solang ropeway is closed in Manali?", domain.IncClosure, "manali", "tomorrow", func(sc *engine.Scenario) bool { return strings.EqualFold(sc.Place, "Solang ropeway") }},
+		{"What happens if heavy rain starts in Gokarna?", domain.IncWeather, "gokarna", "tomorrow", nil},
+		{"what if it rains in Coorg today", domain.IncWeather, "coorg", "today", nil},
+		{"What if Bengaluru flights land 4 hours late?", domain.IncFlightDelay, "bengaluru", "tomorrow", func(sc *engine.Scenario) bool { return sc.DelayMin != nil && *sc.DelayMin == 240 }},
+		{"What if " + cabs.Name + " can't serve Coorg trips?", domain.IncVendorUnavailable, "coorg", "tomorrow", func(sc *engine.Scenario) bool { return sc.VendorID == cabs.ID }},
+		{"What if Abbey Falls is closed in Coorg?", domain.IncClosure, "coorg", "tomorrow", func(sc *engine.Scenario) bool { return strings.EqualFold(sc.Place, "Abbey Falls") }},
 	}
 	for _, c := range cases {
 		sc := s.scenarioFromQuestion(c.q)
@@ -53,7 +53,7 @@ func TestWhatIfQuestionsBecomeScenarios(t *testing.T) {
 			t.Errorf("%q: details wrong: %+v", c.q, sc)
 		}
 	}
-	for _, q := range []string{"Which trips are at risk?", "What if it rains?", "What if Goa is lovely?"} {
+	for _, q := range []string{"Which trips are at risk?", "What if it rains?", "What if Karnataka is lovely?"} {
 		if sc := s.scenarioFromQuestion(q); sc != nil {
 			t.Errorf("%q should not simulate, got %+v", q, sc)
 		}

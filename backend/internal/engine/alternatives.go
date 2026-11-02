@@ -181,11 +181,11 @@ func (e *Engine) PrepChecklist(t *domain.Trip) []PrepItem {
 	if has(shoesRe) {
 		list = append(list, PrepItem{"shoes", "Packing", "Closed shoes with good grip", "Required for paragliding and trails"})
 	}
-	if t.DestinationID == "leh" {
-		list = append(list, PrepItem{"acclimatise", "Health", "Rest 36 hours after landing in Leh", "Altitude is 3,500 m, acclimatise before passes"})
+	if t.DestinationID == "bandipur" || t.DestinationID == "kabini" {
+		list = append(list, PrepItem{"safari-permit", "Documents", "Government Safari Permit & ID Proof", "Mandatory check by Karnataka Forest Dept at safari gates"})
 	}
-	if t.DestinationID == "havelock" {
-		list = append(list, PrepItem{"ferry", "Documents", "Ferry tickets Port Blair ⇄ Havelock", "Printed copy is checked at the jetty"})
+	if t.DestinationID == "coorg" || t.DestinationID == "chikmagalur" {
+		list = append(list, PrepItem{"leech-socks", "Packing", "Leech socks & rain poncho", "Recommended for coffee estate walks & Western Ghats rainforest trails"})
 	}
 	if t.Prefs.Kids > 0 {
 		list = append(list, PrepItem{"kids", "Packing", "Snacks, wipes & a small backpack for the kids", "Long drives between places"})

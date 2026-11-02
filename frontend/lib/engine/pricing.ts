@@ -18,7 +18,16 @@ export const PROMOS: PromoCode[] = [
 ];
 
 /** Popular activities where a Team-up deal is currently unlocked (5% off). */
-export const TEAM_UP = new Set(["man-paragliding", "goa-grande", "ris-rafting", "leh-pangong", "hav-scuba", "udr-pichola"]);
+export const TEAM_UP = new Set([
+  "crg-abbey",
+  "hmp-virupaksha",
+  "gok-ombeach",
+  "dan-rafting",
+  "ban-safari",
+  "ckm-mullayanagiri",
+  "mys-palace",
+  "blr-food-walk",
+]);
 
 export const itemCost = (i: TripItem) => (i.status === "cancelled" ? 0 : i.unitCost * (i.costMode === "per-person" ? i.qty : 1));
 

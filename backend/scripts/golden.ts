@@ -28,20 +28,20 @@ hydrateCatalog({
 });
 
 const base = (p: Partial<TripPreferences>): TripPreferences => ({
-  destinationId: "manali", startDate: "2026-10-12", nights: 4, adults: 2, kids: 0, budgetPerPerson: 30000,
+  destinationId: "coorg", startDate: "2026-10-12", nights: 4, adults: 2, kids: 0, budgetPerPerson: 30000,
   stayType: "boutique", transport: "bus", interests: ["nature", "adventure", "food"], pace: "balanced",
-  rhythm: "early-bird", special: [], ownWords: "", fromCity: "Delhi", ...p,
+  rhythm: "early-bird", special: [], ownWords: "", fromCity: "Bengaluru", ...p,
 });
 
 const prefsList: TripPreferences[] = [
-  base({ ownWords: "Manali, 5 days, nature and adventure, great food, quiet cafés in the evening" }),
-  base({ destinationId: "goa", transport: "flight", stayType: "luxury", pace: "relaxed", interests: ["relax", "food"], budgetPerPerson: 60000 }),
-  base({ destinationId: "jaipur", transport: "train", stayType: "budget", adults: 3, kids: 1, interests: ["culture", "food"], ownWords: "vegetarian food, my mother can't walk much", special: ["Vegetarian"] }),
-  base({ destinationId: "leh", transport: "car", adults: 6, nights: 6, pace: "packed", interests: ["adventure", "nature"], budgetPerPerson: 52000, stayType: "budget" }),
-  base({ destinationId: "havelock", transport: "flight", nights: 3, interests: ["adventure", "relax"], rhythm: "night-owl", startDate: "2026-07-20" }),
-  base({ destinationId: "rishikesh", adults: 12, pace: "packed", interests: ["adventure", "social"], budgetPerPerson: 18000, stayType: "budget", nights: 3 }),
-  base({ destinationId: "alleppey", transport: "flight", pace: "relaxed", interests: ["relax", "food"], ownWords: "my knees hurt, quiet backwaters", nights: 3 }),
-  base({ destinationId: "udaipur", transport: "flight", stayType: "luxury", interests: ["luxury", "culture", "food"], budgetPerPerson: 55000, nights: 3 }),
+  base({ ownWords: "Coorg, 5 days, nature and adventure, great food, quiet cafés in the evening" }),
+  base({ destinationId: "gokarna", transport: "flight", stayType: "luxury", pace: "relaxed", interests: ["relax", "food"], budgetPerPerson: 60000 }),
+  base({ destinationId: "hampi", transport: "train", stayType: "budget", adults: 3, kids: 1, interests: ["culture", "food"], ownWords: "vegetarian food, my mother can't walk much", special: ["Vegetarian"] }),
+  base({ destinationId: "chikmagalur", transport: "car", adults: 6, nights: 6, pace: "packed", interests: ["adventure", "nature"], budgetPerPerson: 52000, stayType: "budget" }),
+  base({ destinationId: "badami", transport: "train", nights: 3, interests: ["adventure", "culture"], rhythm: "night-owl", startDate: "2026-07-20" }),
+  base({ destinationId: "dandeli", adults: 12, pace: "packed", interests: ["adventure", "social"], budgetPerPerson: 18000, stayType: "budget", nights: 3 }),
+  base({ destinationId: "kabini", transport: "car", pace: "relaxed", interests: ["relax", "nature"], ownWords: "wildlife safari, quiet nature", nights: 3 }),
+  base({ destinationId: "mysuru", transport: "train", stayType: "luxury", interests: ["luxury", "culture", "food"], budgetPerPerson: 55000, nights: 3 }),
 ];
 
 const kinds: IncidentKind[] = ["weather", "flight_delay", "vendor_unavailable", "traveler_request", "closure", "running_late", "crowd_report", "health"];

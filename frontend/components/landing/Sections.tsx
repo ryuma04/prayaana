@@ -188,7 +188,7 @@ const AGENT_STEPS = [
   { label: "Analyzing impact", result: "2 activities affected · ₹7,600 at risk", Icon: TreeStructureIcon },
   { label: "Creating fix plans", result: "3 plans · cheapest, fastest, keep favourites", Icon: ArrowsSplitIcon },
   { label: "Running safety checks", result: "10/10 passed in 0.3 s (Jev + code)", Icon: ShieldCheckIcon },
-  { label: "Contacting vendors", result: "Solang Adventure Co. said no", Icon: ChatCircleDotsIcon, fail: true },
+  { label: "Contacting vendors", result: "Kodagu Eco-Trek Guides said no", Icon: ChatCircleDotsIcon, fail: true },
   { label: "Rolling back", result: "Nothing half-updated · trying next vendor", Icon: ArrowsClockwiseIcon, warn: true },
   { label: "Voice note received", result: "“Haan, kal subah 9 baje” → Confirmed 9:00 AM", Icon: MicrophoneIcon },
   { label: "Trip repaired", result: "All vendors said yes · traveler informed", Icon: CheckCircleIcon, ok: true },
@@ -510,7 +510,7 @@ const FEATURES = [
   { t: "Voice notes, any language", b: "“Haan, 5 baje” becomes “Confirmed, 5:00 PM”.", I: MicrophoneIcon, c: "bg-pink" },
   { t: "Jev instant decisions", b: "Typed answers with confidence in 70 to 500 ms.", I: LightningIcon, c: "bg-sun" },
   { t: "Hearts + Mood buttons", b: "Protect must-dos, re-plan the day with one tap.", I: HeartIcon, c: "bg-coral" },
-  { t: "What-If Simulator", b: "“What if it rains in Manali tomorrow?”, before it does.", I: FlaskIcon, c: "bg-cream" },
+  { t: "What-If Simulator", b: "“What if heavy rain hits Coorg tomorrow?”, before it does.", I: FlaskIcon, c: "bg-cream" },
   { t: "Live alerts", b: "Early warnings and verified crowd reports across tours.", I: SirenIcon, c: "bg-lavender-soft" },
 ];
 
@@ -592,7 +592,7 @@ export function TrustSection() {
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
             {[
               ["1 in 7", "Indian flights delayed in peak 2025"],
-              ["842", "roads blocked in the 2025 Himachal monsoon"],
+              ["120+", "Western Ghats monsoon alerts & Ghat roads rerouted"],
               [">95%", "Instant vendor confirmation rate"],
             ].map(([a, b]) => (
               <div key={a} className="rounded-2xl bg-canvas p-4">

@@ -150,7 +150,7 @@ bottom bar on phones) and only **5 sections**:
 |---|---|---|
 | **Today** | `/ops` | **"Needs you now"**: one list of everything that needs a person, each with one button: *Let the agent fix it*, *Nudge on WhatsApp*, *Hand to agent*, or open the message. Plus trips on the road, today's schedule and money in/out. |
 | **Trips** | Trips · Bookings · Travelers · Guides · Money | Every trip with status and risk; open a trip to see its plan, vendors, payments, problems, travelers and **documents**. Assign guides (saved on the server). See the money ledger. |
-| **Problems** | Problems · Trip Fixer · Alerts · What if… | Open problems with the Change Impact Map and 3 fix plans; the agent's live timeline; crowd reports and early warnings; the **What-If simulator** ("What if it rains in Manali tomorrow?"). |
+| **Problems** | Problems · Trip Fixer · Alerts · What if… | Open problems with the Change Impact Map and 3 fix plans; the agent's live timeline; crowd reports and early warnings; the **What-If simulator** ("What if heavy rain hits Coorg tomorrow?"). |
 | **Partners** | Vendors | Every vendor with trust score, reply speed, and an **Available** switch (pausing a vendor creates problems for affected trips). |
 | **Inbox** | WhatsApp inbox | All vendor **and traveler** conversations. Replies to a traveler appear in that traveler's WhatsApp view. PDFs sent to travelers can be opened. |
 
@@ -193,7 +193,7 @@ the **same answers** (`parity_test.go`).
 | **Trip Fixer Agent** | A step-by-step runner in Go: detect → classify → impact → 3 plans → pick the best plan inside the traveler's rules → safety checks → ask vendors → wait → commit or undo → tell the traveler. Every step is saved and shown live. After 2 failed tries it hands over to a human. |
 | **Mood buttons** | Tired / Hungry / Raining / Running late / Over budget / Bored re-plans the rest of today (e.g. Tired swaps a trek for a café and adds a rest). |
 | **Must-Do Hearts** | 5 hearts per trip; every fix plan protects hearted items first. |
-| **What-If simulator** | Runs a problem on a copy of every tour ("heavy rain in Manali tomorrow") and shows which tours break and the money at risk, without touching real data until you press "Fix all". |
+| **What-If simulator** | Runs a problem on a copy of every tour ("heavy rain in Coorg tomorrow") and shows which tours break and the money at risk, without touching real data until you press "Fix all". |
 | **Crowd reports** | A report counts after 2 separate reports within 2 hours, or 1 from a trusted guide. Then every tour going there gets a warning. |
 
 ---

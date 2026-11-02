@@ -114,7 +114,7 @@ func haversineKm(lat1, lng1, lat2, lng2 float64) float64 {
 
 // NearbyHubs finds real hubs of one type ("airport", "railway", "bus") around a point, most
 // relevant first. It searches 50 km around the point, then a ring of four 50 km circles ~80 km
-// out when nothing is close (Manali has no airport within 50 km of town). Cached for a week.
+// out when nothing is close (Coorg has no airport within 50 km of town). Cached for a week.
 // An error means Google could not be asked; an empty list means Google found none.
 func (p *Places) NearbyHubs(ctx context.Context, kind string, lat, lng float64, max int) ([]TransportHub, error) {
 	spec, ok := hubSpecs[kind]

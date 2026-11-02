@@ -19,12 +19,12 @@ DELETE FROM inbox_threads WHERE trip_id IN (SELECT id FROM demo_trips);
 DELETE FROM trips WHERE id IN (SELECT id FROM demo_trips);
 
 DELETE FROM inbox_messages WHERE id IN (
-    'th-v-man-cabs-m1','th-v-man-cabs-m2','th-v-man-cabs-m3',
+    'th-v-coo-cabs-m1','th-v-coo-cabs-m2','th-v-coo-cabs-m3',
     'th-kulkarni-k1','th-kulkarni-k2','th-kulkarni-k3','th-kulkarni-k4','th-kulkarni-k5',
-    'th-v-man-solang-adv-s1','th-v-man-solang-adv-s2','th-v-man-solang-adv-s3',
-    'th-v-ris-rafting-r1','th-v-ris-rafting-r2',
+    'th-v-coo-trek-s1','th-v-coo-trek-s2','th-v-coo-trek-s3',
+    'th-v-dan-rafting-r1','th-v-dan-rafting-r2',
     'th-agent-a1','th-agent-a2','th-system-y1','th-system-y2',
-    'th-v-st-udr-leela-l1','th-v-st-udr-leela-l2');
+    'th-v-st-mys-lalitha-l1','th-v-st-mys-lalitha-l2');
 DELETE FROM inbox_threads t WHERE t.id IN ('th-kulkarni','th-agent','th-system')
    OR NOT EXISTS (SELECT 1 FROM inbox_messages m WHERE m.thread_id = t.id);
 DELETE FROM crowd_reports WHERE id IN ('cr-1','cr-2','cr-3');

@@ -20,7 +20,7 @@ type Event struct {
 	ItemID     string `json:"itemId,omitempty"`
 	Value      int    `json:"value,omitempty"`     // stars for "rated"; +1/-1 sentiment for "note"
 	Dimension  string `json:"dimension,omitempty"` // for events about a dimension, not an activity
-	Detail     string `json:"detail,omitempty"`    // what to show in the history ("Jogini Falls trek")
+	Detail     string `json:"detail,omitempty"`    // what to show in the history ("Abbey Falls trek")
 }
 
 // Weights is how strongly each behaviour says "more like this" (+) or "less like this" (−).

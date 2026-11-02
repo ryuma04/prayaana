@@ -52,7 +52,7 @@ export function scoreByFeeling(d: Destination, query: string) {
   if (taglineLower.includes(q)) score += 40;
   if (descLower.includes(q)) score += 25;
 
-  // Token-level matching for multi-word searches (e.g. "mumbai beaches", "ooty tea", "hampi ruins")
+  // Token-level matching for multi-word searches (e.g. "gokarna beaches", "coorg coffee", "hampi ruins")
   const tokens = q.split(/\s+/).filter((t) => t.length >= 2);
   for (const tok of tokens) {
     if (nameLower.includes(tok)) score += 100;

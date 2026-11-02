@@ -279,12 +279,12 @@ type Scenario struct {
 }
 
 var Scenarios = []Scenario{
-	{ID: "rain-manali", Title: "Heavy rain in Manali", Question: "What if heavy rain hits Manali tomorrow?", DestinationID: "manali", Kind: domain.IncWeather, Emoji: "🌧", When: "tomorrow"},
-	{ID: "ropeway-closed", Title: "Solang ropeway shut", Question: "What if the Solang ropeway closes tomorrow?", DestinationID: "manali", Kind: domain.IncClosure, Emoji: "🚡", When: "tomorrow", Place: "Solang"},
-	{ID: "cabs-down", Title: "Himalayan Cabs unavailable", Question: "What if Himalayan Cabs can't serve any trips?", DestinationID: "manali", Kind: domain.IncVendorUnavailable, Emoji: "🚕", When: "tomorrow", VendorID: "v-man-cabs"},
-	{ID: "rain-goa", Title: "Monsoon spell in Goa", Question: "What if a monsoon spell hits Goa this week?", DestinationID: "goa", Kind: domain.IncWeather, Emoji: "⛈", When: "tomorrow"},
-	{ID: "leh-flight", Title: "Leh flights delayed", Question: "What if all Leh flights land 3 hours late?", DestinationID: "leh", Kind: domain.IncFlightDelay, Emoji: "✈", When: "today", DelayMin: ptr(180)},
-	{ID: "rishikesh-river", Title: "Rafting suspended", Question: "What if the Ganga rises and rafting stops?", DestinationID: "rishikesh", Kind: domain.IncClosure, Emoji: "🌊", When: "tomorrow", Place: "Shivpuri"},
+	{ID: "rain-coorg", Title: "Heavy rain in Coorg", Question: "What if heavy rain hits Coorg tomorrow?", DestinationID: "coorg", Kind: domain.IncWeather, Emoji: "🌧", When: "tomorrow"},
+	{ID: "ropeway-closed", Title: "Abbey Falls shut", Question: "What if Abbey Falls closes tomorrow?", DestinationID: "coorg", Kind: domain.IncClosure, Emoji: "🌊", When: "tomorrow", Place: "Abbey Falls"},
+	{ID: "cabs-down", Title: "Kodagu Cabs unavailable", Question: "What if Kodagu Cabs can't serve any trips?", DestinationID: "coorg", Kind: domain.IncVendorUnavailable, Emoji: "🚕", When: "tomorrow", VendorID: "v-coo-cabs"},
+	{ID: "rain-gokarna", Title: "High swell in Gokarna", Question: "What if rough seas hit Gokarna tomorrow?", DestinationID: "gokarna", Kind: domain.IncWeather, Emoji: "⛈", When: "tomorrow"},
+	{ID: "blr-flight", Title: "Bengaluru flights delayed", Question: "What if Bengaluru flights land 3 hours late?", DestinationID: "bengaluru", Kind: domain.IncFlightDelay, Emoji: "✈", When: "today", DelayMin: ptr(180)},
+	{ID: "dandeli-river", Title: "Rafting suspended", Question: "What if Kali dam discharge stops Dandeli rafting?", DestinationID: "dandeli", Kind: domain.IncClosure, Emoji: "🌊", When: "tomorrow", Place: "Kali River"},
 }
 
 func FindScenario(id string) *Scenario {

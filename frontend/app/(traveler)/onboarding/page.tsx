@@ -38,7 +38,7 @@ function Onboarding() {
   const setStep = useTravelerStore((s) => s.setStep);
   const dna = useTravelerStore((s) => s.dna);
 
-  // Deep link from a destination page: /onboarding?destination=manali
+  // Deep link from a destination page: /onboarding?destination=coorg
   // Lands on the "when" step so the user can set their dates before continuing.
   useEffect(() => {
     const d = params.get("destination") as DestinationId | null;

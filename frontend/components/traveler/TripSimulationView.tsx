@@ -28,22 +28,24 @@ interface GatewayAirport {
 }
 
 const GATEWAY_AIRPORTS: Record<string, GatewayAirport> = {
-  udaipur: { code: "UDR", name: "Maharana Pratap Airport (UDR)", lat: 24.6177, lng: 73.8961 },
-  darjeeling: { code: "IXB", name: "Bagdogra Airport (IXB)", lat: 26.6812, lng: 88.3286 },
-  goa: { code: "GOX", name: "Manohar International Airport (GOX)", lat: 15.7667, lng: 73.8667 },
-  jaipur: { code: "JAI", name: "Jaipur International Airport (JAI)", lat: 26.8242, lng: 75.8122 },
-  manali: { code: "KUU", name: "Kullu-Manali Airport (KUU)", lat: 31.8763, lng: 77.1542 },
-  munnar: { code: "COK", name: "Cochin International Airport (COK)", lat: 10.1556, lng: 76.3908 },
-  kochi: { code: "COK", name: "Cochin International Airport (COK)", lat: 10.1556, lng: 76.3908 },
-  varanasi: { code: "VNS", name: "Lal Bahadur Shastri Airport (VNS)", lat: 25.4497, lng: 82.8587 },
-  rishikesh: { code: "DED", name: "Jolly Grant Airport (DED)", lat: 30.1897, lng: 78.1803 },
-  leh: { code: "IXL", name: "Kushok Bakula Rimpochee Airport (IXL)", lat: 34.1359, lng: 77.5465 },
-  delhi: { code: "DEL", name: "Indira Gandhi International Airport (DEL)", lat: 28.5562, lng: 77.1000 },
-  mumbai: { code: "BOM", name: "Chhatrapati Shivaji Maharaj Airport (BOM)", lat: 19.0896, lng: 72.8656 },
   bengaluru: { code: "BLR", name: "Kempegowda International Airport (BLR)", lat: 13.1986, lng: 77.7066 },
-  kolkata: { code: "CCU", name: "Netaji Subhash Chandra Bose Airport (CCU)", lat: 22.6547, lng: 88.4467 },
-  shillong: { code: "GAU", name: "Guwahati Airport (GAU)", lat: 26.1061, lng: 91.5859 },
+  mysuru: { code: "MYQ", name: "Mysuru Airport (MYQ)", lat: 12.2294, lng: 76.6547 },
+  mangalore: { code: "IXE", name: "Mangaluru International Airport (IXE)", lat: 12.9613, lng: 74.8900 },
   hampi: { code: "VDY", name: "Jindal Vijaynagar Airport (VDY)", lat: 15.1633, lng: 76.6433 },
+  hubballi: { code: "HBX", name: "Hubballi Airport (HBX)", lat: 15.3617, lng: 75.0849 },
+  belagavi: { code: "IXG", name: "Belagavi Airport (IXG)", lat: 15.8593, lng: 74.6183 },
+  shivamogga: { code: "RQY", name: "Kuvempu Airport Shivamogga (RQY)", lat: 13.8617, lng: 75.6322 },
+  coorg: { code: "MYQ", name: "Mysuru Airport Gateway (MYQ)", lat: 12.2294, lng: 76.6547 },
+  gokarna: { code: "IXE", name: "Mangaluru Airport Gateway (IXE)", lat: 12.9613, lng: 74.8900 },
+  chikmagalur: { code: "BLR", name: "Kempegowda Airport Gateway (BLR)", lat: 13.1986, lng: 77.7066 },
+  badami: { code: "HBX", name: "Hubballi Airport Gateway (HBX)", lat: 15.3617, lng: 75.0849 },
+  udupi: { code: "IXE", name: "Mangaluru Airport Gateway (IXE)", lat: 12.9613, lng: 74.8900 },
+  dandeli: { code: "HBX", name: "Hubballi Airport Gateway (HBX)", lat: 15.3617, lng: 75.0849 },
+  kabini: { code: "MYQ", name: "Mysuru Airport Gateway (MYQ)", lat: 12.2294, lng: 76.6547 },
+  bandipur: { code: "MYQ", name: "Mysuru Airport Gateway (MYQ)", lat: 12.2294, lng: 76.6547 },
+  jogfalls: { code: "RQY", name: "Shivamogga Airport Gateway (RQY)", lat: 13.8617, lng: 75.6322 },
+  sakleshpur: { code: "IXE", name: "Mangaluru Airport Gateway (IXE)", lat: 12.9613, lng: 74.8900 },
+  murdeshwar: { code: "IXE", name: "Mangaluru Airport Gateway (IXE)", lat: 12.9613, lng: 74.8900 },
 };
 
 function calculateBearing(lat1: number, lng1: number, lat2: number, lng2: number) {
@@ -124,12 +126,12 @@ export function TripSimulationView({
     }
     const segments: RawSegment[] = [];
 
-    // Case A: Multi-destination trip (e.g. Udaipur -> Darjeeling)
+    // Case A: Multi-destination trip (e.g. Mysuru -> Coorg)
     const isMultiDest = dIds.length >= 2;
     const dest1 = dIds[0];
     const dest2 = dIds[1];
-    const apt1 = GATEWAY_AIRPORTS[dest1] || { code: "UDR", name: `${destinationMap[dest1]?.name || dest1} Airport`, lat: destinationMap[dest1]?.lat ? destinationMap[dest1].lat + 0.05 : 24.6177, lng: destinationMap[dest1]?.lng ? destinationMap[dest1].lng + 0.1 : 73.8961 };
-    const apt2 = isMultiDest ? (GATEWAY_AIRPORTS[dest2] || { code: "IXB", name: `${destinationMap[dest2]?.name || dest2} Airport`, lat: destinationMap[dest2]?.lat ? destinationMap[dest2].lat - 0.2 : 26.6812, lng: destinationMap[dest2]?.lng ? destinationMap[dest2].lng + 0.05 : 88.3286 }) : null;
+    const apt1 = GATEWAY_AIRPORTS[dest1] || { code: "BLR", name: `${destinationMap[dest1]?.name || dest1} Airport`, lat: destinationMap[dest1]?.lat ? destinationMap[dest1].lat + 0.05 : 13.1986, lng: destinationMap[dest1]?.lng ? destinationMap[dest1].lng + 0.1 : 77.7066 };
+    const apt2 = isMultiDest ? (GATEWAY_AIRPORTS[dest2] || { code: "MYQ", name: `${destinationMap[dest2]?.name || dest2} Airport`, lat: destinationMap[dest2]?.lat ? destinationMap[dest2].lat - 0.2 : 12.2958, lng: destinationMap[dest2]?.lng ? destinationMap[dest2].lng + 0.05 : 76.6394 }) : null;
 
     // Filter items with valid locations
     const validItems = rawItems.map((item) => ({ item, coords: resolveCoords(item) }));
@@ -201,7 +203,7 @@ export function TripSimulationView({
       }
 
       // Leg 2: Drive from last Dest 1 item to Airport 1 (Car 🚗)
-      const last1 = itemsDest1[itemsDest1.length - 1] || { coords: { lat: 24.5854, lng: 73.7125 }, item: { title: "Udaipur Center", day: midDay } };
+      const last1 = itemsDest1[itemsDest1.length - 1] || { coords: { lat: 12.2958, lng: 76.6394 }, item: { title: "Mysuru Center", day: midDay } };
       segments.push({
         from: { lat: last1.coords.lat, lng: last1.coords.lng, title: last1.item.title },
         to: { lat: apt1.lat, lng: apt1.lng, title: apt1.name },
@@ -256,9 +258,9 @@ export function TripSimulationView({
       }
     } else {
       // Single Destination with optional flight transfer
-      const originCity = trip.prefs?.fromCity || "Delhi";
-      const originApt = GATEWAY_AIRPORTS[originCity.toLowerCase()] || { code: "DEL", name: `${originCity} Gateway`, lat: 28.5562, lng: 77.1000 };
-      const destApt = GATEWAY_AIRPORTS[trip.destinationId] || { code: "DST", name: `${destinationMap[trip.destinationId]?.name || "Destination"} Airport`, lat: (destinationMap[trip.destinationId]?.lat || 24.58) + 0.1, lng: (destinationMap[trip.destinationId]?.lng || 73.71) + 0.1 };
+      const originCity = trip.prefs?.fromCity || "Bengaluru";
+      const originApt = GATEWAY_AIRPORTS[originCity.toLowerCase()] || { code: "BLR", name: `${originCity} Gateway`, lat: 13.1986, lng: 77.7066 };
+      const destApt = GATEWAY_AIRPORTS[trip.destinationId] || { code: "BLR", name: `${destinationMap[trip.destinationId]?.name || "Destination"} Airport`, lat: (destinationMap[trip.destinationId]?.lat || 12.97) + 0.1, lng: (destinationMap[trip.destinationId]?.lng || 77.59) + 0.1 };
 
       pts.push({
         id: "origin-apt",

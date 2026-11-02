@@ -1032,44 +1032,12 @@ func (e *Engine) ResolveDestination(id string, p domain.TripPreferences) *domain
 			return makePlaceDestination(dp)
 		}
 	}
-	switch cleanID {
-	case "mumbai":
-		return &domain.Destination{
-			ID: "mumbai", Name: "Mumbai", State: "Maharashtra", Lat: 18.9220, Lng: 72.8347,
-			Gateway:        "Chhatrapati Shivaji Maharaj International Airport (BOM), 15 km",
-			LocalCabPerDay: 2500, AirportTransfer: 1200,
-			Clusters: []domain.Cluster{
-				{ID: "south-mumbai", Name: "South Mumbai & Colaba", Lunch: domain.Meal{Name: "Britannia & Co", PricePerPerson: 650}, Dinner: &domain.Meal{Name: "Trishna Seafood", PricePerPerson: 1200}},
-				{ID: "bandra", Name: "Bandra & Marine Drive", Lunch: domain.Meal{Name: "The Bombay Canteen", PricePerPerson: 900}, Dinner: &domain.Meal{Name: "Bastian", PricePerPerson: 1500}},
-			},
-		}
-	case "navi-mumbai", "navi mumbai":
-		return &domain.Destination{
-			ID: "navi-mumbai", Name: "Navi Mumbai", State: "Maharashtra", Lat: 19.0330, Lng: 73.0297,
-			Gateway:        "Chhatrapati Shivaji Maharaj International Airport (BOM), 24 km",
-			LocalCabPerDay: 2200, AirportTransfer: 1100,
-			Clusters: []domain.Cluster{
-				{ID: "vashi", Name: "Vashi & Palm Beach", Lunch: domain.Meal{Name: "Bhagat Tarachand", PricePerPerson: 450}, Dinner: &domain.Meal{Name: "Something's Fishy", PricePerPerson: 850}},
-				{ID: "belapur", Name: "CBD Belapur & Kharghar", Lunch: domain.Meal{Name: "Barbeque Nation Belapur", PricePerPerson: 750}, Dinner: &domain.Meal{Name: "Royal Oak Brewery", PricePerPerson: 950}},
-			},
-		}
-	case "delhi", "new delhi":
-		return &domain.Destination{
-			ID: "delhi", Name: "Delhi", State: "Delhi NCR", Lat: 28.6139, Lng: 77.2090,
-			Gateway:        "Indira Gandhi International Airport (DEL), 15 km",
-			LocalCabPerDay: 2600, AirportTransfer: 1100,
-			Clusters: []domain.Cluster{
-				{ID: "connaught-place", Name: "Connaught Place & Central", Lunch: domain.Meal{Name: "Saravana Bhavan CP", PricePerPerson: 400}, Dinner: &domain.Meal{Name: "Bukhara", PricePerPerson: 2200}},
-				{ID: "old-delhi", Name: "Old Delhi & Chandni Chowk", Lunch: domain.Meal{Name: "Karim's Historic Mughlai", PricePerPerson: 600}, Dinner: &domain.Meal{Name: "Gulati Pandara Road", PricePerPerson: 1100}},
-			},
-		}
-	}
 	formatted := strings.Title(strings.ReplaceAll(id, "-", " "))
 	return &domain.Destination{
-		ID: cleanID, Name: formatted, State: "India", Lat: 19.0760, Lng: 72.8777,
-		Gateway: "Nearest Regional Hub", LocalCabPerDay: 2400, AirportTransfer: 1000,
+		ID: cleanID, Name: formatted, State: "Karnataka", Lat: 12.9716, Lng: 77.5946,
+		Gateway: "Kempegowda International Airport (BLR)", LocalCabPerDay: 2400, AirportTransfer: 1000,
 		Clusters: []domain.Cluster{
-			{ID: cleanID + "-center", Name: formatted + " Center", Lunch: domain.Meal{Name: "Local Specialties", PricePerPerson: 500}, Dinner: &domain.Meal{Name: "Regional Diner", PricePerPerson: 800}},
+			{ID: cleanID + "-center", Name: formatted + " Center", Lunch: domain.Meal{Name: "Karnataka Udupi Canteen", PricePerPerson: 350}, Dinner: &domain.Meal{Name: "Regional Diner", PricePerPerson: 650}},
 		},
 	}
 }
@@ -1165,26 +1133,7 @@ func fallbackActivities(dest *domain.Destination) []domain.Activity {
 		c1 = dest.Clusters[1].ID
 	}
 	clean := strings.ToLower(dest.ID)
-	if clean == "navi-mumbai" || clean == "navi mumbai" {
-		return []domain.Activity{
-			{ID: "act-nm-1", DestinationID: dest.ID, Cluster: c0, Title: "Kharghar Hills Nature & Waterfall Trail", Description: "Scenic trail through Kharghar plateau with sweeping views of the city", Interests: []string{"nature", "adventure"}, DurationMin: 120, Price: 200, Energy: 3, Outdoor: true, Slot: "morning", Lat: 19.0430, Lng: 73.0670, KidFriendly: true, Walking: "medium", Icon: "hike", Tone: "sage"},
-			{ID: "act-nm-2", DestinationID: dest.ID, Cluster: c0, Title: "Wonders Park & Nerul Miniature World", Description: "Family recreation park featuring replicas of world wonders and artificial lake", Interests: []string{"culture", "relax"}, DurationMin: 90, Price: 150, Energy: 2, Outdoor: true, Slot: "afternoon", Lat: 19.0270, Lng: 73.0180, KidFriendly: true, Walking: "low", Icon: "monument", Tone: "sun"},
-			{ID: "act-nm-3", DestinationID: dest.ID, Cluster: c0, Title: "Jewel of Navi Mumbai & Seawoods Promenade", Description: "Lakeside stroll with sunset views and flamingo watching spots", Interests: []string{"photo", "relax"}, DurationMin: 90, Price: 0, Energy: 1, Outdoor: true, Slot: "evening", Lat: 19.0180, Lng: 73.0120, KidFriendly: true, Walking: "low", Icon: "photo", Tone: "sky"},
-			{ID: "act-nm-4", DestinationID: dest.ID, Cluster: c1, Title: "Belapur Historic Fort & Mangrove Boardwalk", Description: "16th-century fortress ruins overlooking the Panvel creek and dense mangroves", Interests: []string{"culture", "nature"}, DurationMin: 120, Price: 100, Energy: 2, Outdoor: true, Slot: "morning", Lat: 19.0140, Lng: 73.0400, KidFriendly: true, Walking: "medium", Icon: "monument", Tone: "amber"},
-			{ID: "act-nm-5", DestinationID: dest.ID, Cluster: c1, Title: "Central Park Valley Walk & Amphitheatre", Description: "Expansive green lung with musical fountain and sculpture gardens", Interests: []string{"relax", "photo"}, DurationMin: 90, Price: 50, Energy: 2, Outdoor: true, Slot: "afternoon", Lat: 19.0550, Lng: 73.0720, KidFriendly: true, Walking: "low", Icon: "walk", Tone: "sage"},
-			{ID: "act-nm-6", DestinationID: dest.ID, Cluster: c1, Title: "Palm Beach Road Twilight Café Crawl", Description: "Explore waterfront dessert parlours and artisan coffee spots along the boulevard", Interests: []string{"food", "social"}, DurationMin: 120, Price: 600, Energy: 2, Outdoor: false, Slot: "evening", Lat: 19.0320, Lng: 73.0190, KidFriendly: true, Walking: "low", Icon: "food", Tone: "sun"},
-		}
-	}
-	if clean == "delhi" || clean == "new delhi" {
-		return []domain.Activity{
-			{ID: "act-del-1", DestinationID: dest.ID, Cluster: c0, Title: "Qutub Minar Complex & Mehrauli Archaeological Walk", Description: "UNESCO World Heritage victory tower and ancient Islamic architectural monuments", Interests: []string{"culture", "photo"}, DurationMin: 120, Price: 500, Energy: 2, Outdoor: true, Slot: "morning", Lat: 28.5244, Lng: 77.1855, KidFriendly: true, Walking: "medium", Icon: "monument", Tone: "amber"},
-			{ID: "act-del-2", DestinationID: dest.ID, Cluster: c0, Title: "National Gallery of Modern Art & India Gate Gardens", Description: "Premier art museum followed by a peaceful stroll around India Gate canopy", Interests: []string{"culture", "relax"}, DurationMin: 90, Price: 150, Energy: 2, Outdoor: true, Slot: "afternoon", Lat: 28.6096, Lng: 77.2343, KidFriendly: true, Walking: "low", Icon: "museum", Tone: "sky"},
-			{ID: "act-del-3", DestinationID: dest.ID, Cluster: c0, Title: "Kartavya Path & Rashtrapati Bhavan Twilight Walk", Description: "Illuminated boulevard stroll leading to the President's estate at golden hour", Interests: []string{"photo", "social"}, DurationMin: 75, Price: 0, Energy: 1, Outdoor: true, Slot: "evening", Lat: 28.6143, Lng: 77.2014, KidFriendly: true, Walking: "low", Icon: "photo", Tone: "sun"},
-			{ID: "act-del-4", DestinationID: dest.ID, Cluster: c1, Title: "Humayun's Tomb Mughal Heritage Exploration", Description: "Magnificent red sandstone garden tomb precursor to the Taj Mahal", Interests: []string{"culture", "photo"}, DurationMin: 120, Price: 500, Energy: 2, Outdoor: true, Slot: "morning", Lat: 28.5933, Lng: 77.2507, KidFriendly: true, Walking: "medium", Icon: "monument", Tone: "amber"},
-			{ID: "act-del-5", DestinationID: dest.ID, Cluster: c1, Title: "Chandni Chowk Spices & Historic Havelis Food Trail", Description: "Iconic Paranthe Wali Gali culinary tasting and historic spice market walk", Interests: []string{"food", "culture"}, DurationMin: 120, Price: 650, Energy: 3, Outdoor: true, Slot: "afternoon", Lat: 28.6562, Lng: 77.2300, KidFriendly: false, Walking: "high", Icon: "food", Tone: "sun"},
-			{ID: "act-del-6", DestinationID: dest.ID, Cluster: c1, Title: "Hauz Khas Social Fort & Lake Sunset", Description: "Medieval madrasa ruins overlooking Hauz Khas water tank, followed by rooftop social", Interests: []string{"social", "photo"}, DurationMin: 120, Price: 300, Energy: 2, Outdoor: true, Slot: "evening", Lat: 28.5534, Lng: 77.1945, KidFriendly: true, Walking: "low", Icon: "social", Tone: "purple"},
-		}
-	}
+	_ = clean
 	return []domain.Activity{
 		{ID: "act-" + dest.ID + "-1", DestinationID: dest.ID, Cluster: c0, Title: dest.Name + " Heritage & Old Town Walk", Description: "Guided morning exploration of local history, architecture and landmark squares", Interests: []string{"culture", "photo"}, DurationMin: 120, Price: 400, Energy: 2, Outdoor: true, Slot: "morning", Lat: dest.Lat + 0.004, Lng: dest.Lng + 0.003, KidFriendly: true, Walking: "medium", Icon: "walk", Tone: "amber"},
 		{ID: "act-" + dest.ID + "-2", DestinationID: dest.ID, Cluster: c0, Title: dest.Name + " Regional Museum & Art Center", Description: "Curated exhibits celebrating the craft, folklore, and heritage of the province", Interests: []string{"culture", "relax"}, DurationMin: 90, Price: 200, Energy: 1, Outdoor: false, Slot: "afternoon", Lat: dest.Lat - 0.003, Lng: dest.Lng + 0.005, KidFriendly: true, Walking: "low", Icon: "museum", Tone: "sky"},

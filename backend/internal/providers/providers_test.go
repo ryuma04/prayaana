@@ -14,7 +14,7 @@ import (
 
 func TestWeatherRefreshParsesEveryLocation(t *testing.T) {
 	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		if got := r.URL.Query().Get("latitude"); got != "32.2432,15.4909" {
+		if got := r.URL.Query().Get("latitude"); got != "12.4244,14.5479" {
 			t.Errorf("latitude = %q", got)
 		}
 		io.WriteString(w, `[
@@ -23,20 +23,20 @@ func TestWeatherRefreshParsesEveryLocation(t *testing.T) {
 		]`)
 	}))
 	defer srv.Close()
-	w := NewWeather(srv.URL, "Asia/Kolkata", []Point{{"manali", 32.2432, 77.1892}, {"goa", 15.4909, 73.8278}}, time.Second)
+	w := NewWeather(srv.URL, "Asia/Kolkata", []Point{{"coorg", 12.4244, 75.7382}, {"gokarna", 14.5479, 74.3188}}, time.Second)
 	if err := w.Refresh(context.Background()); err != nil {
 		t.Fatal(err)
 	}
-	if f, ok := w.Lookup("manali", "2026-09-26"); !ok || f.Condition != "clear" || f.TempC != 22 || f.Source != SourceOpenMeteo {
-		t.Fatalf("manali day 1 = %+v %v", f, ok)
+	if f, ok := w.Lookup("coorg", "2026-09-26"); !ok || f.Condition != "clear" || f.TempC != 22 || f.Source != SourceOpenMeteo {
+		t.Fatalf("coorg day 1 = %+v %v", f, ok)
 	}
-	if f, _ := w.Lookup("manali", "2026-09-27"); f.Condition != "rain" || f.RainChance != 88 {
-		t.Fatalf("manali day 2 = %+v", f)
+	if f, _ := w.Lookup("coorg", "2026-09-27"); f.Condition != "rain" || f.RainChance != 88 {
+		t.Fatalf("coorg day 2 = %+v", f)
 	}
-	if f, _ := w.Lookup("goa", "2026-09-26"); f.Condition != "storm" {
-		t.Fatalf("goa = %+v", f)
+	if f, _ := w.Lookup("gokarna", "2026-09-26"); f.Condition != "storm" {
+		t.Fatalf("gokarna = %+v", f)
 	}
-	if _, ok := w.Lookup("goa", "2026-10-30"); ok {
+	if _, ok := w.Lookup("gokarna", "2026-10-30"); ok {
 		t.Fatal("dates beyond the forecast must fall back to the climate model")
 	}
 	if w.Status().Source != SourceOpenMeteo {
@@ -54,14 +54,14 @@ func TestWeatherKeepsOldDataOnMalformedResponse(t *testing.T) {
 		io.WriteString(w, `{"daily": "nope"`)
 	}))
 	defer srv.Close()
-	w := NewWeather(srv.URL, "UTC", []Point{{"manali", 1, 2}}, time.Second)
+	w := NewWeather(srv.URL, "UTC", []Point{{"coorg", 1, 2}}, time.Second)
 	if err := w.Refresh(context.Background()); err != nil {
 		t.Fatal(err)
 	}
 	if err := w.Refresh(context.Background()); err == nil {
 		t.Fatal("malformed JSON must be an error")
 	}
-	if f, ok := w.Lookup("manali", "2026-09-26"); !ok || f.Condition != "sunny" {
+	if f, ok := w.Lookup("coorg", "2026-09-26"); !ok || f.Condition != "sunny" {
 		t.Fatalf("previous forecast should survive a bad refresh, got %+v %v", f, ok)
 	}
 }
@@ -146,15 +146,15 @@ func TestAviationstackPicksDateAndRoute(t *testing.T) {
 			t.Errorf("query = %s", r.URL.RawQuery)
 		}
 		json.NewEncoder(w).Encode(map[string]any{"data": []map[string]any{
-			{"flight_date": "2026-09-26", "flight_status": "scheduled", "departure": map[string]any{"iata": "GOX"}, "arrival": map[string]any{"iata": "BOM"}},
+			{"flight_date": "2026-09-26", "flight_status": "scheduled", "departure": map[string]any{"iata": "IXE"}, "arrival": map[string]any{"iata": "BLR"}},
 			{"flight_date": "2026-09-26", "flight_status": "active", "airline": map[string]any{"name": "IndiGo"},
-				"departure": map[string]any{"iata": "BOM", "airport": "Mumbai", "delay": 42, "scheduled": "2026-09-26T06:40:00+00:00", "estimated": "2026-09-26T07:22:00+00:00"},
-				"arrival":   map[string]any{"iata": "GOX", "scheduled": "2026-09-26T07:55:00+00:00"}},
+				"departure": map[string]any{"iata": "BLR", "airport": "Bengaluru", "delay": 42, "scheduled": "2026-09-26T06:40:00+00:00", "estimated": "2026-09-26T07:22:00+00:00"},
+				"arrival":   map[string]any{"iata": "IXE", "scheduled": "2026-09-26T07:55:00+00:00"}},
 		}})
 	}))
 	defer srv.Close()
 	a := NewAviationstack(srv.URL, "k", time.Second)
-	got, err := a.Status(context.Background(), FlightQuery{Flight: "6E5392", Date: "2026-09-26", From: "BOM", To: "GOX"})
+	got, err := a.Status(context.Background(), FlightQuery{Flight: "6E5392", Date: "2026-09-26", From: "BLR", To: "IXE"})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -220,18 +220,18 @@ func TestPlacesSendsKeyInHeaderOnly(t *testing.T) {
 		}
 		var body map[string]any
 		json.NewDecoder(r.Body).Decode(&body)
-		if body["textQuery"] != "cafes in Manali" {
+		if body["textQuery"] != "cafes in Coorg" {
 			t.Errorf("body = %v", body)
 		}
-		io.WriteString(w, `{"places":[{"id":"p1","displayName":{"text":"Café 1947"},"formattedAddress":"Old Manali","location":{"latitude":32.25,"longitude":77.18},"rating":4.5,"userRatingCount":1200,"currentOpeningHours":{"openNow":true}},{"id":"p2","displayName":{"text":""}}]}`)
+		io.WriteString(w, `{"places":[{"id":"p1","displayName":{"text":"Big Cup Cafe"},"formattedAddress":"Madikeri","location":{"latitude":12.42,"longitude":75.74},"rating":4.5,"userRatingCount":1200,"currentOpeningHours":{"openNow":true}},{"id":"p2","displayName":{"text":""}}]}`)
 	}))
 	defer srv.Close()
 	p := NewPlaces(srv.URL, "gk", time.Second)
-	got, err := p.Search(context.Background(), PlaceQuery{Text: "cafes in Manali", Center: LatLng{32.24, 77.19}})
+	got, err := p.Search(context.Background(), PlaceQuery{Text: "cafes in Coorg", Center: LatLng{12.42, 75.74}})
 	if err != nil {
 		t.Fatal(err)
 	}
-	if len(got) != 1 || got[0].Name != "Café 1947" || got[0].OpenNow == nil || !*got[0].OpenNow {
+	if len(got) != 1 || got[0].Name != "Big Cup Cafe" || got[0].OpenNow == nil || !*got[0].OpenNow {
 		t.Fatalf("places = %+v", got)
 	}
 	if _, err := NewPlaces(srv.URL, "", time.Second).Search(context.Background(), PlaceQuery{Text: "x"}); err == nil {

@@ -34,7 +34,7 @@ export default function AlertsPage() {
   const markRead = useNotificationStore((s) => s.markRead);
   const markAll = useNotificationStore((s) => s.markAllRead);
   const [busy, setBusy] = useState<string | null>(null);
-  const [form, setForm] = useState<{ dest: DestinationId; place: string; type: CrowdReport["type"] }>({ dest: "manali", place: "Solang ropeway", type: "closed" });
+  const [form, setForm] = useState<{ dest: DestinationId; place: string; type: CrowdReport["type"] }>({ dest: "coorg", place: "Abbey Falls Trail", type: "closed" });
   const ops = useMemo(() => notifications.filter((n) => n.audience === "operator"), [notifications]);
 
   const points = reports.map((r) => {

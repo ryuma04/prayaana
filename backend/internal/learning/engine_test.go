@@ -24,8 +24,8 @@ func setup(t *testing.T) (*engine.Engine, domain.TravelDNA) {
 
 func TestLearningUpdatesAreSignedBoundedAndCumulative(t *testing.T) {
 	eng, dna := setup(t)
-	trek := eng.Cat.Activity("man-jogini") // nature + adventure, strenuous
-	food := eng.Cat.Activity("man-oldmanali-walk")
+	trek := eng.Cat.Activity("ham-matanga") // nature + adventure, strenuous
+	food := eng.Cat.Activity("coo-plantation") // nature + food, relax
 	orig := dna
 
 	up, ch := learning.Apply(dna, learning.Event{Kind: "hearted"}, food)
@@ -64,8 +64,8 @@ func TestLearningUpdatesAreSignedBoundedAndCumulative(t *testing.T) {
 
 func TestFeedbackChangesTheRightDimensions(t *testing.T) {
 	eng, dna := setup(t)
-	p := domain.TripPreferences{DestinationID: "manali", StartDate: "2026-10-12", Nights: 3, Adults: 2, BudgetPerPerson: 40000,
-		StayType: "boutique", Transport: "bus", Interests: []string{"food", "culture"}, Pace: "balanced", Rhythm: "early-bird"}
+	p := domain.TripPreferences{DestinationID: "coorg", StartDate: "2026-10-12", Nights: 3, Adults: 2, BudgetPerPerson: 40000,
+		StayType: "boutique", Transport: "car", Interests: []string{"food", "culture"}, Pace: "balanced", Rhythm: "early-bird"}
 	trip, err := eng.BuildTrip(p, engine.BuildOptions{ID: "t", Code: "T", CustomerName: "A B", Now: time.Now()})
 	if err != nil {
 		t.Fatal(err)
@@ -101,13 +101,13 @@ func TestFeedbackChangesTheRightDimensions(t *testing.T) {
 // Recommendations follow the DNA as it learns.
 func TestRecommendationsUseUpdatedDNA(t *testing.T) {
 	eng, dna := setup(t)
-	before := eng.Recommend("manali", dna, nil, nil, 3)
+	before := eng.Recommend("hampi", dna, nil, nil, 3)
 	cur := dna
 	for i := 0; i < 40; i++ {
 		cur, _ = learning.Apply(cur, learning.Event{Kind: "more", Dimension: "culture"}, nil)
 		cur, _ = learning.Apply(cur, learning.Event{Kind: "less", Dimension: "adventure"}, nil)
 	}
-	after := eng.Recommend("manali", cur, nil, nil, 3)
+	after := eng.Recommend("hampi", cur, nil, nil, 3)
 	if before[0].Activity.ID == after[0].Activity.ID {
 		t.Fatalf("top pick unchanged after the DNA moved to culture: %s", after[0].Activity.Title)
 	}

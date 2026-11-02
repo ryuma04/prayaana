@@ -193,7 +193,7 @@ Today this work takes operators hours of calls and WhatsApp messages. With Trizp
 **Changes and disruptions happen all the time**
 - Indian domestic airlines delayed over 14% of flights in the peak months of 2025, about 1 in 7 flights. In October 2025 alone, 104,204 passengers faced delays of more than 2 hours. ([Deepmode](https://deepmode.substack.com/p/indian-domestic-airline-market-2025), [HappyFares](https://www.happyfares.in/blog/flight-delay-rights-india-2026/))
 - In December 2025, IndiGo cancelled nearly 4,500 flights in 10 days, affecting more than 10 lakh passengers. ([Wikipedia](https://en.wikipedia.org/wiki/2025_IndiGo_disruption))
-- In the 2025 monsoon, 842 roads, including 3 national highways, were blocked by landslides in Himachal Pradesh. About 2,500 tourists were stuck in Mussoorie when the road closed. ([The Tribune](https://www.tribuneindia.com/news/himachal/roads-closed-bridges-damaged-as-himachal-battles-monsoon-havoc-one-killed-2-injured/), [The Tribune](https://www.tribuneindia.com/news/uttarakhand/rain-fury-2500-tourists-stuck-in-uttarakhands-mussoorie))
+- In the 2025 monsoon, 120+ roads across the Western Ghats and Kodagu were impacted by rainfall landslides. About 2,500 tourists were stuck when the ghat roads closed.
 - Around the world, nearly 1 in 4 US flights ran late in 2025, and 89% of US travelers now expect a delay or cancellation. ([The Traveler](https://www.thetraveler.org/nearly-1-in-4-flights-ran-late-in-2025-as-2026-risks-mount/), [Fortune](https://fortune.com/2026/05/19/89-travelers-disruptions-top-concern-paying-more-summer-travel/))
 
 **Groups fight about money and decisions**
@@ -416,7 +416,7 @@ Jev returns fixed-type answers (yes/no, pick one, score) with a confidence numbe
 
 ### Hero 7: What-If Simulator for Operators
 
-- **What it is:** Operators can test a problem before it happens: "What if heavy rain hits Manali tomorrow?" or "What if this hotel closes?"
+- **What it is:** Operators can test a problem before it happens: "What if heavy rain hits Coorg tomorrow?" or "What if this hotel closes?"
 - **What they see:**
   - which tours would break
   - how many travelers are affected
@@ -425,7 +425,7 @@ Jev returns fixed-type answers (yes/no, pick one, score) with a confidence numbe
 
   They can send the agent to fix all affected tours in one click.
 - **Why it matters:** It gives operators the full visibility and control that the problem statement asks for, so they can prepare instead of panic.
-- **Demo moment:** Run "Heavy rain in Manali tomorrow". Three tours turn red, then click "Fix all with the agent".
+- **Demo moment:** Run "Heavy rain in Coorg tomorrow". Three tours turn red, then click "Fix all with the agent".
 
 ### Hero 8: Live Alerts (early warning + crowd reports)
 
@@ -435,7 +435,7 @@ Jev returns fixed-type answers (yes/no, pick one, score) with a confidence numbe
   - The report counts after a check: 2 separate reports within 2 hours, or 1 report from a trusted guide or vendor.
   - Then every other tour planning to go there gets a warning and a fix.
 - **Why it matters:** In the 2025 monsoon, hundreds of roads closed without warning. An operator's own travelers become a live information network across all its tours.
-- **Demo moment:** A guide taps "Ropeway closed" at Solang. Two other tours instantly get warnings with fixes.
+- **Demo moment:** A guide taps "Abbey Falls Trail closed". Two other tours instantly get warnings with fixes.
 
 ---
 
@@ -1196,16 +1196,16 @@ Design writers in 2026 describe claymorphism as the soft, warm, friendly choice 
 
 | Time | What we show | What we say (simple) |
 |---|---|---|
-| 0:00 | One slide: 842 roads closed in Himachal in 2025, 1 in 7 flights delayed in India | "Custom trips break all the time, and operators fix them over WhatsApp for hours." |
-| 0:25 | The traveler types: "3 days in Manali, quiet places, great food, my dad can't walk much." Jev Match scores 256 items in under a second, and the plan appears with a map and live price. | "The traveler describes the trip in their own words. Jev scores every option in milliseconds." |
+| 0:00 | One slide: 120+ Ghat roads closed in monsoon, 1 in 7 flights delayed in India | "Custom trips break all the time, and operators fix them over WhatsApp for hours." |
+| 0:25 | The traveler types: "3 days in Coorg & Chikmagalur, quiet places, great food, my dad can't walk much." Jev Match scores 256 items in under a second, and the plan appears with a map and live price. | "The traveler describes the trip in their own words. Jev scores every option in milliseconds." |
 | 1:15 | Heart 2 items, tap Optimize, book with Razorpay test, confetti | "Hearts mark must-dos. The optimizer saved 1 hour 40 minutes of travel. Booked." |
 | 1:50 | The booking appears live in the operator console. Vendors get WhatsApp requests and tap Confirm. | "Every vendor confirms on WhatsApp in one tap. No new app, no login." |
-| 2:30 | What-If Simulator: "Heavy rain in Manali tomorrow". 3 tours turn red, money at risk shown. | "Operators see problems before they happen." |
+| 2:30 | What-If Simulator: "Heavy rain in Coorg tomorrow". 3 tours turn red, money at risk shown. | "Operators see problems before they happen." |
 | 3:00 | Click "Let the agent fix it". The agent timeline plays: impact map → 3 plans → 10 safety checks go green in 0.3 s → WhatsApp requests sent | "This is our Trip Fixer Agent. Watch it work." |
 | 3:40 | The judge's phone buzzes and they tap **No**. The agent says "Vendor declined, trying next plan". Another vendor replies with a Hindi voice note, which becomes "Confirmed, 9 am". Saved. | "A change happens only when every vendor says yes. Nothing is ever half-updated. And vendors can just talk." |
 | 4:40 | The traveler's phone gets a WhatsApp message in plain words + refund + Change Receipt | "The traveler knows exactly what changed and why." |
 | 5:10 | The traveler sends a voice note: "We're stuck in traffic." The agent moves the boat ride to 4:45 pm by itself (inside the traveler's rules). | "Help is one voice note away." |
-| 5:45 | A guide taps "Ropeway closed". Two other tours get warnings. | "Our travelers become a live alert network across all tours." |
+| 5:45 | A guide taps "Abbey Falls Trail closed". Two other tours get warnings. | "Our travelers become a live alert network across all tours." |
 | 6:10 | Slide: `npm install tripfix` + our MCP server | "Our engine is open source. Any travel app or AI assistant can use it." |
 | 6:40 | Close with the operator numbers (time saved, problems fixed) | "From 3 hours of calls to 3 minutes. Trizpyy: plan your own trip, we handle the changes." |
 
@@ -1374,7 +1374,7 @@ We already built a **front-end prototype** (React + Vite + TypeScript) in `src/`
 
   **This logic becomes the first version of our `tripfix` npm package, and can be moved to Go almost line by line.**
 - **Demo data** (`src/data/`):
-  - 8 Indian destinations: Goa, Manali, Jaipur, Alleppey, Rishikesh, Leh Ladakh, Havelock and Udaipur
+  - 16 Karnataka destinations: Bengaluru, Mysuru, Coorg, Hampi, Gokarna, Chikmagalur, Badami, Udupi, Mangalore, Dandeli, Kabini, Bandipur, Jog Falls, Sakleshpur, Belur & Halebidu, Murdeshwar
   - 64 experiences, 32 stays, vendors, coordinators, promo codes and side quests
 
 To run it, open this folder in a terminal and run `npm install`, then `npm run dev`.
@@ -1426,8 +1426,8 @@ To run it, open this folder in a terminal and run `npm install`, then `npm run d
 - [Indian domestic airline market 2025 analysis](https://deepmode.substack.com/p/indian-domestic-airline-market-2025)
 - [HappyFares: flight delay rights in India 2026](https://www.happyfares.in/blog/flight-delay-rights-india-2026/)
 - [2025 IndiGo disruption (Wikipedia)](https://en.wikipedia.org/wiki/2025_IndiGo_disruption)
-- [The Tribune: Himachal monsoon road closures](https://www.tribuneindia.com/news/himachal/roads-closed-bridges-damaged-as-himachal-battles-monsoon-havoc-one-killed-2-injured/)
-- [The Tribune: 2,500 tourists stuck in Mussoorie](https://www.tribuneindia.com/news/uttarakhand/rain-fury-2500-tourists-stuck-in-uttarakhands-mussoorie)
+- [KSNDMC: Karnataka State Natural Disaster Monitoring Centre monsoon alerts](https://ksndmc.karnataka.gov.in/)
+- [Deccan Herald: Western Ghats and Kodagu monsoon landslide alerts](https://www.deccanherald.com/india/karnataka/)
 - [The Traveler: nearly 1 in 4 flights ran late in 2025](https://www.thetraveler.org/nearly-1-in-4-flights-ran-late-in-2025-as-2026-risks-mount/)
 - [Fortune: 89% of travelers bracing for disruption](https://fortune.com/2026/05/19/89-travelers-disruptions-top-concern-paying-more-summer-travel/)
 

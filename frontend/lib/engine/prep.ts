@@ -31,8 +31,8 @@ export function prepChecklist(trip: Trip): PrepItem[] {
   if (hot) list.push({ id: "sun", group: "Packing", label: "Sunscreen SPF 50, cap & sunglasses", why: "Days go above 30°C" });
   if (has(/raft|kayak|snorkel|scuba|swim|sea walk|lagoon/i)) list.push({ id: "quickdry", group: "Packing", label: "Quick-dry clothes & a spare set", why: "You will get wet on the water activities" });
   if (has(/paraglid|trek|hike|jeep|fort|pass/i)) list.push({ id: "shoes", group: "Packing", label: "Closed shoes with good grip", why: "Required for paragliding and trails" });
-  if (trip.destinationId === "leh") list.push({ id: "acclimatise", group: "Health", label: "Rest 36 hours after landing in Leh", why: "Altitude is 3,500 m, acclimatise before passes" });
-  if (trip.destinationId === "havelock") list.push({ id: "ferry", group: "Documents", label: "Ferry tickets Port Blair ⇄ Havelock", why: "Printed copy is checked at the jetty" });
+  if (trip.destinationId === "bandipur" || trip.destinationId === "kabini") list.push({ id: "safari-permit", group: "Documents", label: "Government Safari Permit & ID Proof", why: "Mandatory check by Karnataka Forest Dept at safari gates" });
+  if (trip.destinationId === "coorg" || trip.destinationId === "chikmagalur") list.push({ id: "leech-socks", group: "Packing", label: "Leech socks & rain poncho", why: "Recommended for coffee plantation walks & Western Ghats rainforest trails" });
   if (trip.prefs.kids > 0) list.push({ id: "kids", group: "Packing", label: "Snacks, wipes & a small backpack for the kids", why: "Long drives between places" });
   return list;
 }

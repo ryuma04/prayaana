@@ -19,7 +19,7 @@ func TestWhatIfBreakdownMatchesImpactAndLeavesTripAlone(t *testing.T) {
 	eng.Today = func() string { return engine.AddDays(trip.Prefs.StartDate, inc.Day-2) }
 	before, _ := json.Marshal(trip)
 
-	res := eng.WhatIf(*engine.FindScenario("rain-manali"), []*domain.Trip{trip})
+	res := eng.WhatIf(*engine.FindScenario("rain-coorg"), []*domain.Trip{trip})
 
 	after, _ := json.Marshal(trip)
 	if string(before) != string(after) {
@@ -63,7 +63,7 @@ func TestWhatIfBreakdownMatchesImpactAndLeavesTripAlone(t *testing.T) {
 	}
 
 	// Another destination is untouched.
-	if other := eng.WhatIf(*engine.FindScenario("rain-goa"), []*domain.Trip{trip}); len(other.Tours) != 0 {
-		t.Fatal("a Goa scenario affected a Manali trip")
+	if other := eng.WhatIf(*engine.FindScenario("rain-gokarna"), []*domain.Trip{trip}); len(other.Tours) != 0 {
+		t.Fatal("a Gokarna scenario affected a Coorg trip")
 	}
 }

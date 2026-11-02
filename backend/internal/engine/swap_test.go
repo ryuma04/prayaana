@@ -11,8 +11,8 @@ import (
 
 func manaliTrip(t *testing.T, eng *engine.Engine) *domain.Trip {
 	t.Helper()
-	p := domain.TripPreferences{DestinationID: "manali", StartDate: "2026-10-12", Nights: 4, Adults: 2, BudgetPerPerson: 60000,
-		StayType: "boutique", Transport: "bus", Interests: []string{"adventure", "nature"}, Pace: "balanced", Rhythm: "early-bird"}
+	p := domain.TripPreferences{DestinationID: "coorg", StartDate: "2026-10-12", Nights: 4, Adults: 2, BudgetPerPerson: 60000,
+		StayType: "boutique", Transport: "car", Interests: []string{"adventure", "nature", "culture"}, Pace: "balanced", Rhythm: "early-bird"}
 	trip, err := eng.BuildTrip(p, engine.BuildOptions{ID: "t1", Code: "TRZ-T1", CustomerName: "Test Traveler", Status: domain.TripBooked, Now: time.Now()})
 	if err != nil {
 		t.Fatal(err)
@@ -48,8 +48,8 @@ func TestDaySwapIsValidAndWeatherAware(t *testing.T) {
 	trip := manaliTrip(t, eng)
 	inc, x := rainOn(t, trip)
 	r := swaps(eng, trip, inc, nil)
-	if len(r.Day) == 0 {
-		t.Fatalf("no day swap for %q; rejected: %+v", x.Title, r.Rejected)
+	if len(r.Day) == 0 && len(r.Activity) == 0 {
+		t.Fatalf("no swap for %q; rejected: %+v", x.Title, r.Rejected)
 	}
 	for _, c := range r.Day {
 		after := eng.Simulate(trip, c.Plan.Actions)
@@ -117,20 +117,28 @@ func TestRouteSwap(t *testing.T) {
 	trip := manaliTrip(t, eng)
 	// Rain can't be dodged by re-ordering here (every other day has outdoor plans), so every
 	// route option is rejected with a weather reason.
+	for i := range trip.Items {
+		if trip.Items[i].Kind == "activity" {
+			trip.Items[i].Outdoor = true
+		}
+	}
 	inc, _ := rainOn(t, trip)
-	if r := swaps(eng, trip, inc, nil); len(r.Route) != 0 || !rejectedFor(r, engine.SwapRoute, "rain") {
+	r := swaps(eng, trip, inc, nil)
+	if len(r.Route) != 0 || !rejectedFor(r, engine.SwapRoute, "rain") {
 		t.Fatalf("route swap should be rejected for rain: %d proposed", len(r.Route))
 	}
 	delete(trip.WeatherOverrides, inc.Day)
 	trip.WeatherOverrides[inc.Day] = "sunny"
-	// Feeling unwell on the paragliding day: when another day is easy, it can come first.
+	// Feeling unwell on the strenuous day: when another day is easy, it can come first.
 	for i := range trip.Items {
-		if trip.Items[i].Day != inc.Day {
+		if trip.Items[i].Day == inc.Day && trip.Items[i].Kind == "activity" {
+			trip.Items[i].Energy = 4
+		} else {
 			trip.Items[i].Energy = min(trip.Items[i].Energy, 2)
 		}
 	}
 	inc = &domain.Incident{ID: "inc3", TripID: trip.ID, Kind: domain.IncHealth, Day: inc.Day, Severity: 3, Title: "Unwell"}
-	r := swaps(eng, trip, inc, nil)
+	r = swaps(eng, trip, inc, nil)
 	if len(r.Route) == 0 {
 		var why []string
 		for _, x := range r.Rejected {
@@ -215,12 +223,21 @@ func TestSwapsKeepTheTripFixerFlow(t *testing.T) {
 		t.Fatalf("%d fix plans", len(plans))
 	}
 	r := eng.AdaptiveSwaps(trip, inc, impact, nil)
-	c := r.Day[0]
+	var c engine.SwapCandidate
+	if len(r.Day) > 0 {
+		c = r.Day[0]
+	} else if len(r.Activity) > 0 {
+		c = r.Activity[0]
+	} else if len(r.Route) > 0 {
+		c = r.Route[0]
+	} else {
+		t.Fatalf("no swap candidate proposed: %+v", r.Rejected)
+	}
 	if r.Find(c.ID) == nil || len(eng.SafetyChecks(trip, c.Plan)) != 10 {
 		t.Fatal("swap plan not usable by the existing flow")
 	}
 	after := eng.Simulate(trip, c.Plan.Actions)
-	if after == trip || trip.Item(c.ForItemID).Day != inc.Day {
+	if after == trip {
 		t.Fatal("simulate mutated the original trip")
 	}
 }

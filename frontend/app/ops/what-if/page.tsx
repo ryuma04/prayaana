@@ -227,7 +227,7 @@ function WhatIfInner() {
               ) : (
                 <>
                   {(() => {
-                    const activeDestId = scenarios.data?.find((s) => s.id === preset)?.destinationId ?? "manali";
+                    const activeDestId = scenarios.data?.find((s) => s.id === preset)?.destinationId ?? "coorg";
                     const activeDays = Object.values(wx[activeDestId] ?? {});
                     const liveWx = activeDays[0];
                     const tomorrowWx = activeDays[1];
@@ -342,7 +342,7 @@ function WhatIfInner() {
                 </Field>
                 {draft.kind === "closure" && (
                   <Field label="Place that closes" htmlFor="wi-place" hint="Matches trip items by place or title.">
-                    <Input id="wi-place" list="wi-places" maxLength={80} value={draft.place} placeholder="e.g. Solang" onChange={(e) => setDraft({ ...draft, place: e.target.value })} />
+                    <Input id="wi-place" list="wi-places" maxLength={80} value={draft.place} placeholder="e.g. Abbey Falls" onChange={(e) => setDraft({ ...draft, place: e.target.value })} />
                     <datalist id="wi-places">
                       {destPlaces.map((p) => (
                         <option key={p} value={p} />

@@ -94,7 +94,7 @@ export function WhereStep({ a, set, recommended }: P & { recommended?: Destinati
           type="text"
           value={search}
           onChange={(e) => handleSearch(e.target.value)}
-          placeholder="Search destinations (e.g. Navi Mumbai, Goa, Jaipur)…"
+          placeholder="Search destinations (e.g. Coorg, Hampi, Gokarna, Chikmagalur)…"
           className="w-full rounded-2xl border-2 border-line bg-white py-3 pl-11 pr-4 text-sm font-medium outline-none transition focus:border-purple focus:ring-2 focus:ring-purple/20"
           aria-label="Search destinations"
         />
@@ -160,7 +160,7 @@ export function WhereStep({ a, set, recommended }: P & { recommended?: Destinati
                     destinationIds: next,
                     destinationId: next[0],
                     destinationPlaces: nextPlaces,
-                    fromCity: a.fromCity || "Delhi",
+                    fromCity: a.fromCity || "Bengaluru",
                     nights: Math.max(a.nights, next.length > 1 ? next.length * 2 : 3),
                   });
                 } catch {
@@ -225,18 +225,18 @@ export function WhereStep({ a, set, recommended }: P & { recommended?: Destinati
 
 /* ─── Popular cities used as quick-picks in the "from" step ──────────── */
 const FROM_CITIES: { name: string; lat: number; lng: number }[] = [
-  { name: "Mumbai", lat: 19.076, lng: 72.8777 },
-  { name: "Delhi", lat: 28.6139, lng: 77.209 },
   { name: "Bengaluru", lat: 12.9716, lng: 77.5946 },
-  { name: "Chennai", lat: 13.0827, lng: 80.2707 },
-  { name: "Hyderabad", lat: 17.385, lng: 78.4867 },
-  { name: "Kolkata", lat: 22.5726, lng: 88.3639 },
-  { name: "Pune", lat: 18.5204, lng: 73.8567 },
-  { name: "Ahmedabad", lat: 23.0225, lng: 72.5714 },
-  { name: "Jaipur", lat: 26.9124, lng: 75.7873 },
-  { name: "Chandigarh", lat: 30.7333, lng: 76.7794 },
-  { name: "Lucknow", lat: 26.8467, lng: 80.9462 },
-  { name: "Kochi", lat: 9.9312, lng: 76.2673 },
+  { name: "Mysuru", lat: 12.2958, lng: 76.6394 },
+  { name: "Mangalore", lat: 12.9141, lng: 74.8560 },
+  { name: "Hubballi", lat: 15.3647, lng: 75.1240 },
+  { name: "Belagavi", lat: 15.8497, lng: 74.4977 },
+  { name: "Kalaburagi", lat: 17.3297, lng: 76.8343 },
+  { name: "Udupi", lat: 13.3409, lng: 74.7421 },
+  { name: "Shivamogga", lat: 13.9299, lng: 75.5681 },
+  { name: "Davanagere", lat: 14.4644, lng: 75.9218 },
+  { name: "Ballari", lat: 15.1394, lng: 76.9214 },
+  { name: "Hassan", lat: 13.0033, lng: 76.1004 },
+  { name: "Vijayapura", lat: 16.8302, lng: 75.7100 },
 ];
 
 /** Geocode a free-text query via Nominatim (free, no key). Returns first result or null. */
@@ -365,7 +365,7 @@ export function FromStep({ a, set }: P) {
               value={query}
               onChange={(e) => handleInputChange(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleSearch()}
-              placeholder="e.g. Andheri West, Mumbai"
+              placeholder="e.g. Indiranagar, Bengaluru"
               className="w-full bg-transparent font-display text-base font-bold outline-none placeholder:text-ink/25"
               aria-label="Search your city or address"
               id="from-address-input"
@@ -1070,7 +1070,7 @@ export function TransportStep({ a, set }: P) {
                     applyTyped();
                   }
                 }}
-                placeholder="Type your city or area (e.g. Navi Mumbai, Pune)…"
+                placeholder="Type your city or area (e.g. Indiranagar, Bengaluru or Vijayanagar, Mysuru)…"
                 className="flex-1 rounded-xl border-2 border-line bg-canvas px-3 py-2 text-sm outline-none focus:border-purple"
                 autoFocus
               />
@@ -1332,7 +1332,7 @@ export function WordsStep({ a, set }: P) {
       <Textarea
         value={a.ownWords}
         onChange={(e) => set({ ownWords: e.target.value })}
-        placeholder="e.g. 5 days in Manali, nature and adventure, great food, quiet cafés in the evening"
+        placeholder="e.g. 5 days in Coorg & Chikmagalur, coffee estates and nature trails, quiet evening cafés"
         aria-label="Describe your dream trip"
         maxLength={400}
         className="min-h-36 text-base"

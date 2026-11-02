@@ -22,7 +22,7 @@ export interface OnboardingAnswers {
   stayType: StayType;
   transport: TransportMode;
   fromCity: string;
-  /** Full address or locality the traveler typed (e.g. "Andheri West, Mumbai"). */
+  /** Full address or locality the traveler typed (e.g. "Indiranagar, Bengaluru"). */
   fromAddress: string;
   /** Latitude of the traveler's origin (geocoded or picked). */
   fromLat: number | null;
@@ -49,7 +49,7 @@ export const defaultAnswers = (): OnboardingAnswers => ({
   budgetPerPerson: 30000,
   stayType: "boutique",
   transport: "bus",
-  fromCity: "Delhi",
+  fromCity: "Bengaluru",
   fromAddress: "",
   fromLat: null,
   fromLng: null,
