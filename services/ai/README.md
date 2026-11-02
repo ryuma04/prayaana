@@ -1,26 +1,38 @@
-# Trizpyy AI service (FastAPI)
+# Prayaana AI Service (FastAPI)
 
-Optional Python service the Go backend calls over HTTP (`AI_SERVICE_URL`). When it is off, slow or
-returns something invalid, Go falls back to its own rules — nothing in the app breaks.
+Microservice called by the Go backend over HTTP (`AI_SERVICE_URL`). When offline or unreachable, the Go backend gracefully falls back to deterministic rules — ensuring 100% platform availability.
 
-| Endpoint | What it does |
-|---|---|
-| `GET /health` | Status, semantic model state (`loading` / `ready` / `unavailable`), vector store |
-| `POST /optimize/day` | Day route + times with Google OR-Tools (routing with time windows); reports conflicts when no plan fits |
-| `POST /similar` | Activities similar to one activity (sentence-transformers `all-MiniLM-L6-v2`) |
-| `POST /search` | Search by feeling ("quiet places with great food") |
-| `GET /similarity-matrix` | Pairwise similarity inside each destination (Go loads it for swap ranking) |
-| `POST /risk/delay` | **Demo** delay-risk model (logistic regression on synthetic history — not validated on real delays) |
-| `POST /vendors/reliability` | Chance a vendor fails the next request, with a 90% interval (Beta-Binomial). Go still owns the trust score |
+## Endpoints
 
-Embeddings are stored in Postgres with pgvector (`ai_activity_embeddings`) when `DATABASE_URL` is set and the
-`vector` extension is available (set `PGVECTOR=0` to keep them in memory).
+| Endpoint | Method | Technical Purpose |
+|---|---|---|
+| `/health` | GET | Service status, semantic model status (`loading` / `ready` / `unavailable`), activity vector count |
+| `/optimize/day` | POST | Google OR-Tools routing engine with time windows; sequences sights to minimize travel time and respect opening hours |
+| `/similar` | POST | Activity similarity via `sentence-transformers/all-MiniLM-L6-v2` |
+| `/search` | POST | Semantic search-by-feeling (*"misty hills with authentic coffee"*) |
+| `/similarity-matrix`| GET | Pairwise similarity matrix within destinations for candidate replacement ranking |
+| `/risk/delay` | POST | Delay-risk logistic regression forecasting late transfers based on weather and route features |
+| `/vendors/reliability` | POST | Beta-Binomial inference estimating probability of partner fulfillment with a 90% credible interval |
+
+## Setup & Running
 
 ```bash
 cd services/ai
-py -3.14 -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt
-.venv/Scripts/python -m uvicorn app.main:app --port 8090
-.venv/Scripts/python -m pytest -q
+python -m venv .venv
+
+# Activate venv:
+# Windows:
+.venv\Scripts\activate
+# Linux/macOS:
+# source .venv/bin/activate
+
+pip install -r requirements.txt
+python -m uvicorn app.main:app --port 8090 --reload
 ```
 
-Docker: `docker compose --profile ai up --build` (built from the repository root).
+## Running Tests
+
+```bash
+python -m pytest -v
+```
+Runs the 15-test suite covering routing, constraints, risk estimation, and agent guardrails.

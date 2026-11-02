@@ -1,203 +1,239 @@
-# Tripzyy — AI-Powered Travel Engine & Operator Platform
-> **HackCelestial 3.0 | Mandatory Technology Integration: Nugen Intelligence**
+<div align="center">
 
-Tripzyy is an end-to-end travel concierge and tour operator platform designed for Indian destinations. It combines dynamic itinerary building, real-time routing optimization, vendor management, and domain-aligned artificial intelligence powered by **Nugen Intelligence**, **Groq**, and **Google Gemini**.
+# 🌿 Prayaana (ಪ್ರಯಾಣ)
+### AI-Powered Karnataka Travel Planner & Autonomous Operations Platform
+
+[![Next.js 16](https://img.shields.io/badge/Next.js-16.0-black?logo=next.js)](https://nextjs.org/)
+[![Go 1.23](https://img.shields.io/badge/Go-1.23-00ADD8?logo=go)](https://golang.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql)](https://www.postgresql.org/)
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python)](https://python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+*A production-grade, end-to-end intelligent travel concierge and operator system tailored exclusively for the state of **Karnataka, India**.*
+
+</div>
 
 ---
 
-## 🏗️ System Architecture Diagram
+## 🎯 Problem Statement
+
+> **AI Travel Planner for Karnataka**  
+> *Develop an AI-powered travel planner that creates personalized Karnataka itineraries based on a traveller’s interests, available time, budget, and preferred type of experience.*
+
+---
+
+## 🧭 About Prayaana
+
+**Prayaana** (*Sanskrit / Kannada for "Journey" or "Voyage"*) is designed from the ground up to solve the real challenges of exploring Karnataka — from navigating the misty hairpins of the Western Ghats to timing sunrise at the Vijayanagara ruins of Hampi.
+
+Unlike static itinerary generators that merely output bullet points, Prayaana delivers an **active, resilient trip management ecosystem**:
+1. **Travel DNA Personalization**: Learns each traveler's 6 psychological traits (Adventure, Nature, Culture, Food, Luxury, Social), morning vs. night pace, and budget constraints.
+2. **Rich Karnataka Catalog**: Deeply grounded in **16 premier destinations**, **58 curated activities**, **28 stays**, **22 transit connections**, and **69 local vendors**.
+3. **Dynamic Self-Fixing Itinerary Engine**: Real-time incident detection (monsoon downpours, dam discharges, Ghat landslides, train delays). Uses a **Change Impact Map** to forward-propagate constraints and synthesize three concrete remedy plans (*Cheapest*, *Fastest*, *Keep Favourites*).
+4. **All-or-Nothing Vendor Coordination**: Coordinates with homestays, private cab drivers, and coracle operators with atomic commits — preventing half-updated trips.
+5. **Interactive Karnataka Travel Guru**: Live conversational AI providing regional culinary tips, cultural etiquette, Kannada emergency assistance, and local travel tips.
+6. **Offline Trip Pass (PWA)**: Works completely offline when traveling through deep forested reserves (Bandipur, Kabini) or high-altitude coffee estates with zero cell reception.
+
+---
+
+## 🏛️ Karnataka Coverage & Geographic Regions
+
+Prayaana organizes Karnataka into 5 distinct geographical zones and 6 curated circuits:
+
+| Region | Regional Identity | Destinations Covered | Highlights |
+|---|---|---|---|
+| ☕ **Malenadu** | The Emerald Western Ghats | Coorg, Chikmagalur, Sakleshpur, Jog Falls | Coffee estate homestays, Mullayanagiri peaks, Abbey falls, Bylakuppe Tibetan monastery |
+| 🌊 **Karavali** | The Arabian Coast | Gokarna, Udupi, Mangalore, Murdeshwar | Om Beach, Krishna Mutt, coastal temple architecture, Mangalorean seafood |
+| 🪨 **Aitihasika** | UNESCO World Heritage & Stone Architecture | Hampi, Badami, Belur & Halebidu | Vijayanagara ruins, Badami cave temples, Hoysala stone carvings |
+| 🐅 **Aranya** | Wildlife Reserves & Rainforests | Kabini, Bandipur, Dandeli | Nagarhole tiger safaris, Kali river white-water rafting, hornbill trails |
+| 🏙️ **Rajadhani & Royal** | Capitals & Royal Heritage | Bengaluru, Mysuru | Mysuru Palace, Devaraja Market, Chamundi Hill, Bengaluru tech-garden culture |
+
+---
+
+## 🏗️ System Architecture
 
 ```mermaid
-graph TD
-    subgraph Client Layer
-        A[Traveler Web App - Next.js 14]
-        B[Operator Console - /ops]
+flowchart TD
+    subgraph ClientLayer ["Client Layer"]
+        A["Traveler Web App (Next.js 16)"]
+        B["Operator Console (/ops)"]
+        C["Offline Trip Pass (PWA)"]
     end
 
-    subgraph API & Core Service Layer - Go Backend
-        C[Chi Router & Middleware]
-        D[AI Service Manager - internal/ai]
-        E[Trip Planning Engine - internal/engine]
-        F[Store & Data Layer - internal/store]
+    subgraph CoreBackend ["Core API & Engine Layer (Go Backend)"]
+        D["Chi REST Router & JWT Middleware"]
+        E["Trip Planning & Parity Engine (internal/engine)"]
+        F["Change Impact & Fix Synthesizer (internal/incidents)"]
+        G["All-or-Nothing Commit Protocol (internal/confirm)"]
+        H["AI Service Orchestrator (internal/ai)"]
+        I["Persistence Store (PostgreSQL / SQLite)"]
     end
 
-    subgraph Intelligence & Microservices
-        G[Nugen Intelligence Platform]
-        H[Groq Fast LLM Inference]
-        I[Google Gemini Model]
-        J[OR-Tools Routing Optimizer]
+    subgraph PythonAI ["AI & Microservices Layer (Python FastAPI)"]
+        J["FastAPI AI Service (services/ai)"]
+        K["Semantic Search (Sentence-Transformers)"]
+        L["Day Route Optimizer (Google OR-Tools)"]
+        M["Delay-Risk Predictor (Logistic Regression)"]
+        N["Vendor Reliability (Beta-Binomial Inference)"]
     end
 
-    subgraph Persistence Layer
-        K[(PostgreSQL - Neon DB)]
+    subgraph LLMProviders ["LLM Intelligence & Fallbacks"]
+        O["Nugen Karnataka Aligned Model"]
+        P["Groq Llama-3.3 70B High-Speed Inference"]
+        Q["Google Gemini Multimodal Fallback"]
     end
 
-    A -->|HTTPS / REST| C
-    B -->|HTTPS / JWT Auth| C
-    C --> D
-    C --> E
-    C --> F
-    
-    D -->|Chat Completion & Vector Embeddings| G
-    D -->|High-Speed Structured JSON| H
-    D -->|Multimodal Fallback| I
-    E -->|Travel & Window Constraints| J
-    F -->|Queries / Mutations| K
+    A -->|REST / WebSocket| D
+    B -->|REST / JWT| D
+    C -->|Local Cache| A
+
+    D --> E
+    D --> F
+    D --> G
+    D --> H
+    D --> I
+
+    H -->|HTTP RPC| J
+    H -->|Domain Inference| O
+    H -->|Fast Structured Output| P
+    H -->|Resilience Path| Q
+
+    J --> K
+    J --> L
+    J --> M
+    J --> N
 ```
 
 ---
 
-## 🔄 Data Flow Diagram
+## 🔄 Dynamic Self-Fixing Sequence
+
+When an adverse event occurs on a trip (e.g., severe rainfall shuts down outdoor excursions), Prayaana executes an autonomous repair pipeline:
 
 ```mermaid
 sequenceDiagram
     autonumber
-    actor User as Traveler / Operator
-    participant FE as Next.js Frontend
-    participant BE as Go Backend API
-    participant Nugen as Nugen Intelligence
-    participant Groq as Groq LLM
-    participant DB as PostgreSQL DB
+    actor Traveler
+    participant App as Prayaana Web / PWA
+    participant Go as Go Backend
+    participant AI as Python AI Service
+    participant Vendor as Local Vendor / Driver
 
-    User->>FE: Ask question or request trip itinerary
-    FE->>BE: POST /ops/ai/model/ask (JWT authenticated)
-    BE->>Nugen: POST /api/v3/inference/embeddings (qwen3-embedding-8b)
-    Nugen-->>BE: Return high-dimensional vector embeddings
-    BE->>BE: Semantic catalog ranking & constraint check
-    alt Nugen Aligned Model Inference
-        BE->>Nugen: POST /api/v3/inference/chat/completions (trizpyy-aligned-travel-v1)
-        Nugen-->>BE: Domain-grounded travel response
-    else Fallback Provider (Resilience Path)
-        BE->>Groq: POST /openai/v1/chat/completions (Nugen Domain Prompt)
-        Groq-->>BE: Dynamic question response
-    end
-    BE->>DB: Log decision & store analytics
-    BE-->>FE: Return formatted response JSON
-    FE-->>User: Render formatted chat card UI
+    Traveler->>App: Report disruption (heavy rain in Coorg)
+    App->>Go: POST trip disruption event
+    Go->>Go: Detect disruption and create Incident
+    Go->>Go: Traverse Change Impact DAG
+    Go->>AI: POST query similar indoor alternatives
+    AI-->>Go: Match: Golden Temple Tibetan Complex
+    Go->>Go: Synthesize 3 Plans (Cheapest, Fastest, Keep Favourites)
+    Go-->>App: Display interactive Remedy Comparison
+    Traveler->>App: Selects Keep Favourites Plan
+    Go->>Vendor: Dispatch change requests (WhatsApp / SMS)
+    Vendor-->>Go: Driver confirms adjusted pickup
+    Go->>Go: Atomic Commit: Update bookings and regenerate ticket PDF
+    Go-->>App: Updated Itinerary Live
 ```
 
 ---
 
-## 🧬 Nugen Intelligence Integration (Mandatory Requirement)
+## 🛠️ Technical Stack
 
-As mandated for **HackCelestial 3.0**, Tripzyy incorporates Nugen Intelligence's domain alignment and inference capabilities across the application.
-
-```
-Base AI Model (qwen-v2p5-0p5b-instruct)
-       │
-       ▼
-Nugen Alignment/Customization (22 Corpus Documents: Destinations, Experiences, Stays, Policies)
-       │
-       ▼
-Domain-Specific Model (trizpyy-aligned-travel-v1)
-       │
-       ▼
-Integration into Tripzyy (Go AI Engine, Vector Search & Operator UI)
-```
-
-### 1. Domain Corpus Compilation (`services/nugen/corpus`)
-We compiled a dataset of 22 text files (`document_01m3fve5...`) containing:
-- Destination guides for 20 Indian cities (Gokarna, Manali, Goa, Ahmedabad, etc.).
-- 130 local activities and experiences.
-- 68 stay properties and local transport rules.
-- Monsoon trip policies, cancellation terms, and traveler Q&A.
-
-### 2. Alignment & Fine-Tuning Pipeline (`services/nugen/align.py`)
-- **API Key:** `nugen-7f47a84a030cd42a`
-- **Base Model:** `qwen-v2p5-0p5b-instruct`
-- **Alignment Project:** `Trizpyy Travel Concierge` (`alignment_01m3g3h3t1b3vdz7`)
-- **Deployed Model ID:** `trizpyy-aligned-travel-v1`
-
-### 3. Backend AI Integration (`backend/internal/ai`)
-- **Chat Completions:** Calls `https://api.nugen.in/api/v3/inference/chat/completions` using the aligned model `trizpyy-aligned-travel-v1`.
-- **Semantic Vector Search:** Calls Nugen Embeddings (`qwen3-embedding-8b`) on `https://api.nugen.in/api/v3/inference/embeddings` for search-by-feeling queries (*"quiet beaches with local food"*).
-- **Operator Dashboard Card:** Displays the live 4-step pipeline status on `/ops` with an interactive test input console.
-
----
-
-## 🛠️ Key Technical Components
-
-| Component | Technology | Technical Purpose |
+| Layer | Technologies | Role in Prayaana |
 |---|---|---|
-| **Frontend UI** | Next.js 14, React, TailwindCSS, TypeScript | Responsive web interface for Travelers and Tour Operators. |
-| **Backend API** | Go (Golang), Chi Router | High-throughput REST API backend with rate limiting and JWT security. |
-| **AI Manager** | Go AI Package (`internal/ai`) | Provider management, circuit breakers, fallback handling, and caching. |
-| **Domain AI** | Nugen Intelligence Platform | Fine-tuned travel model and vector embedding provider. |
-| **Fast LLM** | Groq API | Ultra-low latency JSON generation for itinerary node calculations. |
-| **Multimodal LLM**| Google Gemini | Multimodal backup provider for visual and voice transcription tasks. |
-| **Routing Engine**| OR-Tools Microservice | Day itinerary sequence optimization with window and pace constraints. |
-| **Database** | PostgreSQL (Neon Cloud DB) | Relational storage for users, trips, bookings, vendors, and audit logs. |
+| **Frontend** | Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, Motion, Phosphor & Lucide Icons | Responsive traveler interface, interactive DNA quiz, offline Trip Pass, dynamic Change Impact visualizations. |
+| **Backend API** | Go (Golang 1.23), Chi Router, pgx, SQLc / SQLite / PostgreSQL | Core business logic, booking management, atomic multi-party confirmation rounds, pricing parity engine. |
+| **AI Microservice** | Python 3.12, FastAPI, Uvicorn, Pytest | Semantic search, delay risk regression, OR-Tools day schedule optimization, vendor reliability scoring. |
+| **Vector Search** | `sentence-transformers/all-MiniLM-L6-v2`, pgvector / NumPy memory index | "Search-by-feeling" (*"peaceful temple walk with filter coffee"*), activity similarity matrix. |
+| **Optimization** | Google OR-Tools (Vehicle Routing with Time Windows) | Optimal sequencing of daily sights respecting open/close hours, transit duration, and traveler pace. |
+| **LLM Inference** | Nugen Aligned Travel Model, Groq (`llama-3.3-70b-versatile`), Google Gemini (`gemini-2.0-flash`) | Strict JSON-schema structured output, on-tour chat assistant, operational what-if reasoning. |
 
 ---
 
-## ⚙️ Environment Configuration (`backend/.env`)
-
-```env
-DATABASE_URL=postgresql://user:pass@ep-holy-silence-b3z3wobc-pooler.c-4.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
-JWT_SECRET=your_jwt_secret_key
-
-# Nugen Intelligence Configuration
-NUGEN_API_KEY=nugen-7f47a84a030cd42a
-NUGEN_MODEL_ID=trizpyy-aligned-travel-v1
-NUGEN_ALIGNMENT_ID=alignment_01m3g3h3t1b3vdz7
-
-GROQ_API_KEY_1=gsk_...
-GEMINI_API_KEY_1=AQ...
-
-PORT=8080
-PUBLIC_API_URL=http://localhost:8080
-PUBLIC_WEB_URL=http://localhost:3000
-```
-
----
-
-## 🚀 Running the Project Locally
+## 🚀 Getting Started Locally
 
 ### Prerequisites
-- Node.js v18+ & npm
-- Go v1.21+
-- Python 3.9+ (for Nugen scripts)
+- **Node.js** v20+ & npm
+- **Go** v1.22+
+- **Python** 3.12+
 
-### Step 1: Start the Go Backend API Server
+### 1. Clone the Repository
+```bash
+git clone https://github.com/ryuma04/prayaana.git
+cd prayaana
+```
+
+### 2. Start the Python AI Microservice
+```bash
+cd services/ai
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# Linux/macOS:
+# source .venv/bin/activate
+
+pip install -r requirements.txt
+python -m uvicorn app.main:app --port 8090 --reload
+```
+*Verify: Visit `http://localhost:8090/health` (returns status `ok` and semantic activity count).*
+
+### 3. Start the Go Backend API
 ```bash
 cd backend
+# Optional: copy and customize environment variables
+cp .env.example .env
+
 go run ./cmd/api
 ```
-*The backend API will start listening on `http://localhost:8080`.*
+*The Go API seeds the Karnataka demo catalog and starts on `http://localhost:8080`.*
 
-### Step 2: Start the Next.js Frontend Server
+### 4. Start the Next.js Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-*The web app will start on `http://localhost:3000`.*
+*The frontend web app will be available at `http://localhost:3000`.*
 
-### Step 3: Test Nugen AI Integration Endpoints
+---
+
+## 🧪 Running the Test Suites
+
+All components feature comprehensive unit and integration tests:
+
+### Python AI Service Tests (15 tests)
 ```bash
-python scratch/test_dynamic_questions.py
+python -m pytest services/ai/tests/ -v
+```
+Verifies routing optimizer, constraint validation, delay-risk model, vendor reliability, and ops agent tool guardrails.
+
+### Go Backend Tests & Parity
+```bash
+cd backend
+go test ./...
+```
+Verifies financial calculations, promo code validations, and catalog parity with the frontend.
+
+### Frontend TypeScript Verification
+```bash
+cd frontend
+npx tsc --noEmit
 ```
 
 ---
 
-## 🔍 How to Demo During Hackathon Judging
+## 👥 Demo Logins
 
-1. **Access Operator Dashboard:**  
-   Open **`http://localhost:3000/ops`** in your browser.  
-   *(Login: `ops@saffrontrails.demo` | Password: `demo1234`)*
+When testing the deployed or local app, pre-seeded accounts are available (password: `demo1234`):
 
-2. **Inspect the Nugen Model Card:**  
-   Locate the **Trizpyy travel model** panel. All 4 pipeline steps display green active status:
-   - 🟢 **Base model:** `qwen-v2p5-0p5b-instruct`
-   - 🟢 **Aligned on Trizpyy data:** `22 documents`
-   - 🟢 **Travel model deployed:** `trizpyy-aligned-travel-v1`
-   - 🟢 **Answering travelers:** `Active`
+| Role | Email | Password | Access Area |
+|---|---|---|---|
+| **Traveler** | `rahul@prayaana.demo` | `demo1234` | Full trip planning, bookings, live trip pass, Travel Guru AI |
+| **Tour Operator** | `ops@saffrontrails.demo` | `demo1234` | `/ops` Operator Console, incident maps, vendor dispatch |
+| **Super Admin** | `admin@prayaana.internal` | `demo1234` | `/super-admin` Platform overview, guide approvals |
 
-3. **Execute Live Prompts:**  
-   Type questions such as:
-   - *"What are top 3 budget spots in Gokarna?"*
-   - *"It's raining in Manali today. What can we do?"*  
-   Click **Ask**. The system executes live inference and renders a formatted chat card response.
+---
 
-4. **Access Traveler AI Concierge:**  
-   Open **`http://localhost:3000`** and click the **Ask Guru AI** floating widget on the bottom-right to interact with the traveler concierge interface.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE). 

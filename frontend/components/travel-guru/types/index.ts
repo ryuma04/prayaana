@@ -1,7 +1,7 @@
 export interface PlaceRecommendation {
   id: string;
   name: string;
-  category: "Heritage & History" | "Food & Markets" | "Nature & Parks" | "Cultural & Spiritual" | "Hidden Gem" | "Nightlife & Views";
+  category: "Heritage & History" | "Food & Markets" | "Nature & Parks" | "Cultural & Spiritual" | "Hidden Gem" | "Nightlife & Views" | (string & {});
   rating: number;
   reviewCount: string;
   description: string;
